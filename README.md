@@ -31,3 +31,17 @@ https://www.gartner.com/doc/reprints?id=1-2EQ0YMTZ&ct=230816&st=sb
 ### 2024 Strategic Roadmap for SASE Convergence
 
 https://www.gartner.com/doc/reprints?id=1-2G2V1C8T&ct=231229&st=sb
+
+### Exposing Kubernetes Applications
+
+#### Part 1: Service and Ingress Resources
+
+https://aws.amazon.com/blogs/containers/exposing-kubernetes-applications-part-1-service-and-ingress-resources/
+
+#### Part 2: AWS Load Balancer Controller
+
+https://aws.amazon.com/blogs/containers/exposing-kubernetes-applications-part-2-aws-load-balancer-controller/
+
+#### Part 3: NGINX Ingress Controller
+
+https://aws.amazon.com/blogs/containers/exposing-kubernetes-applications-part-3-nginx-ingress-controller/
