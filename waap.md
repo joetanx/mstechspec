@@ -237,3 +237,19 @@ Logs from a Web Application Firewall (WAF) and an Intrusion Prevention System (I
 6. **Threat Intelligence Integration**: Correlating logs from the WAF and IPS with external threat intelligence feeds enhances the identification of IOCs by providing additional context and enrichment data. By matching observed IOCs with known indicators from threat intelligence sources, security teams can prioritize response actions and proactively defend against emerging threats and attack campaigns.
 
 Overall, correlating logs from a Web Application Firewall and an Intrusion Prevention System enables organizations to identify indicators of compromise, detect security incidents, and respond to threats more effectively by leveraging insights from both the application layer and network layer of their environment.
+
+## In an air-gapped environment with no internet exposure, is it still relevant to implement web application firewall?
+
+In an air-gapped environment where there is no internet exposure, the relevance of implementing a web application firewall (WAF) depends on the specific security requirements and architecture of the environment. Here are some considerations:
+
+1. **Internal Threats**: Even in an air-gapped environment, there may still be potential threats from internal sources, such as malicious insiders or compromised systems. A WAF can help protect against attacks targeting internal web applications or APIs by enforcing security policies and filtering malicious traffic.
+
+2. **Zero-Day Attacks**: While an air-gapped environment may reduce the risk of external attacks, it does not eliminate the possibility of zero-day vulnerabilities or insider threats. A WAF with capabilities for virtual patching and proactive threat detection can help mitigate the risk of exploitation until patches can be applied.
+
+3. **Regulatory Compliance**: Depending on the industry and regulatory requirements, implementing a WAF may be necessary for compliance purposes, even in an air-gapped environment. Regulations such as PCI DSS, HIPAA, and GDPR may require organizations to implement security controls, including WAFs, to protect sensitive data and ensure data privacy.
+
+4. **Defense in Depth**: The principle of defense in depth advocates for layering multiple security controls to provide comprehensive protection against various threats. Even in an air-gapped environment, implementing additional security measures such as a WAF can add an extra layer of defense and enhance overall security posture.
+
+5. **Future Connectivity**: While the environment may currently be air-gapped, there may be plans to establish connectivity to the internet or other external networks in the future. Implementing a WAF proactively can help prepare for future connectivity requirements and ensure that adequate security controls are in place when connectivity is established.
+
+Ultimately, the decision to implement a WAF in an air-gapped environment depends on factors such as the organization's risk tolerance, compliance requirements, internal security policies, and future plans for connectivity. While the immediate threat landscape may be different in an air-gapped environment, there are still potential security risks that warrant consideration and mitigation through appropriate security controls such as WAFs.
