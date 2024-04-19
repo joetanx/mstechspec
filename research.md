@@ -355,7 +355,7 @@ While AWS Web Application Firewall (WAF) offers robust capabilities for protecti
 
 Overall, while AWS WAF can provide some level of protection for APIs, organizations should carefully evaluate its limitations and consider complementing it with API-specific security solutions or best practices to address the unique security challenges associated with API endpoints.
 
-### What are the limitations of aws web application firewall performing behavioral analysis to detect anomalies in web traffic with machine learning?
+#### What are the limitations of aws web application firewall performing behavioral analysis to detect anomalies in web traffic with machine learning?
 
 As of my last update, AWS Web Application Firewall (WAF) does not offer native capabilities for performing behavioral analysis to detect anomalies in web traffic using machine learning. While AWS WAF provides robust rule-based filtering and inspection capabilities, it does not include built-in features for machine learning-based anomaly detection.
 
