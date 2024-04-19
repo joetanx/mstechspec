@@ -25,10 +25,11 @@
 
 ### 3.1. Competition
 
-| Use case            | Fortinet  | AWS                                                                 | Azure                                                          | GCP                                                       | Third-Party |
-| ------------------- | --------- | ------------------------------------------------------------------- | -------------------------------------------------------------- | --------------------------------------------------------- | ----------- |
-| SIEM                | FortiSIEM | • AWS CloudTrail<br>• Amazon CloudWatch Logs<br>• Amazon OpenSearch | • Azure Audit Logs<br>• Azure Monitor Logs<br>• Azure Sentinel | • Cloud Audit Logs<br>• Cloud Logging<br>• Chronicle SIEM |             |
-| Security Automation | FortiSOAR | AWS Security Hub Automated Security Response add-on                 | Microsoft Defender for Cloud<br>\+ Azure Logic Apps            | Chronicle SOAR                                            |             |
+| Use case                          | Fortinet                          | AWS                                                                              | Azure                                                          | GCP                                                       | Third-Party |
+| --------------------------------- | --------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------- | --------------------------------------------------------- | ----------- |
+| Network Monitoring                | • FortiAnalyzer<br>• FortiMonitor | AWS Network Manager                                                              | Azure Network Watcher                                          | Network Intelligence Center                               |             |
+| SIEM                              | FortiSIEM                         | • AWS CloudTrail<br>• Amazon CloudWatch Logs<br>• Amazon OpenSearch              | • Azure Audit Logs<br>• Azure Monitor Logs<br>• Azure Sentinel | • Cloud Audit Logs<br>• Cloud Logging<br>• Chronicle SIEM |             |
+| Security Automation               | FortiSOAR                         | AWS Security Hub Automated Security Response add-on                              | Microsoft Defender for Cloud<br>\+ Azure Logic Apps            | Chronicle SOAR                                            |             |
 
 ## 4. CNAPP / Others
 
@@ -37,5 +38,5 @@
 | Use case                          | Fortinet                         | AWS                                                                              | Azure                                     | GCP                            | Third-Party |
 | --------------------------------- | -------------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------- | ------------------------------ | ----------- |
 | Cloud Security Posture Management | FortiCNP                         | • AWS Security Hub<br>• Amazon Guard Duty<br>• AWS Audit Manager<br>• AWS Config | Microsoft Defender for Cloud              | Security Command Center        |             |
-| Secure Access                     | • FortiPAM<br>• FortiSASE (ZTNA) | AWS Systems Manager                                                              | Azure Bastion Host                        | Identity-Aware Proxy (IAP)     |             |
 | Application Security              | FortiDevSec                      | Amazon CodeGuru Security                                                         | GitHub Advanced Security for Azure DevOps | Cloud Build On-Demand Scanning |             |
+| Secure Access                     | • FortiPAM<br>• FortiSASE (ZTNA) | AWS Systems Manager                                                              | Azure Bastion Host                        | Identity-Aware Proxy (IAP)     |             |
