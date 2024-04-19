@@ -593,44 +593,21 @@ In summary, the decision to use a third-party SOAR platform versus AWS services 
 
 ## 4. Reference Links
 
-### Magic Quadrant for Network Firewalls
+### Analyst Reports
 
-https://www.gartner.com/doc/reprints?id=1-2C2Q9662&ct=221222&st=sb
+|Topic|Link|
+|---|--|
+|Magic Quadrant for Network Firewalls|https://www.gartner.com/doc/reprints?id=1-2C2Q9662&ct=221222&st=sb|
+|Market Guide for Cloud-Native Application Protection Platforms|https://www.gartner.com/doc/reprints?id=1-2CYRBHBR&ct=230317&st=sb|
+|Magic Quadrant for Cloud Web Application and API Protection|https://www.techcity.cloud/information/gartner-magic-quadrant-for-cloud-web-application-and-api-protection/|
+|Magic Quadrant for Single-Vendor SASE|https://www.gartner.com/doc/reprints?id=1-2EQ0YMTZ&ct=230816&st=sb|
+|2024 Strategic Roadmap for SASE Convergence|https://www.gartner.com/doc/reprints?id=1-2G2V1C8T&ct=231229&st=sb|
 
-### Market Guide for Cloud-Native Application Protection Platforms
+### Technical Documents
 
-https://www.gartner.com/doc/reprints?id=1-2CYRBHBR&ct=230317&st=sb
-
-### Magic Quadrant for Cloud Web Application and API Protection
-
-https://www.techcity.cloud/information/gartner-magic-quadrant-for-cloud-web-application-and-api-protection/
-
-### Security Pillar - AWS Well-Architected Framework
-
-https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html
-
-### Third-party firewall appliance vs AWS Network Firewall/WAF
-
-https://www.linkedin.com/pulse/third-party-firewall-appliance-vs-aws-network-dinesh-sharma-64kmc
-
-### Magic Quadrant for Single-Vendor SASE
-
-https://www.gartner.com/doc/reprints?id=1-2EQ0YMTZ&ct=230816&st=sb
-
-### 2024 Strategic Roadmap for SASE Convergence
-
-https://www.gartner.com/doc/reprints?id=1-2G2V1C8T&ct=231229&st=sb
-
-### Exposing Kubernetes Applications
-
-#### Part 1: Service and Ingress Resources
-
-https://aws.amazon.com/blogs/containers/exposing-kubernetes-applications-part-1-service-and-ingress-resources/
-
-#### Part 2: AWS Load Balancer Controller
-
-https://aws.amazon.com/blogs/containers/exposing-kubernetes-applications-part-2-aws-load-balancer-controller/
-
-#### Part 3: NGINX Ingress Controller
-
-https://aws.amazon.com/blogs/containers/exposing-kubernetes-applications-part-3-nginx-ingress-controller/
+|Topic|Link|
+|---|--|
+|Security Pillar - AWS Well-Architected Framework|https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html|
+|Third-party firewall appliance vs AWS Network Firewall/WAF|https://www.linkedin.com/pulse/third-party-firewall-appliance-vs-aws-network-dinesh-sharma-64kmc|
+|Design your firewall deployment for Internet ingress traffic flows|https://aws.amazon.com/blogs/networking-and-content-delivery/design-your-firewall-deployment-for-internet-ingress-traffic-flows/|
+|Exposing Kubernetes Applications|- Part 1: Service and Ingress Resources https://aws.amazon.com/blogs/containers/exposing-kubernetes-applications-part-1-service-and-ingress-resources/<br>- Part 2: AWS Load Balancer Controller https://aws.amazon.com/blogs/containers/exposing-kubernetes-applications-part-2-aws-load-balancer-controller/<br>- Part 3: NGINX Ingress Controller https://aws.amazon.com/blogs/containers/exposing-kubernetes-applications-part-3-nginx-ingress-controller/|
