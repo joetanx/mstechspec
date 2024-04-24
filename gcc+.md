@@ -1,42 +1,52 @@
-##  1. Firewall / IPS
+## 1. Firewall and Intrusion Prevention System
 
-### 1.1. Competition
+FortiGate
+- up to date ips with latest updates from FortiGuard
+  - Botnet and C&C detection https://docs.fortinet.com/document/fortigate/7.4.3/administration-guide/668865/ips-with-botnet-c-c-ip-blocking
+- dns filtering
+  - Botnet C&C domain blocking https://docs.fortinet.com/document/fortigate/7.4.3/administration-guide/105208/botnet-c-c-domain-blocking
 
-| Use case                                | Fortinet             | AWS                                                                                                             | Azure                                                                     | GCP                                          | Third-Party |
-| --------------------------------------- | -------------------- | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | -------------------------------------------- | ----------- |
-| NGFW<br>(IPS, AV, Web Filter, App Ctrl) | FortiGate / FortiCNF | • AWS Security Groups<br>• AWS network Access Control List (ACL)<br>• AWS Network Firewall<br>• AWS NAT Gateway | • Network Security Group (NSG)<br>• Azure Firewall<br>• Azure NAT Gateway | • Cloud NGFW<br>• Cloud NAT                  |             |
-| WAN/SDWAN                               | FortiGate / FortiCNF | • AWS Virtual Private Network (VPN)<br>• Amazon Cloud WAN<br>• AWS Transit Gateway                              | • Azure Virtual Private Network (VPN)<br>• Azure Virtual WAN              | • Cloud VPN<br>• Network Connectivity Center |             |
+## 2. Secure Web Gateway
 
-### 1.2. Value Drivers
+FortiProxy
+- content inspection with SSL inspection (web filtering, application control, antivirus)
+- SWG with LDAP/RADIUS authentication
 
-## 2. Web Application and API Security
+## 3. Web Application and API Protection
 
-### 2.1. Competition
+FortiWeb
+- Protection against web application exploits
+  - up to date signature-based attack prevention with latest updates from FortiGuard https://docs.fortinet.com/document/fortiweb/7.4.3/administration-guide/210196/blocking-known-attacks
+  - OWASP top 10 compliance monitoring https://docs.fortinet.com/document/fortiweb/7.4.3/administration-guide/897881/owasp-top-10-compliance
+  - prevent client-side attacks such as XSS and CSRF
+    - https://docs.fortinet.com/document/fortiweb/7.4.3/administration-guide/56487/defeating-cross-site-request-forgery-csrf-attacks
+    - https://docs.fortinet.com/document/fortiweb/7.4.3/administration-guide/981691/syntax-based-sql-xss-injection-detection
+- API security
+  - Schema validation for JSON and XML APIs
+  - OpenAPI 3.0.x validation
+- machine learning
+  - ML bot detection: https://docs.fortinet.com/document/fortiweb/7.4.3/administration-guide/600188/configuring-ml-based-bot-detection-policy
+  - ML Based Anomaly Detection: https://docs.fortinet.com/document/fortiweb/7.4.3/administration-guide/94907/ml-based-anomaly-detection
+  - ML Based API Protection: https://docs.fortinet.com/document/fortiweb/7.4.3/administration-guide/98060/configuring-ml-based-api-protection-policy
+- Ingress controller for Kubernetes (EKS)
 
-| Use case                                           | Fortinet                                                          | AWS                                               | Azure                                                                        | GCP                                                                          | Third-Party |
-| -------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------- |
-| CDN                                                | FortiWeb Cloud                                                    | Amazon CloudFront                                 | Azure Front Door                                                             | • Cloud CDN<br>• Media CDN                                                   |             |
-| GSLB                                               | FortiGSLB                                                         | AWS Route 53                                      | Azure Traffic Manager                                                        | Cloud DNS                                                                    |             |
-| DDOS                                               | • FortiDDOS<br>• FortiWeb / FortiWeb Cloud                        | AWS Shield Advanced                               | Azure DDoS Protection                                                        | Google Cloud Armor Managed Protection Plus                                   |             |
-| Web Application Firewall (WAF) /<br>API Protection | FortiWeb / FortiWeb Cloud                                         | • AWS WAF<br>• AWS Shield<br>• Amazon API Gateway | • Azure Web Application Firewall (WAF)<br>• Azure API Management             | • Google Cloud Armor<br>• Web App and API Protection (WAAP)<br>• API Gateway |             |
-| Load balancing                                     | • FortiADC (non-HTTP(S))<br>• FortiWeb / FortiWeb Cloud (HTTP(S)) | • AWS NLB (non-HTTP(S))<br>• AWS ALB (HTTP(S))    | • Azure Load Balancer (non-HTTP(S))<br>• Azure Application Gateway (HTTP(S)) | Cloud Load Balancing                                                         |             |
+## 4. Integrated Security Mesh
 
-## 3. SIEM / SOAR
+FortiAnalyzer
+- fabric integration, corelation across firewall, swg and waf
 
-### 3.1. Competition
+## 5. Security Information and Event Management
 
-| Use case                          | Fortinet                          | AWS                                                                              | Azure                                                          | GCP                                                       | Third-Party |
-| --------------------------------- | --------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------- | --------------------------------------------------------- | ----------- |
-| Network Monitoring                | • FortiAnalyzer<br>• FortiMonitor | AWS Network Manager                                                              | Azure Network Watcher                                          | Network Intelligence Center                               |             |
-| SIEM                              | FortiSIEM                         | • AWS CloudTrail<br>• Amazon CloudWatch Logs<br>• Amazon OpenSearch              | • Azure Audit Logs<br>• Azure Monitor Logs<br>• Azure Sentinel | • Cloud Audit Logs<br>• Cloud Logging<br>• Chronicle SIEM |             |
-| Security Automation               | FortiSOAR                         | AWS Security Hub Automated Security Response add-on                              | Microsoft Defender for Cloud<br>\+ Azure Logic Apps            | Chronicle SOAR                                            |             |
+FortiSIEM
+- Detection for MITRE ATT&CK
+  - Detect DGA https://help.fortinet.com/fsiem/Public_Resource_Access/7_1_3/rules/PH_RULE_DGA_DETECTED.htm
+- Centralize storage and visibility for data from Fortinet, EC2 instance guest OS, EKS and Cloud Trail
+- Correlate log data from Fortinet fabric and Cloud environment to help identify cross-layer anomalies and suspicious activities that may indicate a compromise
 
-## 4. CNAPP / Others
+## 6. Security Orchestration, Automation and Response
 
-### 4.1. Competition
-
-| Use case                          | Fortinet                         | AWS                                                                              | Azure                                     | GCP                            | Third-Party |
-| --------------------------------- | -------------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------- | ------------------------------ | ----------- |
-| Cloud Security Posture Management | FortiCNP                         | • AWS Security Hub<br>• Amazon Guard Duty<br>• AWS Audit Manager<br>• AWS Config | Microsoft Defender for Cloud              | Security Command Center        |             |
-| Application Security              | FortiDevSec                      | Amazon CodeGuru Security                                                         | GitHub Advanced Security for Azure DevOps | Cloud Build On-Demand Scanning |             |
-| Secure Access                     | • FortiPAM<br>• FortiSASE (ZTNA) | AWS Systems Manager                                                              | Azure Bastion Host                        | Identity-Aware Proxy (IAP)     |             |
+FortiSOAR
+- Automate incident triage to reduce response times by ensuring that critical incidents are addressed promptly, while less urgent alerts are handled in a timely manner
+- Automate response
+  - enable the creation of customizable response playbooks that define step-by-step workflows for responding to specific types of security incidents
+  - relieve analyze effort on repetitive tasks and manual processes involved in incident response, such as ticketing, documentation, and communication
