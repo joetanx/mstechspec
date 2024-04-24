@@ -1,10 +1,24 @@
 ## 1. Firewall and Intrusion Prevention System
 
-FortiGate
-- up to date ips with latest updates from FortiGuard
-  - Botnet and C&C detection https://docs.fortinet.com/document/fortigate/7.4.3/administration-guide/668865/ips-with-botnet-c-c-ip-blocking
-- dns filtering
-  - Botnet C&C domain blocking https://docs.fortinet.com/document/fortigate/7.4.3/administration-guide/105208/botnet-c-c-domain-blocking
+### FortiGate IPS
+
+Intrusion Prevention System (IPS) detects network attacks and prevents threats from compromising the network, including protected devices.
+
+IPS can be in the form of a standalone appliance, or part of the feature set of a Next Generation Firewall (NGFW), such as FortiGate.
+
+IPS utilizes signatures, protocol decoders, heuristics (or behavioral monitoring), threat intelligence (such as FortiGuard Labs), and advanced threat detection in order to prevent exploitation of known and unknown zero-day threats.
+
+FortiGate IPS is even capable of performing deep packet inspection to scan encrypted payloads in order to detect and prevent threats from attackers.
+
+- Up to date IPS with latest data on IPS signatures, malicious URLs and Botnet IPs and Domains from FortiGuard
+  - The FortiGuard Service periodically adds new predefined signatures to counter new threats. New predefined signatures are automatically included in IPS sensors that are configured to use filters when the new signatures match existing filter specifications.
+  - FortiGuard Service continually updates the botnet C&C domain list. The botnet C&C domain blocking feature can block the botnet website access at the DNS name resolving stage.
+- Prevent Botnet C&C communication via various methods: IPS signatures, malicious URLs and Botnet IPs and Domains
+
+Ref:
+- https://docs.fortinet.com/document/fortigate/7.4.3/administration-guide/213498/signature-based-defense
+- https://docs.fortinet.com/document/fortigate/7.4.3/administration-guide/668865/ips-with-botnet-c-c-ip-blocking
+- https://docs.fortinet.com/document/fortigate/7.4.3/administration-guide/105208/botnet-c-c-domain-blocking
 
 ## 2. Secure Web Gateway
 
