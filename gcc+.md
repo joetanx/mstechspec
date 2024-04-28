@@ -109,35 +109,72 @@ Squid and Nginx provide basic forward proxy capabilities, but they lack security
 
 ### 2.1. Web Application Firewall
 
-- Predefined WAF profiles to enable security out-of-the-box https://docs.fortinet.com/document/fortiadc/7.4.3/handbook/909/configuring-a-waf-profile
-- Convenient OWASP top 10 compliance
-  - Wizard-driven configuration to enable OWASP top 10 protection https://docs.fortinet.com/document/fortiadc/7.4.3/handbook/721088/owasp-top10
-  - Monitor threats by OWASP Top 10 to analyze the 10 most critical attacks https://docs.fortinet.com/document/fortiadc/7.4.3/handbook/151280/owasp-top-10
+FortiADC offers more comprehense security features to provide web layer protection for application deployed in AWS.
+
+1. **Predefined WAF Profiles for Out-of-the-Box Security**: FortiADC provides predefined WAF profiles that enable robust security right from the start. These profiles are tailored to address specific security concerns, such as SQL injection and cross-site scripting (XSS). With FortiADC, you can activate these profiles with a single click, ensuring immediate protection for your applications.
+
+2. **Wizard-Driven Configuration for OWASP Top 10 Protection**: FortiADC's wizard-driven configuration makes it easy to implement OWASP Top 10 protection. The wizard guides you through a straightforward process to set up WAF profiles that address the most critical web application security risks. This ensures that you have comprehensive protection against threats like injection attacks, broken authentication, and cross-site request forgery (CSRF).
+
+3. **FortiView Dashboard for Threat Monitoring and Analysis**: The FortiView dashboard provides real-time threat monitoring and analysis, allowing you to track threats by OWASP Top 10 categories. This intuitive dashboard offers:
+- Visualization: Clearly see the top 10 most critical attacks and trends.
+- Drill-down capabilities: Investigate specific threats and analyze their impact.
+- Customizable reporting: Generate reports to meet compliance requirements.
 
 ### 2.2. API Protection
 
-- JSON Protection
-- XML Protection
-- OpenAPI Validation
-- API Discovery
+FortiADC offers comprehensive API protection, securing your APIs from threats and vulnerabilities.
 
-### 2.3. Support for both HTTP and non-HTTP load balancing
+1. **JSON and XML payload protection**: Detects and prevents malicious payload attacks. validates API requests against predefined schemas, ensuring adherence to expected structures and preventing malformed requests.
 
-- Centralized control and visibility for both HTTP and non-HTTP application delivery
+2. **OpenAPI validation**: Ensures adherence to OpenAPI specifications
 
-### 2.4. Ingress controller for Kubernetes (EKS)
+3. **API discovery and visibility**: Identifies and secures unknown or unmanaged APIs, preventing Shadow APIs and API sprawls
+
+4. **Rate limiting and quota management**: Controls API request rates and quotas
+
+5. **Protection for East-West Traffic and traffic between GCC+ and GEN**: Enable API protection for securing API traffic within the GCC+ Compartments, such as between applications in EC2, EKS, as well as GEN consumers.
+
+### 2.3. EKS Security
+
+FortiADC's Ingress Controller seamlessly integrates with Kubernetes clusters, extending robust Web Application Firewall (WAF) and API protection to cloud-native applications.
+
+1. **Unified security for cloud-native applications**: FortiADC Ingress Controller provides consistent WAF and API protection across Kubernetes clusters, ensuring security policies are enforced uniformly.
+
+2. **Simplify Kubernetes security management**: FortiADC Ingress Controller is deployed as a Kubernetes-native application, leveraging Helm charts or Kubernetes manifests for easy installation. FortiADC Ingress Controller automatically generates security configurations based on Kubernetes deployment metadata, eliminating manual configuration.
+
+### 2.4. Support for both HTTP and non-HTTP load balancing
+
+FortiADC's ability to load balance both HTTP and non-HTTP traffic provides a unified solution for application delivery, enhancing security and operations for disparate applications.
+
+1. **Centralized security controls**: FortiADC provides a single pane of glass to enforce application delivery controls for both HTTP and non-HTTP traffic, ensuring consistent security controls and reducing complexity.
+
+2. **Streamlined operations**: FortiADC's centralized management platform streamlines the management, monitoring and analysis of both HTTP and non-HTTP applications, reducing administrative overhead and offering real-time insights into application performance and security.
 
 ### 2.5. Comparison with Cloud-Native or Open Source solutions
 
-- AWS
-  - AWS WAF recommends to use vendor managed rules for more complete protection, Fortinet's complete OWASP Top 10 rule group is one of the vendors
-  - AWS API Gateway is more typically used for exposing lambda functions over APIs, other APIs in EC2 or EKS will need third-party API protection
-  - No NLB in GCC+
-- Nginx
-  - config-file based
-  - challenging in fine-tuning, monitoring, and troubleshooting
+#### 2.5.1. AWS
 
-## 3. Integrated Security Mesh
+1. **Incomplete Protection**: AWS WAF recommends using vendor-managed rules for comprehensive protection. Fortinet's complete OWASP Top 10 rule group is one of the recommended vendors, indicating that AWS WAF alone may not provide adequate security.
+
+2. **Limited API Protection**: AWS API Gateway is primarily used for exposing Lambda functions over APIs. Other APIs in EC2 or EKS require third-party API protection, which may lead to additional complexity and security gaps.
+
+3. **Restricted NLB Use**: The use of Network Load Balancer (NLB) for non-HTTP traffic is restricted, and Nginx is stated as alternatic under GCC+ policies, this creates complexities or overhead for non-HTTP applications
+
+#### 2.5.2. Nginx
+
+1. **Config-File Based**: Nginx rules are configured through config files on the guest OS, which can bring become complex even lead to potential security misconfigurations. More advanced features requires paid version of Nginx Plus.
+
+2. **Steep Configuration Learning curve**: Nginx config files involve an overwhelming quantity of variables, this requires expertise for fine-tuning, monitoring, and troubleshooting, which can be time-consuming and may lead to security vulnerabilities if not done correctly.
+
+## 3. Security Information and Event Management
+
+FortiSIEM
+- Detection for MITRE ATT&CK
+  - Detect DGA https://help.fortinet.com/fsiem/Public_Resource_Access/7_1_3/rules/PH_RULE_DGA_DETECTED.htm
+- Centralize storage and visibility for data from Fortinet, EC2 instance guest OS, EKS and Cloud Trail
+- Correlate log data from Fortinet fabric and Cloud environment to help identify cross-layer anomalies and suspicious activities that may indicate a compromise
+
+## 4. Integrated Security Mesh
 
 FortiWeb and FortiGate can form an integrated security mesh with FortiAnalyzer to enhance network security posture by providing centralized management, advanced analytics, and comprehensive visibility into security events in the environment.
 
@@ -151,15 +188,7 @@ FortiWeb and FortiGate can form an integrated security mesh with FortiAnalyzer t
 
 5. **Customizable Dashboards and Alerts**: FortiAnalyzer allows you to create customized dashboards and alerts based on your specific security requirements. This enables proactive monitoring and rapid response to potential security incidents.
 
-## 4. Security Information and Event Management
-
-FortiSIEM
-- Detection for MITRE ATT&CK
-  - Detect DGA https://help.fortinet.com/fsiem/Public_Resource_Access/7_1_3/rules/PH_RULE_DGA_DETECTED.htm
-- Centralize storage and visibility for data from Fortinet, EC2 instance guest OS, EKS and Cloud Trail
-- Correlate log data from Fortinet fabric and Cloud environment to help identify cross-layer anomalies and suspicious activities that may indicate a compromise
-
-## 6. Security Orchestration, Automation and Response
+## 5. Security Orchestration, Automation and Response
 
 FortiSOAR
 - Automate incident triage to reduce response times by ensuring that critical incidents are addressed promptly, while less urgent alerts are handled in a timely manner
