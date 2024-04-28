@@ -107,21 +107,35 @@ Squid and Nginx provide basic forward proxy capabilities, but they lack security
 
 ## 2. Web Application and API Protection
 
-FortiWeb
-- Protection against web application exploits
-  - up to date signature-based attack prevention with latest updates from FortiGuard https://docs.fortinet.com/document/fortiweb/7.4.3/administration-guide/210196/blocking-known-attacks
-  - OWASP top 10 compliance monitoring https://docs.fortinet.com/document/fortiweb/7.4.3/administration-guide/897881/owasp-top-10-compliance
-  - prevent client-side attacks such as XSS and CSRF
-    - https://docs.fortinet.com/document/fortiweb/7.4.3/administration-guide/56487/defeating-cross-site-request-forgery-csrf-attacks
-    - https://docs.fortinet.com/document/fortiweb/7.4.3/administration-guide/981691/syntax-based-sql-xss-injection-detection
-- API security
-  - Schema validation for JSON and XML APIs
-  - OpenAPI 3.0.x validation
-- machine learning
-  - ML bot detection: https://docs.fortinet.com/document/fortiweb/7.4.3/administration-guide/600188/configuring-ml-based-bot-detection-policy
-  - ML Based Anomaly Detection: https://docs.fortinet.com/document/fortiweb/7.4.3/administration-guide/94907/ml-based-anomaly-detection
-  - ML Based API Protection: https://docs.fortinet.com/document/fortiweb/7.4.3/administration-guide/98060/configuring-ml-based-api-protection-policy
-- Ingress controller for Kubernetes (EKS)
+### 2.1. Web Application Firewall
+
+- Predefined WAF profiles to enable security out-of-the-box https://docs.fortinet.com/document/fortiadc/7.4.3/handbook/909/configuring-a-waf-profile
+- Convenient OWASP top 10 compliance
+  - Wizard-driven configuration to enable OWASP top 10 protection https://docs.fortinet.com/document/fortiadc/7.4.3/handbook/721088/owasp-top10
+  - Monitor threats by OWASP Top 10 to analyze the 10 most critical attacks https://docs.fortinet.com/document/fortiadc/7.4.3/handbook/151280/owasp-top-10
+
+### 2.2. API Protection
+
+- JSON Protection
+- XML Protection
+- OpenAPI Validation
+- API Discovery
+
+### 2.3. Support for both HTTP and non-HTTP load balancing
+
+- Centralized control and visibility for both HTTP and non-HTTP application delivery
+
+### 2.4. Ingress controller for Kubernetes (EKS)
+
+### 2.5. Comparison with Cloud-Native or Open Source solutions
+
+- AWS
+  - AWS WAF recommends to use vendor managed rules for more complete protection, Fortinet's complete OWASP Top 10 rule group is one of the vendors
+  - AWS API Gateway is more typically used for exposing lambda functions over APIs, other APIs in EC2 or EKS will need third-party API protection
+  - No NLB in GCC+
+- Nginx
+  - config-file based
+  - challenging in fine-tuning, monitoring, and troubleshooting
 
 ## 3. Integrated Security Mesh
 
