@@ -216,12 +216,14 @@ In summary, the decision to use a third-party SOAR platform versus AWS services 
 
 |Topic|Link|
 |---|--|
-|Magic Quadrant for Network Firewalls 2022|https://www.gartner.com/doc/reprints?id=1-2C2Q9662&ct=221222&st=sb|
-|Market Guide for CNAPP 2023|https://www.gartner.com/doc/reprints?id=1-2CYRBHBR&ct=230317&st=sb|
+|Magic Quadrant for Network Firewalls 2022|https://www.gartner.com/doc/reprints?id=1-2C2Q9662&ct=221222|
+|Market Guide for CNAPP 2023|https://www.gartner.com/doc/reprints?id=1-2CYRBHBR&ct=230317|
+|Market Guide for SOAR 2023|https://www.gartner.com/doc/reprints?id=1-2E78ER5R&ct=230620|
+|Market Guide for XDR 2023|https://www.gartner.com/doc/reprints?id=1-2EOYTQA6&ct=230811|
 |Magic Quadrant for Cloud WAAP 2022|https://www.techcity.cloud/information/gartner-magic-quadrant-for-cloud-web-application-and-api-protection/|
-|Magic Quadrant for Single-Vendor SASE 2023|https://www.gartner.com/doc/reprints?id=1-2EQ0YMTZ&ct=230816&st=sb|
-|Magic Quadrant for SIEM 2022|https://www.gartner.com/doc/reprints?id=1-2BDGWSVV&ct=221011&st=sb|
-|2024 Strategic Roadmap for SASE Convergence|https://www.gartner.com/doc/reprints?id=1-2G2V1C8T&ct=231229&st=sb|
+|Magic Quadrant for Single-Vendor SASE 2023|https://www.gartner.com/doc/reprints?id=1-2EQ0YMTZ&ct=230816|
+|Magic Quadrant for SIEM 2022|https://www.gartner.com/doc/reprints?id=1-2BDGWSVV&ct=221011|
+|2024 Strategic Roadmap for SASE Convergence|https://www.gartner.com/doc/reprints?id=1-2G2V1C8T&ct=231229|
 
 ### Technical Documents
 
