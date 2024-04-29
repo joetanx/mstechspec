@@ -223,6 +223,7 @@ In summary, the decision to use a third-party SOAR platform versus AWS services 
 |Magic Quadrant for Cloud WAAP 2022|https://www.techcity.cloud/information/gartner-magic-quadrant-for-cloud-web-application-and-api-protection/|
 |Magic Quadrant for Single-Vendor SASE 2023|https://www.gartner.com/doc/reprints?id=1-2EQ0YMTZ&ct=230816|
 |Magic Quadrant for SIEM 2022|https://www.gartner.com/doc/reprints?id=1-2BDGWSVV&ct=221011|
+|Critical Capabilities for SIEM|https://www.gartner.com/doc/reprints?id=1-2BS9LBUO&ct=221122|
 |2024 Strategic Roadmap for SASE Convergence|https://www.gartner.com/doc/reprints?id=1-2G2V1C8T&ct=231229|
 
 ### Technical Documents
