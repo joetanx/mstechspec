@@ -100,6 +100,98 @@ Overall, machine learning enables WAFs to become more proactive, adaptive, and e
 
 ## 3. Security Operations
 
+### 3.1. SOC Functions
+
+1. Threat monitoring
+2. Alert investigations
+3. Incident response
+
+### 3.2. Technologies used in SOC
+
+1. SIEM
+2. EDR/ NDR/XDR
+3. TIP
+4. SOAR
+5. Ticketing systems (e.g. ServiceNow, Jira, may also use built-in functions from SOAR)
+
+### 3.3. SIEM use cases
+
+1. Log collection
+2. Log aggregation
+3. Rule-based alert
+4. Artificial intelligence
+5. Response
+6. Parsing
+7. Normalization
+8. Categorization
+9. Enrichment
+10. Indexing
+11. Storage
+
+### 3.4. SITEM Integration with EDR/NDR/XDR
+
+SIEM, EDR, NDR, and XDR solutions work together to provide comprehensive visibility, detection, and response capabilities across an organization's IT infrastructure, helping security teams detect and mitigate a wide range of cybersecurity threats.
+
+1. **SIEM (Security Information and Event Management)**:
+   - SIEM systems collect, aggregate, and analyze log data from various sources across an organization's IT infrastructure, such as firewalls, servers, endpoints, and applications.
+   - They use correlation rules and advanced analytics to detect patterns of suspicious behavior or potential security threats.
+   - SIEM platforms provide real-time monitoring and incident response capabilities, allowing security teams to investigate and mitigate security incidents promptly.
+
+2. **EDR (Endpoint Detection and Response)**:
+   - EDR solutions focus on protecting individual endpoints, such as desktops, laptops, servers, and mobile devices.
+   - They continuously monitor endpoint activities and behaviors, including file accesses, process executions, network connections, and registry changes.
+   - EDR tools leverage advanced detection techniques, such as machine learning and behavioral analysis, to identify and respond to threats that traditional antivirus software might miss.
+   - When a potential threat is detected on an endpoint, EDR solutions can trigger alerts, quarantine suspicious files, or initiate automated response actions to contain and remediate the threat.
+
+3. **NDR (Network Detection and Response)**:
+   - NDR solutions are designed to monitor network traffic and identify suspicious or malicious activities occurring within the network perimeter.
+   - They analyze network packets in real-time, looking for indicators of compromise (IoCs), anomalous behavior, or known attack patterns.
+   - NDR tools provide visibility into lateral movement, data exfiltration, command-and-control communications, and other network-based threats.
+   - When a threat is detected, NDR solutions can generate alerts, block malicious traffic, and provide forensic data to aid in incident investigation and response.
+
+4. **XDR (Extended Detection and Response)**:
+   - XDR integrates and correlates data from multiple security tools, including SIEM, EDR, NDR, and other sources, to provide holistic threat detection and response capabilities.
+   - By aggregating and analyzing telemetry data from endpoints, networks, and other security controls, XDR solutions can identify sophisticated, multi-stage attacks that span across different layers of the IT environment.
+   - XDR platforms use advanced analytics, threat intelligence, and automated response actions to detect, investigate, and remediate security incidents more effectively than individual security products operating in isolation.
+
+### 3.5. SOC Roles
+
+#### 3.5.1. L1 SOC Analyst
+
+1. Alert triage
+2. First line of defence
+3. Identifying anomalies
+4. Raising requests for whitelists
+5. Performing investigations
+
+#### 3.5.2. L2 SOC Analyst
+
+1. Monitoring alerts
+2. Threat hunting
+3. Resource mentoring
+4. Creating and approving whitelists
+5. Handling escalated investigations
+
+#### 3.5.3. L3 SOC Analyst
+
+1. Client onboarding
+2. Incident management
+3. Report and documentation
+4. Stakeholders communication (technical)
+
+### 3.6. SOC Automation
+
+1. Triage
+2. Enrichment
+3. TI Gathering
+4. Validation across detection tools
+5. Close false positives
+6. Notify users and stakeholders
+7. Block IOCs
+8. Alert administration
+
+### 3.99. GPT Q&A
+
 ### What are the limitations in using aws guardduty as security orchestration and automation platform?
 
 While AWS GuardDuty offers powerful capabilities for threat detection and security monitoring, it's important to note that it's primarily designed as a threat detection service rather than a full-fledged security orchestration and automation (SOAR) platform. Here are some limitations to consider when using AWS GuardDuty for security orchestration and automation:
