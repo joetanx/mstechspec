@@ -190,6 +190,40 @@ SIEM, EDR, NDR, and XDR solutions work together to provide comprehensive visibil
 7. Block IOCs
 8. Alert administration
 
+### 3.7. SAN Incident Response Framework
+
+https://www.sans.org/media/score/504-incident-response-cycle.pdf
+
+#### 3.7.1. Preparation
+
+#### 3.7.2. Identification
+
+#### 3.7.3. Containment
+
+#### 3.7.4. Eradication
+
+1. Removing artifacts
+2. Identify all hosts
+3. Updating configurations
+4. Patches
+5. Documentation
+
+#### 3.7.5. Recovery
+
+1. Restoration
+2. Normal operations
+3. Activities
+4. Monitoring
+5. Documentation
+6. Prevent re-infection
+
+#### 3.7.6. Lessons Learned
+
+1. Meeting
+2. 5W1H
+3. Way forward
+4. Documentation
+
 ### 3.99. GPT Q&A
 
 ### What are the limitations in using aws guardduty as security orchestration and automation platform?
