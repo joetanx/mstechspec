@@ -1,4 +1,4 @@
-1. SASE
+## 1. SASE
 
 ```mermaid
 graph TD
@@ -17,7 +17,7 @@ SSE --> DLP
 - FortiAnalyzer
 - FortiManager
 
-2. Application Security
+## 2. Application Security
 
 Web Application and API Protection (WAAP)
 - FortiADC
@@ -27,7 +27,7 @@ Application Development Security
 - FortiDevSec
 - FortiDAST (add-on to FortiDevSec)
 
-3. Security Operations
+## 3. Security Operations
 
 - FortiMonitor
 - FortiSIEM
