@@ -1,5 +1,7 @@
 ## 1. SASE
 
+https://www.scmagazine.com/resource/sse-vs-sase-whats-the-difference
+
 ```mermaid
 graph TD
 SASE --> SD-WAN
@@ -8,8 +10,12 @@ SSE --> SWG
 SSE --> ZTNA
 SSE --> CASB
 SSE --> FWaaS
-SSE --> RBI
-SSE --> DLP
+FWaaS -.- SSLi[SSL Inspection]
+FWaaS -.- IPS
+FWaaS -.- DNSf[DNS Filtering]
+FWaaS -.- AV
+FWaaS -.- DLP
+SWG -.- RBI
 ```
 
 - FortiGate / FortiCNF
