@@ -61,7 +61,7 @@ Save settings:
 
 ![image](https://github.com/user-attachments/assets/4d3c2030-3da8-4974-8268-555d5bf9f731)
 
-![image](https://github.com/user-attachments/assets/c67558be-0a2c-49af-8084-9b9b86b6a351)
+![image](https://github.com/user-attachments/assets/aa344acc-8403-48b2-b80a-af98195899b3)
 
 ![image](https://github.com/user-attachments/assets/78bf273c-8ae5-4cc4-b76b-0b4833fdb916)
 
