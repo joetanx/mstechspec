@@ -23,7 +23,7 @@
 
 ![image](https://github.com/user-attachments/assets/5a3ff0c0-b8bc-4051-a25d-493a33936d52)
 
-### 0.4. EMS settings
+### 0.4. Configure EMS settings
 
 |Key|Value|
 |---|---|
@@ -36,3 +36,55 @@
 |Cloud region to repackage installers|`Asia`|
 
 ![image](https://github.com/user-attachments/assets/84a2a6f9-fe64-40e6-809e-75d2cb72ce3e)
+
+### 0.5. Configure SMTP server
+
+Enter `Server` parameter and select `Auto Detect` to automatically detect the SMTP security:
+
+![image](https://github.com/user-attachments/assets/91e8e3c3-f8ca-4c54-907d-d9d83b35a9f4)
+
+Select `Send Test Email`:
+
+![image](https://github.com/user-attachments/assets/2cb23658-187e-44ae-9fcc-e279d71ed6a5)
+
+Verify test email received:
+
+![image](https://github.com/user-attachments/assets/c19d0a57-5c78-40ad-be96-32261611d415)
+
+Save settings:
+
+![image](https://github.com/user-attachments/assets/f01e2fc0-19b4-4f05-94bd-8e84fe67c93e)
+
+### 0.6. Configure LDAP users
+
+#### 0.6.1. Add ADDS authentication server
+
+![image](https://github.com/user-attachments/assets/4d3c2030-3da8-4974-8268-555d5bf9f731)
+
+![image](https://github.com/user-attachments/assets/c67558be-0a2c-49af-8084-9b9b86b6a351)
+
+![image](https://github.com/user-attachments/assets/78bf273c-8ae5-4cc4-b76b-0b4833fdb916)
+
+#### 0.6.2. Add ADDS domain
+
+![image](https://github.com/user-attachments/assets/2f61d35c-6e6f-498e-94a4-67d082f20220)
+
+![image](https://github.com/user-attachments/assets/55c0a244-9d7a-4f85-be26-53dc7405fbec)
+
+![image](https://github.com/user-attachments/assets/f685ff92-3409-4966-aa2a-7b167fc46409)
+
+#### 0.6.3. Restrict authorized user groups
+
+Select all the groups in domain and select `Exclude`
+
+![image](https://github.com/user-attachments/assets/a84dc3f0-f30c-467f-b4f6-0465190e36d0)
+
+![image](https://github.com/user-attachments/assets/8f933a6d-c565-461d-a564-67631a3d8d52)
+
+Select required groups and select `Authorize`
+
+![image](https://github.com/user-attachments/assets/bf640f8b-e9fd-4772-bcff-854ee365bcb5)
+
+![image](https://github.com/user-attachments/assets/3b48fbf6-0046-40d8-940d-d0cb2ed6c7a6)
+
+![image](https://github.com/user-attachments/assets/55d5d579-fe4c-40b5-b9c3-caaee19a0d9b)
