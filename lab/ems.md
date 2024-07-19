@@ -88,3 +88,23 @@ Select required groups and select `Authorize`
 ![image](https://github.com/user-attachments/assets/3b48fbf6-0046-40d8-940d-d0cb2ed6c7a6)
 
 ![image](https://github.com/user-attachments/assets/55d5d579-fe4c-40b5-b9c3-caaee19a0d9b)
+
+### 0.7. Enroll users
+
+#### 0.7.1. Create invitation for LDAP users
+
+![image](https://github.com/user-attachments/assets/c95d87b9-fb12-42fc-a2da-4d7484a8ded7)
+
+![image](https://github.com/user-attachments/assets/90996bfe-936f-4d91-8336-7b63159d7a10)
+
+![image](https://github.com/user-attachments/assets/6997988b-1221-412c-a212-7960eab6584b)
+
+![image](https://github.com/user-attachments/assets/fbe88f17-c47d-41a5-95f2-03fc0464d487)
+
+![image](https://github.com/user-attachments/assets/83c6e10d-b53e-493c-ad08-78eb3a44aba2)
+
+![image](https://github.com/user-attachments/assets/04a7e23e-f73a-44c9-b942-9d4e4f195998)
+
+![image](https://github.com/user-attachments/assets/9fd937a1-4ef6-4e07-98e5-70587bfca8ff)
+
+![image](https://github.com/user-attachments/assets/4624a7ee-2f56-4510-9175-8af361ae880b)
