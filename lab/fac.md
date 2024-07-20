@@ -114,8 +114,20 @@
 
 ### 7.1. Setup EMS SP
 
+Create SP on FortiAuthenticator:
+
 ![image](https://github.com/user-attachments/assets/8a83bff0-d693-49e1-9859-6067dd15be35)
 
-![image](https://github.com/user-attachments/assets/1f882dde-f501-4bab-877d-2aab2e190072)
+![image](https://github.com/user-attachments/assets/f020ca11-ec0c-4351-a239-240d0a6a96fd)
 
-![image](https://github.com/user-attachments/assets/073e9b55-b937-4c25-91ed-13bca59878af)
+Copy the `IdP Entity ID` and `IdP single sign-on URL`, use it to create IdP on EMS:
+
+![image](https://github.com/user-attachments/assets/63ac0ec8-e21f-409a-93b6-5f1981529b6b)
+
+![image](https://github.com/user-attachments/assets/08dd44ed-7f7f-4879-b64d-88127ac08099)
+
+Copy the `SP Entity ID` and `SP ACS (login) URL`, complete the SP configuration on FortiAuthenticator:
+
+![image](https://github.com/user-attachments/assets/4e8c8723-4d69-4ce9-9e8b-d4f1593e9d2b)
+
+![image](https://github.com/user-attachments/assets/e659c57c-8abb-4673-a1ec-54f24def2503)
