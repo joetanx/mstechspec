@@ -2,31 +2,37 @@
 
 ### 0.1. Setup license
 
-![image](https://github.com/user-attachments/assets/6516de44-b790-4ce8-8126-147b1e2c9d11)
+![image](https://github.com/user-attachments/assets/8ad439d4-ca6b-4a17-8f8f-971faf7f4abe)
 
-![image](https://github.com/user-attachments/assets/ff2f30ce-5de6-4656-9bb3-af310c1a6c76)
+![image](https://github.com/user-attachments/assets/c9b6a3d6-6e52-46c3-8942-d0c3c88c8e5f)
 
-![image](https://github.com/user-attachments/assets/1464cd74-601d-4cb0-ad40-eb34c7087c3f)
+![image](https://github.com/user-attachments/assets/f4cf67fc-753c-46b0-91a1-a3d2f8f5c46d)
 
-![image](https://github.com/user-attachments/assets/65266346-16c2-4736-93ed-4af46c65adc2)
+![image](https://github.com/user-attachments/assets/1fe889ba-7ffb-4226-87b5-da479c381324)
 
-![image](https://github.com/user-attachments/assets/330c79f6-c2e6-4d1b-ab67-894767ae6aed)
+![image](https://github.com/user-attachments/assets/3852b3ff-fe8b-400c-91d9-cf0f0e2c38e8)
 
 ### 0.2. Setup server certificate
 
 #### 0.2.1. Import server certificate
 
-![image](https://github.com/user-attachments/assets/8b6b7bf7-dcff-45b0-8ce9-95f973b62598)
+![image](https://github.com/user-attachments/assets/69158549-95ee-4e7f-b8fc-3a840fca1a7c)
 
-![image](https://github.com/user-attachments/assets/ea280284-9ca1-4e41-9e68-599e0ac92f75)
+![image](https://github.com/user-attachments/assets/72043460-25ec-4074-b19a-611915305446)
 
-![image](https://github.com/user-attachments/assets/6ab074ff-e2c2-4d09-87da-475d5739a82f)
+![image](https://github.com/user-attachments/assets/cf276e84-b70e-47d2-92da-fc550fd8b5f5)
 
 #### 0.2.2. Set server certificate
 
-![image](https://github.com/user-attachments/assets/0b91b024-1c37-4e40-a791-6b24ef568c21)
+![image](https://github.com/user-attachments/assets/c1df823a-99f4-482f-89e2-4fd3feed256c)
 
-![image](https://github.com/user-attachments/assets/77eb46ba-d34f-4952-8ccb-876b77ed75c3)
+![image](https://github.com/user-attachments/assets/74c051ef-d55f-471b-bdd7-11383f868a44)
+
+#### 0.2.3. Set device FQDN
+
+![image](https://github.com/user-attachments/assets/0bd0734f-58ff-489b-898d-41b093170bc5)
+
+![image](https://github.com/user-attachments/assets/a8b38d51-d087-462f-9a72-7df38711585e)
 
 ### 0.3. Setup SMTP server
 
