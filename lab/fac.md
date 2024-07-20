@@ -95,3 +95,19 @@
 ![image](https://github.com/user-attachments/assets/8c9357d9-4d6e-4234-af91-62bf532587b5)
 
 ![image](https://github.com/user-attachments/assets/6f785351-4069-4a78-a60e-14791faec12d)
+
+### 0.6. Configure SAML IdP
+
+#### 0.6.1. Configure realm
+
+![image](https://github.com/user-attachments/assets/ba2cc8b3-7f84-431d-a033-fbb236e4ed0a)
+
+![image](https://github.com/user-attachments/assets/4033674d-185a-4e8a-8bfa-b8b3142043d4)
+
+![image](https://github.com/user-attachments/assets/9e99c694-1941-47f0-a4c0-8f63df95d49b)
+
+#### 0.6.2. Enable SAML IdP portal
+
+![image](https://github.com/user-attachments/assets/fa9db890-f2c3-4adb-9514-5693f8303483)
+
+![image](https://github.com/user-attachments/assets/4ff2e435-161c-4ef0-82ca-1ef99e6425b4)
