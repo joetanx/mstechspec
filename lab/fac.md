@@ -1,6 +1,4 @@
-## 0. Initial setup
-
-### 0.1. Setup license
+## 1. Setup license
 
 ![image](https://github.com/user-attachments/assets/8ad439d4-ca6b-4a17-8f8f-971faf7f4abe)
 
@@ -12,9 +10,9 @@
 
 ![image](https://github.com/user-attachments/assets/3852b3ff-fe8b-400c-91d9-cf0f0e2c38e8)
 
-### 0.2. Setup server certificate
+## 2. Setup server certificate
 
-#### 0.2.1. Import server certificate
+### 2.1. Import server certificate
 
 ![image](https://github.com/user-attachments/assets/69158549-95ee-4e7f-b8fc-3a840fca1a7c)
 
@@ -22,19 +20,19 @@
 
 ![image](https://github.com/user-attachments/assets/cf276e84-b70e-47d2-92da-fc550fd8b5f5)
 
-#### 0.2.2. Set server certificate
+### 2.2. Set server certificate
 
 ![image](https://github.com/user-attachments/assets/c1df823a-99f4-482f-89e2-4fd3feed256c)
 
 ![image](https://github.com/user-attachments/assets/74c051ef-d55f-471b-bdd7-11383f868a44)
 
-#### 0.2.3. Set device FQDN
+### 2.3. Set device FQDN
 
 ![image](https://github.com/user-attachments/assets/0bd0734f-58ff-489b-898d-41b093170bc5)
 
 ![image](https://github.com/user-attachments/assets/a8b38d51-d087-462f-9a72-7df38711585e)
 
-### 0.3. Import trusted root CA
+## 3. Import trusted root CA
 
 > [!Note]
 >
@@ -46,7 +44,7 @@
 
 ![image](https://github.com/user-attachments/assets/333fb46f-75a9-4664-ba88-6db28bbe373f)
 
-### 0.4. Setup SMTP server
+## 4. Setup SMTP server
 
 ![image](https://github.com/user-attachments/assets/14229a7a-b3ff-4962-887a-06de8b6fa32a)
 
@@ -60,9 +58,9 @@
 
 ![image](https://github.com/user-attachments/assets/d3996e89-141b-44c3-a5a3-2994a0b87c30)
 
-### 0.5. Setup LDAP authentication
+## 5. Setup LDAP authentication
 
-#### 0.5.1. Create LDAP server
+### 5.1. Create LDAP server
 
 ![image](https://github.com/user-attachments/assets/04a752f3-8434-4276-992c-68690dd71c79)
 
@@ -72,7 +70,7 @@
 
 ![image](https://github.com/user-attachments/assets/7f0e6e27-5542-4f44-974a-4656804f8d37)
 
-#### 0.5.2. Import users
+### 5.2. Import users
 
 ![image](https://github.com/user-attachments/assets/0fe6d24a-f9ef-44ab-97dd-2246b797ddcf)
 
@@ -82,7 +80,7 @@
 
 ![image](https://github.com/user-attachments/assets/1a0a599f-e972-4160-9615-7fdc24ac2243)
 
-#### 0.5.3. Configure OTP
+### 5.3. Configure OTP
 
 ![image](https://github.com/user-attachments/assets/e8b34f2a-3204-4839-bdcd-15bc94b4c6a1)
 
@@ -96,9 +94,9 @@
 
 ![image](https://github.com/user-attachments/assets/6f785351-4069-4a78-a60e-14791faec12d)
 
-### 0.6. Configure SAML IdP
+## 6. Configure SAML IdP
 
-#### 0.6.1. Configure realm
+### 6.1. Configure realm
 
 ![image](https://github.com/user-attachments/assets/ba2cc8b3-7f84-431d-a033-fbb236e4ed0a)
 
@@ -106,8 +104,18 @@
 
 ![image](https://github.com/user-attachments/assets/9e99c694-1941-47f0-a4c0-8f63df95d49b)
 
-#### 0.6.2. Enable SAML IdP portal
+### 6.2. Enable SAML IdP portal
 
-![image](https://github.com/user-attachments/assets/fa9db890-f2c3-4adb-9514-5693f8303483)
+![image](https://github.com/user-attachments/assets/96c35e93-9cb7-498c-a429-246d9b6c090f)
 
-![image](https://github.com/user-attachments/assets/4ff2e435-161c-4ef0-82ca-1ef99e6425b4)
+![image](https://github.com/user-attachments/assets/68405d03-2630-4457-b125-476db079136e)
+
+## 7. FortiClient EMS SAML authentication
+
+### 7.1. Setup EMS SP
+
+![image](https://github.com/user-attachments/assets/8a83bff0-d693-49e1-9859-6067dd15be35)
+
+![image](https://github.com/user-attachments/assets/1f882dde-f501-4bab-877d-2aab2e190072)
+
+![image](https://github.com/user-attachments/assets/073e9b55-b937-4c25-91ed-13bca59878af)
