@@ -110,6 +110,16 @@
 
 ![image](https://github.com/user-attachments/assets/68405d03-2630-4457-b125-476db079136e)
 
+### 6.3. Enable SAML IdP service on the network interface
+
+![image](https://github.com/user-attachments/assets/b66635c5-1bab-4b81-9a68-7e05bf807c39)
+
+> [!Note]
+>
+> Regarding 403 forbidden error on FortiAuthenticator SAML:
+> 
+> https://community.fortinet.com/t5/FortiAuthenticator/Troubleshooting-Tip-How-to-fix-SAML-error-403-access-to-this/ta-p/307297
+
 ## 7. FortiClient EMS SAML authentication
 
 ### 7.1. Setup EMS SP
