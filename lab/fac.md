@@ -64,39 +64,34 @@
 
 #### 0.5.1. Create LDAP server
 
-![image](https://github.com/user-attachments/assets/eceafb29-7a77-4282-a795-ca25fe133a1c)
+![image](https://github.com/user-attachments/assets/04a752f3-8434-4276-992c-68690dd71c79)
 
-![image](https://github.com/user-attachments/assets/99042ac6-0b36-4633-b677-9c09d61a1222)
+![image](https://github.com/user-attachments/assets/64b7fc33-d383-44b0-bb26-45a2fd500ab0)
 
-![image](https://github.com/user-attachments/assets/1a381f45-eb15-48f6-a1f0-11592cc4dc35)
+![image](https://github.com/user-attachments/assets/389f2fd9-45e6-464d-8e3f-cd6b54695ff7)
 
-![image](https://github.com/user-attachments/assets/c35d3f1c-c3c9-469e-a83e-247a2c682c35)
+![image](https://github.com/user-attachments/assets/7f0e6e27-5542-4f44-974a-4656804f8d37)
 
 #### 0.5.2. Import users
 
-![image](https://github.com/user-attachments/assets/0a6ef680-042c-4a72-88e0-e4ad3c47ece9)
+![image](https://github.com/user-attachments/assets/0fe6d24a-f9ef-44ab-97dd-2246b797ddcf)
 
-![image](https://github.com/user-attachments/assets/a24aa24f-78b6-45a8-b1b9-78b44db22e1d)
+![image](https://github.com/user-attachments/assets/d4d1b4d8-e7f6-4860-9c92-b32e3d732f37)
 
-![image](https://github.com/user-attachments/assets/5bb55e1b-c677-4b31-96e4-cba673325640)
+![image](https://github.com/user-attachments/assets/5b4d8b5a-97f8-44ee-8c05-492045f19859)
 
-![image](https://github.com/user-attachments/assets/a65d61c5-fbfb-4eac-90e1-faa8cb008044)
+![image](https://github.com/user-attachments/assets/1a0a599f-e972-4160-9615-7fdc24ac2243)
 
 #### 0.5.3. Configure OTP
 
-![image](https://github.com/user-attachments/assets/b222fac9-b574-4620-88b5-81dbe18e3aa3)
+![image](https://github.com/user-attachments/assets/e8b34f2a-3204-4839-bdcd-15bc94b4c6a1)
 
-![image](https://github.com/user-attachments/assets/8c249871-52c7-42bf-942c-34b6e18e0fd1)
+![image](https://github.com/user-attachments/assets/844afd08-5387-4202-8712-7f6e3be9cc16)
 
-![image](https://github.com/user-attachments/assets/209ad49d-fb4b-4860-b606-d38c963a4bbc)
+![image](https://github.com/user-attachments/assets/db71a47e-1057-44e0-8130-d955a674a036)
 
-![image](https://github.com/user-attachments/assets/35dbdd24-4465-424e-ad68-b73a0124cc8e)
+![image](https://github.com/user-attachments/assets/c5c7260b-9b37-4a0e-b969-93fab3cbbdfd)
 
-![image](https://github.com/user-attachments/assets/b0a3cdf6-ad4b-4c58-b5ae-47ac532d458c)
+![image](https://github.com/user-attachments/assets/8c9357d9-4d6e-4234-af91-62bf532587b5)
 
-![image](https://github.com/user-attachments/assets/2274acc6-3f23-4ecd-b06b-70c8a227501d)
-
-![image](https://github.com/user-attachments/assets/a96333de-86c4-4858-9a50-2b0d912b6a4e)
-
-
-
+![image](https://github.com/user-attachments/assets/6f785351-4069-4a78-a60e-14791faec12d)
