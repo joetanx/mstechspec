@@ -2,7 +2,7 @@
 
 ### 0.1. Setup license
 
-![image](https://github.com/user-attachments/assets/36fdb63c-8beb-4154-8323-02ba95484079)
+![image](https://github.com/user-attachments/assets/6516de44-b790-4ce8-8126-147b1e2c9d11)
 
 ![image](https://github.com/user-attachments/assets/ff2f30ce-5de6-4656-9bb3-af310c1a6c76)
 
@@ -10,7 +10,7 @@
 
 ![image](https://github.com/user-attachments/assets/65266346-16c2-4736-93ed-4af46c65adc2)
 
-![image](https://github.com/user-attachments/assets/90fad8ef-8a2b-417f-aa30-df5d6e860a11)
+![image](https://github.com/user-attachments/assets/330c79f6-c2e6-4d1b-ab67-894767ae6aed)
 
 ### 0.2. Setup server certificate
 
