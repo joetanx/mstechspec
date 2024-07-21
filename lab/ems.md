@@ -87,9 +87,51 @@ Select required groups and select `Authorize`
 
 ![image](https://github.com/user-attachments/assets/55d5d579-fe4c-40b5-b9c3-caaee19a0d9b)
 
-## 7. Enroll users
+## 7. Install FortiClient
 
-### 7.1. Create invitation for LDAP users
+### 7.1. Prepare deployment package
+
+![image](https://github.com/user-attachments/assets/83f6a514-a567-4aac-aae6-947fbcbb68ea)
+
+![image](https://github.com/user-attachments/assets/02254c39-98df-4c99-9378-3f90ba5f14bd)
+
+![image](https://github.com/user-attachments/assets/1f3283d2-658d-4c4e-972d-9c67c970bfcb)
+
+![image](https://github.com/user-attachments/assets/9ec97c3a-7295-4128-80ee-b65bd9ada00c)
+
+![image](https://github.com/user-attachments/assets/bc91d5f8-497a-43ee-a21f-a04e360e448d)
+
+### 7.2. Generic download and install
+
+|OS|Link|
+|---|---|
+|macOS|https://links.fortinet.com/forticlient/mac/cloudagent|
+|Windows|https://links.fortinet.com/forticlient/win/cloudagent|
+|Linux|https://links.fortinet.com/forticlient/linux/cloudagent|
+|iOS|https://apps.apple.com/us/app/forticlient/id1474294106|
+|Android|https://play.google.com/store/apps/details?id=com.fortinet.forticlient_fa&hl=en_CA&gl=US|
+
+![image](https://github.com/user-attachments/assets/1d13b35e-dd8f-4990-bf04-fca7e6b40708)
+
+![image](https://github.com/user-attachments/assets/e655fbdd-1630-4353-b24e-d8deed8be21c)
+
+![image](https://github.com/user-attachments/assets/248754d2-beca-4100-9959-ad0ec27057e5)
+
+![image](https://github.com/user-attachments/assets/3eb2cf3c-23b2-4eb5-818a-24738549241e)
+
+![image](https://github.com/user-attachments/assets/5e466953-17a8-428d-abd6-17bb3128f127)
+
+![image](https://github.com/user-attachments/assets/554f14b7-0160-4c67-b239-a5670f6acef5)
+
+![image](https://github.com/user-attachments/assets/e9baf8d4-b563-4bdc-8687-4e961579c898)
+
+![image](https://github.com/user-attachments/assets/012553b8-8338-4725-9f01-6538d0e91d39)
+
+![image](https://github.com/user-attachments/assets/04811197-7555-4716-abcf-2a67601522a5)
+
+## 8. Enroll users
+
+### 8.1. Create invitation for LDAP users
 
 ![image](https://github.com/user-attachments/assets/c95d87b9-fb12-42fc-a2da-4d7484a8ded7)
 
@@ -107,7 +149,7 @@ Select required groups and select `Authorize`
 
 ![image](https://github.com/user-attachments/assets/4624a7ee-2f56-4510-9175-8af361ae880b)
 
-### 7.2. Create invitation for SAML users
+### 8.2. Create invitation for SAML users
 
 > [!Note]
 >
