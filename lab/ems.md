@@ -109,27 +109,11 @@ Select required groups and select `Authorize`
 
 ### 7.2. Create invitation for SAML users
 
-#### 7.2.1. Configure SAML
-
-Create SP on FortiAuthenticator:
-
-![image](https://github.com/user-attachments/assets/17e961db-a3d5-48bc-8f9c-3f158da80bec)
-
-![image](https://github.com/user-attachments/assets/274c9d5d-4ba5-4cac-b679-fa4be7f120bb)
-
-Copy the `IdP Entity ID` and `IdP single sign-on URL`, use it to create IdP on EMS:
-
-![image](https://github.com/user-attachments/assets/65d6917d-e032-4ebf-9e76-3d344f5f4f62)
-
-![image](https://github.com/user-attachments/assets/0fed1661-10da-4c87-afe5-622613d4ef7e)
-
-Copy the `SP Entity ID` and `SP ACS (login) URL`, complete the SP configuration on FortiAuthenticator:
-
-![image](https://github.com/user-attachments/assets/ba7477f8-bfca-463c-acc0-396f7faa015b)
-
-![image](https://github.com/user-attachments/assets/db71611a-d59c-4a30-9ccd-47c6d849fb9a)
-
-### 7.2.2. Create invitation
+> [!Note]
+>
+> Configure SAML IdP and SP as described here:
+>
+> https://github.com/joetanx/FortiArchitect/blob/main/lab/fac.md#a1-forticlient-ems-saml-authentication
 
 ![image](https://github.com/user-attachments/assets/d9b8cf33-8258-4937-bf8d-9353f7c6bbcc)
 
@@ -139,15 +123,15 @@ Copy the `SP Entity ID` and `SP ACS (login) URL`, complete the SP configuration 
 
 ![image](https://github.com/user-attachments/assets/fbe88f17-c47d-41a5-95f2-03fc0464d487)
 
-![image](https://github.com/user-attachments/assets/32ea9d8e-5196-422e-a87e-582c3546e55a)
+![image](https://github.com/user-attachments/assets/f4bb51ac-8c79-427d-8ec7-90c8cd563479)
 
-![image](https://github.com/user-attachments/assets/db91c57e-61e4-4542-96ab-e518e59f6054)
+![image](https://github.com/user-attachments/assets/f6714b09-85d7-4bf3-b5a5-efc4f9ec5ba5)
 
 ![image](https://github.com/user-attachments/assets/175f0fed-54c3-4584-a770-f5b19dcd8e37)
 
-![image](https://github.com/user-attachments/assets/f1e71999-370e-404d-a12d-f9722ac6a83d)
+![image](https://github.com/user-attachments/assets/174e52b4-1511-45db-8363-593babd6fcd7)
 
-![image](https://github.com/user-attachments/assets/c6fe858b-5297-475c-ac8a-b2c813fc6b6f)
+![image](https://github.com/user-attachments/assets/e5441a34-f355-4daa-b5fd-ba5e87f828b7)
 
 ![image](https://github.com/user-attachments/assets/d21d260a-b588-4db9-a149-2e8ef40382dc)
 
