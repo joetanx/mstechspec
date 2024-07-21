@@ -149,3 +149,70 @@ Use the `SP Entity ID` and `SP ACS (login) URL` values copied from the previous 
 ![image](https://github.com/user-attachments/assets/82377e15-e9a2-4aa1-a7f7-bca1658c8230)
 
 ![image](https://github.com/user-attachments/assets/be59fee9-1ec2-4cb4-b49b-623b73051fa3)
+
+## A.2. FortiGate Admin SAML
+
+### A.2.1. Create SP on FortiAuthenticator
+
+![image](https://github.com/user-attachments/assets/8a83bff0-d693-49e1-9859-6067dd15be35)
+
+Note the `identifier` value created:
+
+![image](https://github.com/user-attachments/assets/50726167-49f1-444b-a273-8b5e85e13395)
+
+### A.2.2. Configure IdP on FortiGate
+
+![image](https://github.com/user-attachments/assets/84cfc6cb-a98a-4969-8911-876178f04455)
+
+![image](https://github.com/user-attachments/assets/d2a23fec-2bab-441d-abea-ac2a6ee81cec)
+
+Select `Fortinet Product` and enter:
+- `IdP address` - the base FQDN of FortiAuthenticator
+- `Prefix` - the IdP identifier noted from the previous SP creation step
+- `IdP certificate` - the SAML signing certificate (e.g. [here](https://github.com/joetanx/FortiArchitect/blob/main/lab/fac.md#62-enable-saml-idp-portal))
+
+![image](https://github.com/user-attachments/assets/759fb6e6-2bea-435e-85ea-18323f639806)
+
+> [!Tip]
+>
+> By selecting `Fortinet Product` in the IdP setting, FortiGate automatically populates the required IdP details:
+>
+> ![image](https://github.com/user-attachments/assets/d478b1b5-81dc-4b40-95da-3d88a166541f)
+
+#### Optional: create SSO Admin user
+
+The SSO Admin user can be manually pre-create or allow the user to be automatically created upon log in
+
+![image](https://github.com/user-attachments/assets/3f6c74e3-42fd-4528-9ae0-7e2eccc69a5f)
+
+![image](https://github.com/user-attachments/assets/22b3129e-776f-4684-8a9d-af96a1cb0bca)
+
+![image](https://github.com/user-attachments/assets/b0d2ccbc-dae0-406f-8a3d-d802c44830dd)
+
+### A.2.3. Complete the SP configuration on FortiAuthenticator
+
+Use the `SP Entity ID` and `SP ACS (login) URL` values copied from the previous EMS configuration step:
+
+![image](https://github.com/user-attachments/assets/c5e216df-67d2-4908-89a1-75edfa94e279)
+
+![image](https://github.com/user-attachments/assets/89a4d81a-912f-4826-b241-64e6abb52f0a)
+
+### A.2.4. Test login
+
+![image](https://github.com/user-attachments/assets/60f4cfcb-4385-4610-935a-11f3122a7c73)
+
+![image](https://github.com/user-attachments/assets/0d632b4a-8b3a-46e8-bf13-89b0d58789af)
+
+![image](https://github.com/user-attachments/assets/1878c4c5-6dd3-40fa-b7e5-4debd20ab1f0)
+
+![image](https://github.com/user-attachments/assets/fa8b7ec1-8421-4344-84b2-ba37fde6b644)
+
+![image](https://github.com/user-attachments/assets/7b115fc7-765c-4e78-8003-e97635290794)
+
+> [!Note]
+>
+> The SSO automatically creates the SSO Admin user if it doesn't already exist
+> 
+> ![image](https://github.com/user-attachments/assets/bc44360b-f2d1-4af3-acf8-1263cadcf4c0)
+
+![image](https://github.com/user-attachments/assets/65f8a277-0622-45e7-afcf-f8270b1dc868)
