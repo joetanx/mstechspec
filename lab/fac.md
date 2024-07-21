@@ -120,24 +120,32 @@
 > 
 > https://community.fortinet.com/t5/FortiAuthenticator/Troubleshooting-Tip-How-to-fix-SAML-error-403-access-to-this/ta-p/307297
 
-## 7. FortiClient EMS SAML authentication
+# Appendix A: integration examples
 
-### 7.1. Setup EMS SP
+## A.1. FortiClient EMS SAML authentication
 
-Create SP on FortiAuthenticator:
+### A.1.1. Create SP on FortiAuthenticator
 
 ![image](https://github.com/user-attachments/assets/8a83bff0-d693-49e1-9859-6067dd15be35)
 
-![image](https://github.com/user-attachments/assets/f020ca11-ec0c-4351-a239-240d0a6a96fd)
+Copy the `IdP Entity ID` and `IdP single sign-on URL` values:
 
-Copy the `IdP Entity ID` and `IdP single sign-on URL`, use it to create IdP on EMS:
+![image](https://github.com/user-attachments/assets/7abfe311-e15d-4032-a007-d6b2998c77dd)
 
-![image](https://github.com/user-attachments/assets/63ac0ec8-e21f-409a-93b6-5f1981529b6b)
+### A.1.2. Configure IdP on EMS
 
-![image](https://github.com/user-attachments/assets/08dd44ed-7f7f-4879-b64d-88127ac08099)
+Use the `IdP Entity ID` and `IdP single sign-on URL` values copied from the previous SP creation step:
 
-Copy the `SP Entity ID` and `SP ACS (login) URL`, complete the SP configuration on FortiAuthenticator:
+![image](https://github.com/user-attachments/assets/7e068d22-3201-4b92-80b7-ca79b1910973)
 
-![image](https://github.com/user-attachments/assets/4e8c8723-4d69-4ce9-9e8b-d4f1593e9d2b)
+Copy the `SP Entity ID` and `SP ACS (login) URL` values:
 
-![image](https://github.com/user-attachments/assets/e659c57c-8abb-4673-a1ec-54f24def2503)
+![image](https://github.com/user-attachments/assets/b639b2e2-f777-441a-a409-28c8cad4103d)
+
+### A.1.3. Complete the SP configuration on FortiAuthenticator
+
+Use the `SP Entity ID` and `SP ACS (login) URL` values copied from the previous EMS configuration step:
+
+![image](https://github.com/user-attachments/assets/82377e15-e9a2-4aa1-a7f7-bca1658c8230)
+
+![image](https://github.com/user-attachments/assets/be59fee9-1ec2-4cb4-b49b-623b73051fa3)
