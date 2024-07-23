@@ -126,39 +126,35 @@
 
 ### A.1.1. Create SP on FortiAuthenticator
 
-![image](https://github.com/user-attachments/assets/8a83bff0-d693-49e1-9859-6067dd15be35)
-
 Copy the `IdP Entity ID` and `IdP single sign-on URL` values:
 
-![image](https://github.com/user-attachments/assets/7abfe311-e15d-4032-a007-d6b2998c77dd)
+![image](https://github.com/user-attachments/assets/2d6312f5-121b-46c6-8bc0-6fc42ef3aefa)
 
 ### A.1.2. Configure IdP on EMS
 
 Use the `IdP Entity ID` and `IdP single sign-on URL` values copied from the previous SP creation step:
 
-![image](https://github.com/user-attachments/assets/7e068d22-3201-4b92-80b7-ca79b1910973)
+![image](https://github.com/user-attachments/assets/e1269f29-962d-4552-afb3-757e1d0ef70b)
 
 Copy the `SP Entity ID` and `SP ACS (login) URL` values:
 
-![image](https://github.com/user-attachments/assets/b639b2e2-f777-441a-a409-28c8cad4103d)
+![image](https://github.com/user-attachments/assets/5545831d-e1af-4e0f-8544-5ff736b1de20)
 
 ### A.1.3. Complete the SP configuration on FortiAuthenticator
 
 Use the `SP Entity ID` and `SP ACS (login) URL` values copied from the previous EMS configuration step:
 
-![image](https://github.com/user-attachments/assets/82377e15-e9a2-4aa1-a7f7-bca1658c8230)
+![image](https://github.com/user-attachments/assets/ef55c27f-d9a6-4345-a550-3e47532088d6)
 
-![image](https://github.com/user-attachments/assets/be59fee9-1ec2-4cb4-b49b-623b73051fa3)
+![image](https://github.com/user-attachments/assets/7c970a1d-210f-4476-b603-9ed2f9295737)
 
 ## A.2. FortiGate Admin SAML
 
 ### A.2.1. Create SP on FortiAuthenticator
 
-![image](https://github.com/user-attachments/assets/8a83bff0-d693-49e1-9859-6067dd15be35)
-
 Note the `identifier` value created:
 
-![image](https://github.com/user-attachments/assets/50726167-49f1-444b-a273-8b5e85e13395)
+![image](https://github.com/user-attachments/assets/487fbb3c-d283-4d12-9e8d-4bd33bc32d85)
 
 ### A.2.2. Configure IdP on FortiGate
 
@@ -193,9 +189,9 @@ The SSO Admin user can be manually pre-create or allow the user to be automatica
 
 Use the `SP Entity ID` and `SP ACS (login) URL` values copied from the previous FortiGate configuration step:
 
-![image](https://github.com/user-attachments/assets/c5e216df-67d2-4908-89a1-75edfa94e279)
+![image](https://github.com/user-attachments/assets/8169f7a9-58a0-456e-b2d0-ec7b26552d83)
 
-![image](https://github.com/user-attachments/assets/89a4d81a-912f-4826-b241-64e6abb52f0a)
+![image](https://github.com/user-attachments/assets/e2ed4abb-34db-4f70-8164-97bd5c6db61d)
 
 ### A.2.4. Test login
 
