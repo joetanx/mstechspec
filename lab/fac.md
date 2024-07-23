@@ -191,7 +191,7 @@ The SSO Admin user can be manually pre-create or allow the user to be automatica
 
 ### A.2.3. Complete the SP configuration on FortiAuthenticator
 
-Use the `SP Entity ID` and `SP ACS (login) URL` values copied from the previous EMS configuration step:
+Use the `SP Entity ID` and `SP ACS (login) URL` values copied from the previous FortiGate configuration step:
 
 ![image](https://github.com/user-attachments/assets/c5e216df-67d2-4908-89a1-75edfa94e279)
 
@@ -216,3 +216,37 @@ Use the `SP Entity ID` and `SP ACS (login) URL` values copied from the previous 
 > ![image](https://github.com/user-attachments/assets/bc44360b-f2d1-4af3-acf8-1263cadcf4c0)
 
 ![image](https://github.com/user-attachments/assets/65f8a277-0622-45e7-afcf-f8270b1dc868)
+
+### A.3. FortiGate ZTNA SAML
+
+### A.3.1. Create SP on FortiAuthenticator
+
+![image](https://github.com/user-attachments/assets/8a83bff0-d693-49e1-9859-6067dd15be35)
+
+Note the `identifier` value created:
+
+![image](https://github.com/user-attachments/assets/af22606e-3705-436c-93b9-f293cb15ab2b)
+
+### A.3.2. Configure IdP on FortiGate
+
+![image](https://github.com/user-attachments/assets/6dbf2369-f998-4fdc-8a41-e27bbca30fb3)
+
+Select `Fortinet Product` and enter:
+- `address` - the base FQDN of FortiAuthenticator
+- `Prefix` - the IdP identifier noted from the previous SP creation step
+- `Certificate` - the SAML signing certificate (e.g. [here](#62-enable-saml-idp-portal))
+- Also note that the `Attribute used to identify users` corresponds to the `Assertion Attributes` configured on FortiAuthenticator
+
+![image](https://github.com/user-attachments/assets/991de242-5419-4d00-b169-10e23669efba)
+
+> [!Tip]
+>
+> By selecting `Fortinet Product` in the IdP setting, FortiGate automatically populates the required IdP details:
+>
+> ![image](https://github.com/user-attachments/assets/2ce1d4cb-e36f-4721-b304-137979b7b13c)
+
+### A.3.3. Complete the SP configuration on FortiAuthenticator
+
+Use the `Entity ID` and `Assertion consumer service URL` values copied from the previous FortiGate configuration step:
+
+![image](https://github.com/user-attachments/assets/8b5af97a-b4a0-4774-b03c-a8ec526bc1a8)
