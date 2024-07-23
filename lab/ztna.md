@@ -16,6 +16,14 @@
 
 ![image](https://github.com/user-attachments/assets/f382a17a-054d-4d2d-bb73-6761dc3f4790)
 
+<details><summary><h3>Authorize via fabric login</h3></summary>
+
+![image](https://github.com/user-attachments/assets/d3b1ddcb-ca38-40d9-8968-77932213f20e)
+
+![image](https://github.com/user-attachments/assets/aa5a0312-e1bd-4207-807d-bf1f79c2ab84)
+
+</details>
+
 ## 2. HTTP Access Proxy
 
 ### 2.1. Create ZTNA server
@@ -89,11 +97,11 @@ Notice that only the EMS CA signed client certificate is in the prompt.
 
 ### 2.3. Configure ZTNA authentication
 
+#### 2.3.1. LDAP authentication
+
 Create LDAP server:
 
 ![image](https://github.com/user-attachments/assets/d14d1b0c-ad6f-463e-8a05-d5893c591225)
-
-#### 2.3.1. LDAP authentication
 
 Create LDAP remote user group:
 
@@ -109,7 +117,7 @@ Create LDAP authentication rule:
 
 Add the LDAP remote user group to `Source` in the ZTNA firewall rule:
 
-![image](https://github.com/user-attachments/assets/e052686c-136f-4568-a86a-28540fc6dbb1)
+![image](https://github.com/user-attachments/assets/56a02427-d66a-4bdf-98d9-bb0e5c7e1525)
 
 Test access:
 
@@ -127,7 +135,7 @@ Test access:
 
 Create SAML remote user group:
 
-![image](https://github.com/user-attachments/assets/497d5d03-0a7b-4a8b-87f5-2f332a3d6b5a)
+![image](https://github.com/user-attachments/assets/345f0958-8cb1-46cc-acb2-b3af7e1dad1e)
 
 Create SAML authentication scheme:
 
@@ -143,7 +151,7 @@ Enable SAML in ZTNA server:
 
 Add the SAML remote user group to `Source` in the ZTNA firewall rule:
 
-![image](https://github.com/user-attachments/assets/da23aa98-2d24-4739-a33d-6b2011f3a744)
+![image](https://github.com/user-attachments/assets/e535ecf9-1f7b-4408-bf6d-d4d0db890d0d)
 
 Create address record for the ZTNA VIP:
 
@@ -152,6 +160,16 @@ Create address record for the ZTNA VIP:
 Configure `Authentication Scheme` and `Captive Portal` in `Authentication Settings`:
 
 ![image](https://github.com/user-attachments/assets/1b886629-f015-4931-8e3d-e1a9d1c9e11b)
+
+Test access:
+
+![image](https://github.com/user-attachments/assets/f53cde66-d6da-4669-899c-e9bdb1101a2a)
+
+![image](https://github.com/user-attachments/assets/2c7d7b23-2ae6-40d1-8e74-d661e0c2b651)
+
+![image](https://github.com/user-attachments/assets/53fac38c-efd8-4ebb-8c5d-daf2f94c7458)
+
+![image](https://github.com/user-attachments/assets/7c589bf8-4c3a-45f6-a542-18d8b856aaef)
 
 ## X. EMS security tagging
 
