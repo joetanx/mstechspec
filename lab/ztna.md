@@ -104,7 +104,7 @@ end
 
 Likely due to EMS fabric connection not configured.
 
-If EMS fabric connection is configured, only the EMS signed signed client certificate should be in the prompt.
+If EMS fabric connection is configured, only the EMS CA signed client certificate should appear in the prompt.
 
 ![image](https://github.com/user-attachments/assets/39958406-c14b-4d80-8920-ad875304769f)
 
@@ -124,7 +124,7 @@ Wrong certificate selected or EMS fabric connection not configured.
 
 ### 3.5. Successful access
 
-Notice that only the EMS CA signed client certificate is in the prompt.
+Notice that only the EMS CA signed client certificate appears in the prompt.
 
 ![image](https://github.com/user-attachments/assets/74d1b945-afd7-4d04-b88d-025b2eef7e8a)
 
@@ -203,6 +203,32 @@ Notice that only the EMS CA signed client certificate is in the prompt.
 ![image](https://github.com/user-attachments/assets/53fac38c-efd8-4ebb-8c5d-daf2f94c7458)
 
 ![image](https://github.com/user-attachments/assets/7a441fea-878f-4bf4-9c4e-d13be4f9e1e4)
+
+## 6. TCP forwarding access proxy / ZTNA destinations
+
+### 6.1. Configure ZTNA destinations profile
+
+Configure proxy gateway to ZTNA server create above:
+
+![image](https://github.com/user-attachments/assets/5631a1dc-857c-42c7-b1ad-26f1917056f5)
+
+![image](https://github.com/user-attachments/assets/ef8ada74-070d-4575-a0aa-9a1ab614f555)
+
+Configure private applications:
+
+![image](https://github.com/user-attachments/assets/8f77b380-e721-4848-b29f-60cf3bee2def)
+
+Configure SaaS applications:
+
+![image](https://github.com/user-attachments/assets/40a2e32f-9696-438f-83b3-c0c7b9790345)
+
+Verify and save:
+
+![image](https://github.com/user-attachments/assets/b7d173ae-a97b-4928-ba59-436f5aaf26fe)
+
+> [!Tip]
+>
+> Click on the "eye" behind the `ZTNA Destination Profile` title to toggle showing of `ZTNA Destination` in FortiClient
 
 ## X. EMS security tagging
 
