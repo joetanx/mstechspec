@@ -210,13 +210,15 @@ Notice that only the EMS CA signed client certificate appears in the prompt.
 
 Configure proxy gateway to ZTNA server create above:
 
-![image](https://github.com/user-attachments/assets/5631a1dc-857c-42c7-b1ad-26f1917056f5)
-
 ![image](https://github.com/user-attachments/assets/ef8ada74-070d-4575-a0aa-9a1ab614f555)
 
 Configure private applications:
 
 ![image](https://github.com/user-attachments/assets/0a6263f4-28f4-4929-ba2b-b8dd94e92650)
+
+> [!Tip]
+>
+> Using IP address of the destination in the private applications configuration will ensure that connection to the destination is captured by FortiClient regardless of using FQDN or IP address when connecting
 
 Configure SaaS applications:
 
@@ -240,11 +242,21 @@ Review ZTNA destinations:
 
 ![image](https://github.com/user-attachments/assets/4ba55f27-ec65-46b7-8cc9-74e577278f89)
 
-![image](https://github.com/user-attachments/assets/3f4ca7cf-f556-475c-abee-86f6bc96ac51)
+Test connection:
 
-![image](https://github.com/user-attachments/assets/56bcf705-8d9d-480a-984a-d9fb2d9dd53f)
+![image](https://github.com/user-attachments/assets/abba0ec2-c0d5-4a2a-aca3-236c3e3c41d1)
 
-![image](https://github.com/user-attachments/assets/693d9a58-00c0-4a04-a9fc-dde9e908ce4e)
+![image](https://github.com/user-attachments/assets/e83c57e0-9b7d-4476-9812-eba3a885b48d)
+
+![image](https://github.com/user-attachments/assets/0396f4da-4268-4df9-a9f5-883c2ab2e66d)
+
+![image](https://github.com/user-attachments/assets/1010c919-fc51-49ee-9fb7-6b0ebd5cb7d8)
+
+![image](https://github.com/user-attachments/assets/47ceb4af-426a-4535-9243-b90e2bb72007)
+
+Notice that connections are made towards the ZTNA server
+
+![image](https://github.com/user-attachments/assets/bb89b69d-bc8f-4579-9e7e-fff7678c05ed)
 
 ## X. EMS security tagging
 
