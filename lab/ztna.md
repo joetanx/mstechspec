@@ -20,74 +20,80 @@
 
 ### 2.1. Create ZTNA server
 
-Create address record for destination server:
+#### 2.1.1. Create address record for destination server
 
 ![image](https://github.com/user-attachments/assets/01289add-92a9-463d-8abd-81f66f54de2b)
 
-Create ZTNA server:
+#### 2.1.2. Create ZTNA server
 
 ![image](https://github.com/user-attachments/assets/0595a2c0-e4bc-4cff-8472-803b701e6767)
 
-Create destination server mapping:
+#### 2.1.3. Create destination server mapping:
 
 ![image](https://github.com/user-attachments/assets/cf09534a-685f-4a99-a06e-eb6d7eea5b99)
 
-> [!Note]
->
-> Client certificate authentication is **enabled** on the access proxy **by default**.
->
-> Commands `client-cert` and `empty-cert-action` can be configured on the CLI to change client certificate authentication behaviour.
->
-> ```
-> config firewall access-proxy
->   edit <name>
->     set client-cert { enable | disable }
->     set empty-cert-action { accept | block }
->   next
-> end
-> ```
-> 
-> `empty-cert-action` is available only if `client-cert` is set to `enable`
-
-### 2.2. Create ZTNA firewall rule
+#### 2.1.4. Create ZTNA firewall rule
 
 ![image](https://github.com/user-attachments/assets/3fc98ccf-86a4-489a-a603-c00867db9eef)
 
-### 2.3. Test client certificate authentication
+### 2.2. Test client certificate authentication
 
-Incorrect client certificate prompt:
+#### 2.2.1. Enabling client certificate authentication
 
-(Likely due to EMS fabric connection not configured, if EMS fabric connection is configured, only the EMS signed signed client certificate should be in the prompt)
+Client certificate authentication is **enabled** on the access proxy **by default**.
+
+Commands `client-cert` and `empty-cert-action` can be configured on the CLI to change client certificate authentication behaviour.
+
+```
+config firewall access-proxy
+  edit <name>
+    set client-cert { enable | disable }
+    set empty-cert-action { accept | block }
+  next
+end
+```
+
+> [!Note]
+>
+> `empty-cert-action` is available only if `client-cert` is set to `enable`
+
+#### 2.2.2. Incorrect client certificate prompt:
+
+Likely due to EMS fabric connection not configured.
+
+If EMS fabric connection is configured, only the EMS signed signed client certificate should be in the prompt.
 
 ![image](https://github.com/user-attachments/assets/b58fd056-3f9a-4499-94e6-4c831d8a0d12)
 
-Empty client certificate:
+#### 2.2.3. Empty client certificate:
 
-(No certificate or cancel was selected on the prompt)
+No certificate or cancel was selected on the prompt.
 
 ![image](https://github.com/user-attachments/assets/366b0c1a-1f99-43eb-9ed9-4142a0390d81)
 
-Wrong certificate selected or EMS fabric connection not configured:
+#### 2.2.4. Invalid client certificate:
+
+Wrong certificate selected or EMS fabric connection not configured.
 
 ![image](https://github.com/user-attachments/assets/6f130a22-58ba-4bea-8273-b666f0a2e1a1)
 
 ![image](https://github.com/user-attachments/assets/a97ef800-258b-40ea-b370-0184b4cfad2a)
 
-Successful access:
+#### 2.2.5. Successful access
 
-(Notice that only the EMS CA signed client certificate is in the prompt)
+Notice that only the EMS CA signed client certificate is in the prompt.
 
 ![image](https://github.com/user-attachments/assets/d2cdb08e-8a60-442e-9136-af1fbb77459c)
 
 ![image](https://github.com/user-attachments/assets/27e435aa-1c49-41e7-8525-78590cd0bd50)
 
-### 2.4. Configure ZTNA authentication
+### 2.3. Configure ZTNA authentication
 
 Create LDAP server:
 
 ![image](https://github.com/user-attachments/assets/d14d1b0c-ad6f-463e-8a05-d5893c591225)
 
-#### 2.4.1. LDAP authentication
+#### 2.3.1. LDAP authentication
 
 Create LDAP remote user group:
 
@@ -101,7 +107,17 @@ Create LDAP authentication rule:
 
 ![image](https://github.com/user-attachments/assets/60a0351f-003e-49c7-83e9-9078a1f1e3bb)
 
-#### 2.4.2. SAML authentication to FortiAuthenticator
+Add the LDAP remote user group to `Source` in the ZTNA firewall rule:
+
+![image](https://github.com/user-attachments/assets/e052686c-136f-4568-a86a-28540fc6dbb1)
+
+Test access:
+
+![image](https://github.com/user-attachments/assets/c0d2ecbf-5edc-462f-a1b1-617f4b5ae869)
+
+![image](https://github.com/user-attachments/assets/7b2770fe-0bdd-4d60-ab1c-ced6c827a03c)
+
+#### 2.3.2. SAML authentication to FortiAuthenticator
 
 > [!Note]
 >
@@ -115,11 +131,27 @@ Create SAML remote user group:
 
 Create SAML authentication scheme:
 
-![image](https://github.com/user-attachments/assets/0f02a788-43fa-4075-bf41-c1ecc6f8d643)
+![image](https://github.com/user-attachments/assets/d6b9146c-d8a0-4d1f-afff-2249ac2f883d)
 
 Create SAML authentication rule:
 
 ![image](https://github.com/user-attachments/assets/05e244d9-0fb9-43c9-b4d4-d61c3d227d5d)
+
+Enable SAML in ZTNA server:
+
+![image](https://github.com/user-attachments/assets/edb3acc0-6de7-492b-b8d2-4928415b81b2)
+
+Add the SAML remote user group to `Source` in the ZTNA firewall rule:
+
+![image](https://github.com/user-attachments/assets/da23aa98-2d24-4739-a33d-6b2011f3a744)
+
+Create address record for the ZTNA VIP:
+
+![image](https://github.com/user-attachments/assets/44c49d35-796c-4bd6-ab4a-f3e09ec92903)
+
+Configure `Authentication Scheme` and `Captive Portal` in `Authentication Settings`:
+
+![image](https://github.com/user-attachments/assets/1b886629-f015-4931-8e3d-e1a9d1c9e11b)
 
 ## X. EMS security tagging
 
