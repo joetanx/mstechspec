@@ -186,15 +186,7 @@ Notice that only the EMS CA signed client certificate appears in the prompt.
 
 ![image](https://github.com/user-attachments/assets/b8c8fd48-5586-4093-8f3b-dd7b694d3bb3)
 
-### 5.6. Create address record for the ZTNA VIP:
-
-![image](https://github.com/user-attachments/assets/30e5945a-749f-4554-97f2-c0b0fcec7c92)
-
-### 5.7. Configure `Authentication Scheme` and `Captive Portal` in `Authentication Settings`:
-
-![image](https://github.com/user-attachments/assets/40f88bce-c905-49d4-909a-7189f0651ff3)
-
-### 5.8. Test access:
+### 5.6. Test access:
 
 ![image](https://github.com/user-attachments/assets/f53cde66-d6da-4669-899c-e9bdb1101a2a)
 
@@ -254,7 +246,7 @@ Test connection:
 
 ![image](https://github.com/user-attachments/assets/47ceb4af-426a-4535-9243-b90e2bb72007)
 
-Notice that connections are made towards the ZTNA server
+Notice that connections are made towards the ZTNA server:
 
 ![image](https://github.com/user-attachments/assets/bb89b69d-bc8f-4579-9e7e-fff7678c05ed)
 
