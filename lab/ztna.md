@@ -126,37 +126,35 @@ Notice that only the EMS CA signed client certificate is in the prompt.
 
 ![image](https://github.com/user-attachments/assets/7a441fea-878f-4bf4-9c4e-d13be4f9e1e4)
 
-## 4. Configure ZTNA authentication
+## 4. Configure LDAP authentication
 
-### 4.1. LDAP authentication
-
-Create LDAP server:
+### 4.1. Create LDAP server:
 
 ![image](https://github.com/user-attachments/assets/d14d1b0c-ad6f-463e-8a05-d5893c591225)
 
-Create LDAP remote user group:
+### 4.2. Create LDAP remote user group:
 
 ![image](https://github.com/user-attachments/assets/9e66b2c4-f543-4f9a-8a82-7fe95f459f3f)
 
-Create LDAP authentication scheme:
+### 4.3. Create LDAP authentication scheme:
 
 ![image](https://github.com/user-attachments/assets/84380719-c69c-4f81-940d-df0d97205131)
 
-Create LDAP authentication rule:
+### 4.4. Create LDAP authentication rule:
 
 ![image](https://github.com/user-attachments/assets/60a0351f-003e-49c7-83e9-9078a1f1e3bb)
 
-Add the LDAP remote user group to `Source` in the ZTNA firewall rule:
+### 4.5. Add the LDAP remote user group to `Source` in the ZTNA firewall rule:
 
 ![image](https://github.com/user-attachments/assets/e334211b-fc32-475f-8932-8efdc123e975)
 
-Test access:
+### 4.6. Test access:
 
-![image](https://github.com/user-attachments/assets/c0d2ecbf-5edc-462f-a1b1-617f4b5ae869)
+![image](https://github.com/user-attachments/assets/8519a6c3-6b1c-4827-9e64-40a55f9d6325)
 
-![image](https://github.com/user-attachments/assets/7b2770fe-0bdd-4d60-ab1c-ced6c827a03c)
+![image](https://github.com/user-attachments/assets/7a441fea-878f-4bf4-9c4e-d13be4f9e1e4)
 
-### 4.2. SAML authentication to FortiAuthenticator
+## 5. SAML authentication to FortiAuthenticator
 
 > [!Note]
 >
@@ -164,35 +162,35 @@ Test access:
 >
 > https://github.com/joetanx/FortiArchitect/blob/main/lab/fac.md#a3-fortigate-ztna-saml
 
-Create SAML remote user group:
+### 5.1. Create SAML remote user group:
 
 ![image](https://github.com/user-attachments/assets/345f0958-8cb1-46cc-acb2-b3af7e1dad1e)
 
-Create SAML authentication scheme:
+### 5.2. Create SAML authentication scheme:
 
 ![image](https://github.com/user-attachments/assets/d6b9146c-d8a0-4d1f-afff-2249ac2f883d)
 
-Create SAML authentication rule:
+### 5.3. Create SAML authentication rule:
 
 ![image](https://github.com/user-attachments/assets/05e244d9-0fb9-43c9-b4d4-d61c3d227d5d)
 
-Enable SAML in ZTNA server:
+### 5.4. Enable SAML in ZTNA server:
 
 ![image](https://github.com/user-attachments/assets/11776a54-45b6-407e-8c01-ec0c52ad9b92)
 
-Add the SAML remote user group to `Source` in the ZTNA firewall rule:
+### 5.5. Add the SAML remote user group to `Source` in the ZTNA firewall rule:
 
 ![image](https://github.com/user-attachments/assets/b8c8fd48-5586-4093-8f3b-dd7b694d3bb3)
 
-Create address record for the ZTNA VIP:
+### 5.6. Create address record for the ZTNA VIP:
 
-![image](https://github.com/user-attachments/assets/44c49d35-796c-4bd6-ab4a-f3e09ec92903)
+![image](https://github.com/user-attachments/assets/30e5945a-749f-4554-97f2-c0b0fcec7c92)
 
-Configure `Authentication Scheme` and `Captive Portal` in `Authentication Settings`:
+### 5.7. Configure `Authentication Scheme` and `Captive Portal` in `Authentication Settings`:
 
-![image](https://github.com/user-attachments/assets/1b886629-f015-4931-8e3d-e1a9d1c9e11b)
+![image](https://github.com/user-attachments/assets/40f88bce-c905-49d4-909a-7189f0651ff3)
 
-Test access:
+### 5.8. Test access:
 
 ![image](https://github.com/user-attachments/assets/f53cde66-d6da-4669-899c-e9bdb1101a2a)
 
@@ -200,7 +198,7 @@ Test access:
 
 ![image](https://github.com/user-attachments/assets/53fac38c-efd8-4ebb-8c5d-daf2f94c7458)
 
-![image](https://github.com/user-attachments/assets/7c589bf8-4c3a-45f6-a542-18d8b856aaef)
+![image](https://github.com/user-attachments/assets/7a441fea-878f-4bf4-9c4e-d13be4f9e1e4)
 
 ## X. EMS security tagging
 
