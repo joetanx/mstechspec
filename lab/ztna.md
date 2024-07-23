@@ -24,29 +24,60 @@
 
 </details>
 
-## 2. HTTP Access Proxy
+## 2. Create ZTNA server
 
-### 2.1. Create ZTNA server
-
-#### 2.1.1. Create address record for destination server
+### 2.1. Create address records for destination servers
 
 ![image](https://github.com/user-attachments/assets/01289add-92a9-463d-8abd-81f66f54de2b)
 
-#### 2.1.2. Create ZTNA server
+![image](https://github.com/user-attachments/assets/e026a521-4df5-49c6-98e4-64be35edd6c2)
 
-![image](https://github.com/user-attachments/assets/0595a2c0-e4bc-4cff-8472-803b701e6767)
+### 2.2. Create ZTNA server
 
-#### 2.1.3. Create destination server mapping:
+![image](https://github.com/user-attachments/assets/b9d841ce-e020-46ce-98e8-6481f51c7abe)
+
+### 2.3. Create destination server mapping:
 
 ![image](https://github.com/user-attachments/assets/cf09534a-685f-4a99-a06e-eb6d7eea5b99)
 
-#### 2.1.4. Create ZTNA firewall rule
+![image](https://github.com/user-attachments/assets/7d04494e-3922-46d0-ae09-b078c6a0f488)
 
-![image](https://github.com/user-attachments/assets/3fc98ccf-86a4-489a-a603-c00867db9eef)
+The ZTNA server creation page allows adding of only 1 real server for TCP Forwarding, the option gets greyed out after adding the first server:
 
-### 2.2. Test client certificate authentication
+![image](https://github.com/user-attachments/assets/a62e5e91-91c8-41c1-b8e2-e572d5742afa)
 
-#### 2.2.1. Enabling client certificate authentication
+Use CLI to add additional servers for TCP Forwarding:
+
+```
+config firewall access-proxy
+  edit ztna-server
+    config api-gateway
+      edit 2
+        config realservers
+          edit 2
+            set address file.net.vx
+            set mappedport 445 3389 
+          next
+        end
+      next
+    end
+  next
+end
+```
+
+After adding a second real server, the UI changes to allow adding of more servers to the list:
+
+![image](https://github.com/user-attachments/assets/c316495a-f4bb-4f3f-a676-18a7600ad856)
+
+![image](https://github.com/user-attachments/assets/3550e007-510d-4147-9150-9f11d13cf599)
+
+#### 2.4. Create ZTNA firewall rule
+
+![image](https://github.com/user-attachments/assets/feda6e68-914d-4b0c-8246-6832092d9675)
+
+## 3. Test client certificate authentication
+
+### 3.1. Enabling client certificate authentication
 
 Client certificate authentication is **enabled** on the access proxy **by default**.
 
@@ -65,39 +96,39 @@ end
 >
 > `empty-cert-action` is available only if `client-cert` is set to `enable`
 
-#### 2.2.2. Incorrect client certificate prompt:
+### 3.2. Incorrect client certificate prompt:
 
 Likely due to EMS fabric connection not configured.
 
 If EMS fabric connection is configured, only the EMS signed signed client certificate should be in the prompt.
 
-![image](https://github.com/user-attachments/assets/b58fd056-3f9a-4499-94e6-4c831d8a0d12)
+![image](https://github.com/user-attachments/assets/39958406-c14b-4d80-8920-ad875304769f)
 
-#### 2.2.3. Empty client certificate:
+### 3.3. Empty client certificate:
 
 No certificate or cancel was selected on the prompt.
 
-![image](https://github.com/user-attachments/assets/366b0c1a-1f99-43eb-9ed9-4142a0390d81)
+![image](https://github.com/user-attachments/assets/e2cb6848-69b4-45d0-b42c-a2f107d87596)
 
-#### 2.2.4. Invalid client certificate:
+### 3.4. Invalid client certificate:
 
 Wrong certificate selected or EMS fabric connection not configured.
 
-![image](https://github.com/user-attachments/assets/6f130a22-58ba-4bea-8273-b666f0a2e1a1)
+![image](https://github.com/user-attachments/assets/8ee38784-1994-422f-a4a5-678145ceed39)
 
-![image](https://github.com/user-attachments/assets/a97ef800-258b-40ea-b370-0184b4cfad2a)
+![image](https://github.com/user-attachments/assets/cb6b27f0-d85f-4fdd-b191-5409286578bb)
 
-#### 2.2.5. Successful access
+### 3.5. Successful access
 
 Notice that only the EMS CA signed client certificate is in the prompt.
 
-![image](https://github.com/user-attachments/assets/d2cdb08e-8a60-442e-9136-af1fbb77459c)
+![image](https://github.com/user-attachments/assets/74d1b945-afd7-4d04-b88d-025b2eef7e8a)
 
-![image](https://github.com/user-attachments/assets/27e435aa-1c49-41e7-8525-78590cd0bd50)
+![image](https://github.com/user-attachments/assets/7a441fea-878f-4bf4-9c4e-d13be4f9e1e4)
 
-### 2.3. Configure ZTNA authentication
+## 4. Configure ZTNA authentication
 
-#### 2.3.1. LDAP authentication
+### 4.1. LDAP authentication
 
 Create LDAP server:
 
@@ -105,7 +136,7 @@ Create LDAP server:
 
 Create LDAP remote user group:
 
-![image](https://github.com/user-attachments/assets/cf8ba0b2-47cc-4c05-b6ca-682cb72156f2)
+![image](https://github.com/user-attachments/assets/9e66b2c4-f543-4f9a-8a82-7fe95f459f3f)
 
 Create LDAP authentication scheme:
 
@@ -117,7 +148,7 @@ Create LDAP authentication rule:
 
 Add the LDAP remote user group to `Source` in the ZTNA firewall rule:
 
-![image](https://github.com/user-attachments/assets/56a02427-d66a-4bdf-98d9-bb0e5c7e1525)
+![image](https://github.com/user-attachments/assets/e334211b-fc32-475f-8932-8efdc123e975)
 
 Test access:
 
@@ -125,7 +156,7 @@ Test access:
 
 ![image](https://github.com/user-attachments/assets/7b2770fe-0bdd-4d60-ab1c-ced6c827a03c)
 
-#### 2.3.2. SAML authentication to FortiAuthenticator
+### 4.2. SAML authentication to FortiAuthenticator
 
 > [!Note]
 >
@@ -147,11 +178,11 @@ Create SAML authentication rule:
 
 Enable SAML in ZTNA server:
 
-![image](https://github.com/user-attachments/assets/edb3acc0-6de7-492b-b8d2-4928415b81b2)
+![image](https://github.com/user-attachments/assets/11776a54-45b6-407e-8c01-ec0c52ad9b92)
 
 Add the SAML remote user group to `Source` in the ZTNA firewall rule:
 
-![image](https://github.com/user-attachments/assets/e535ecf9-1f7b-4408-bf6d-d4d0db890d0d)
+![image](https://github.com/user-attachments/assets/b8c8fd48-5586-4093-8f3b-dd7b694d3bb3)
 
 Create address record for the ZTNA VIP:
 
