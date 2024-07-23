@@ -225,11 +225,11 @@ Use the `SP Entity ID` and `SP ACS (login) URL` values copied from the previous 
 
 Note the `identifier` value created:
 
-![image](https://github.com/user-attachments/assets/af22606e-3705-436c-93b9-f293cb15ab2b)
+![image](https://github.com/user-attachments/assets/58efb23c-74a5-46fd-8bd3-c6f984951a91)
 
 ### A.3.2. Configure IdP on FortiGate
 
-![image](https://github.com/user-attachments/assets/6dbf2369-f998-4fdc-8a41-e27bbca30fb3)
+![image](https://github.com/user-attachments/assets/7bdb7fbd-f6d5-46bb-a61c-68df912bcbed)
 
 Select `Fortinet Product` and enter:
 - `address` - the base FQDN of FortiAuthenticator
@@ -237,16 +237,16 @@ Select `Fortinet Product` and enter:
 - `Certificate` - the SAML signing certificate (e.g. [here](#62-enable-saml-idp-portal))
 - Also note that the `Attribute used to identify users` corresponds to the `Assertion Attributes` configured on FortiAuthenticator
 
-![image](https://github.com/user-attachments/assets/991de242-5419-4d00-b169-10e23669efba)
+![image](https://github.com/user-attachments/assets/ffb199a7-6619-4dfd-bab7-08ac578f3183)
 
 > [!Tip]
 >
 > By selecting `Fortinet Product` in the IdP setting, FortiGate automatically populates the required IdP details:
 >
-> ![image](https://github.com/user-attachments/assets/2ce1d4cb-e36f-4721-b304-137979b7b13c)
+> ![image](https://github.com/user-attachments/assets/a86dfc21-138e-4730-8416-d884945084f4)
 
 ### A.3.3. Complete the SP configuration on FortiAuthenticator
 
 Use the `Entity ID` and `Assertion consumer service URL` values copied from the previous FortiGate configuration step:
 
-![image](https://github.com/user-attachments/assets/8b5af97a-b4a0-4774-b03c-a8ec526bc1a8)
+![image](https://github.com/user-attachments/assets/ed3b2137-b107-4342-b022-be0a9db8177f)
