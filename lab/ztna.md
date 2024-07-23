@@ -54,18 +54,18 @@ Use CLI to add additional servers for TCP Forwarding:
 
 ```
 config firewall access-proxy
-  edit ztna-server
-    config api-gateway
-      edit 2
-        config realservers
-          edit 2
-            set address file.net.vx
-            set mappedport 445 3389 
-          next
-        end
-      next
-    end
-  next
+edit ztna-server
+config api-gateway
+edit 2
+config realservers
+edit 2
+set address file.net.vx
+set mappedport 445 3389 
+next
+end
+next
+end
+next
 end
 ```
 
@@ -216,19 +216,35 @@ Configure proxy gateway to ZTNA server create above:
 
 Configure private applications:
 
-![image](https://github.com/user-attachments/assets/8f77b380-e721-4848-b29f-60cf3bee2def)
+![image](https://github.com/user-attachments/assets/0a6263f4-28f4-4929-ba2b-b8dd94e92650)
 
 Configure SaaS applications:
 
 ![image](https://github.com/user-attachments/assets/40a2e32f-9696-438f-83b3-c0c7b9790345)
 
-Verify and save:
+Review and save:
 
-![image](https://github.com/user-attachments/assets/b7d173ae-a97b-4928-ba59-436f5aaf26fe)
+![image](https://github.com/user-attachments/assets/cad29a4b-fc53-4324-8969-8b05626d0982)
 
 > [!Tip]
 >
 > Click on the "eye" behind the `ZTNA Destination Profile` title to toggle showing of `ZTNA Destination` in FortiClient
+
+### 6.2. Test access
+
+Wait for FortiClient to receive the configuration update:
+
+![image](https://github.com/user-attachments/assets/176d5dcb-bf5a-4b3c-b3b6-9f8379d3f457)
+
+Review ZTNA destinations:
+
+![image](https://github.com/user-attachments/assets/4ba55f27-ec65-46b7-8cc9-74e577278f89)
+
+![image](https://github.com/user-attachments/assets/3f4ca7cf-f556-475c-abee-86f6bc96ac51)
+
+![image](https://github.com/user-attachments/assets/56bcf705-8d9d-480a-984a-d9fb2d9dd53f)
+
+![image](https://github.com/user-attachments/assets/693d9a58-00c0-4a04-a9fc-dde9e908ce4e)
 
 ## X. EMS security tagging
 
