@@ -38,7 +38,11 @@
 
 ### 2.3. Create destination server mapping:
 
+#### 2.3.1. HTTP access proxy
+
 ![image](https://github.com/user-attachments/assets/cf09534a-685f-4a99-a06e-eb6d7eea5b99)
+
+#### 2.3.2. TCP forwarding access proxy
 
 ![image](https://github.com/user-attachments/assets/7d04494e-3922-46d0-ae09-b078c6a0f488)
 
