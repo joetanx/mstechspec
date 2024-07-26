@@ -357,3 +357,298 @@ Adopting a single vendor solution for Firewall, EDR, SIEM, and SOAR components c
 ## 4.8. Conclusion
 
 Adopting a single vendor solution for Firewall, EDR, SIEM, and SOAR components offers a more focused and well-coordinated approach to security operations. By integrating tools from the same vendor, organizations benefit from seamless integration, streamlined management, and coordinated incident response. This holistic approach enhances operational efficiency, improves threat detection and response, and simplifies support and maintenance, ultimately strengthening the organization’s overall security posture.
+
+# 5. Diagrams
+
+## 5.1. Firewall, EDR, SIEM and SOAR
+
+```mermaid
+graph TD
+    A[Firewall] -->|Logs and Alerts| B[SIEM]
+    B -->|Correlated Alerts and Insights| C[EDR]
+    C -->|Detailed Endpoint Data| B
+    B -->|Contextualized Alerts| D[SOAR]
+    D -->|Automated Responses and Actions| A
+    D -->|Automated Responses and Actions| C
+    
+    subgraph Feedback Loop
+        A
+        B
+        C
+        D
+    end
+
+    %% Additional styling (optional)
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#ccf,stroke:#333,stroke-width:2px
+    style C fill:#cfc,stroke:#333,stroke-width:2px
+    style D fill:#fcf,stroke:#333,stroke-width:2px
+```
+
+### **Diagram Description**
+
+- **Firewall**: Monitors and logs network traffic, generating alerts for potential threats.
+- **SIEM**: Aggregates and correlates data from Firewalls and other sources. Provides insights and alerts.
+- **EDR**: Monitors endpoint activities and provides detailed data on threats. Receives contextualized alerts from SIEM.
+- **SOAR**: Automates responses based on insights from SIEM and data from EDR. Implements actions to mitigate threats, which can include updating firewall rules or isolating endpoints.
+
+### **Diagram Flow**
+
+1. **Firewall** sends logs and alerts to **SIEM**.
+2. **SIEM** processes and correlates these alerts with other data sources and provides insights to **EDR**.
+3. **EDR** analyzes endpoint data and returns detailed threat information to **SIEM**.
+4. **SIEM** sends contextualized alerts to **SOAR**.
+5. **SOAR** automates responses, which can involve actions such as adjusting firewall settings or isolating endpoints. These actions affect both **Firewall** and **EDR**.
+6. The feedback loop continues as the automated actions from **SOAR** update the **Firewall** and **EDR**, which then influence future data collected by **SIEM**.
+
+This diagram effectively illustrates the interplay and feedback mechanisms between the different security components, showing how they work together to enhance overall security operations.
+
+## 5.2. Multi-tenant
+
+In a multi-tenant environment, the feedback loop involves a master tenant that oversees several sub-tenants. Each component—Firewall, EDR, SIEM, and SOAR—operates across all tenants, with data and insights shared to improve security across the entire system.
+
+```mermaid
+graph TD
+    subgraph Master Tenant
+        M_F[Firewall]
+        M_S[SIEM]
+        M_SO[SOAR]
+    end
+    
+    subgraph Tenant A
+        A_F[Firewall]
+        A_E[EDR]
+    end
+    
+    subgraph Tenant B
+        B_F[Firewall]
+        B_E[EDR]
+    end
+    
+    subgraph Tenant C
+        C_F[Firewall]
+        C_E[EDR]
+    end
+    
+    %% Data Flows
+    A_F -->|Logs and Alerts| M_S
+    B_F -->|Logs and Alerts| M_S
+    C_F -->|Logs and Alerts| M_S
+    
+    M_S -->|Correlated Insights| A_E
+    M_S -->|Correlated Insights| B_E
+    M_S -->|Correlated Insights| C_E
+    
+    A_E -->|Detailed Endpoint Data| M_S
+    B_E -->|Detailed Endpoint Data| M_S
+    C_E -->|Detailed Endpoint Data| M_S
+    
+    M_S -->|Contextualized Alerts| M_SO
+    
+    M_SO -->|Automated Responses| A_F
+    M_SO -->|Automated Responses| B_F
+    M_SO -->|Automated Responses| C_F
+    M_SO -->|Automated Responses| A_E
+    M_SO -->|Automated Responses| B_E
+    M_SO -->|Automated Responses| C_E
+
+    %% Feedback Loop
+    A_F -->|Updated Rules| M_S
+    B_F -->|Updated Rules| M_S
+    C_F -->|Updated Rules| M_S
+    A_E -->|Response Data| M_S
+    B_E -->|Response Data| M_S
+    C_E -->|Response Data| M_S
+
+    %% Additional styling (optional)
+    style MasterTenant fill:#ccf,stroke:#333,stroke-width:2px
+    style TenantA fill:#cfc,stroke:#333,stroke-width:2px
+    style TenantB fill:#cfc,stroke:#333,stroke-width:2px
+    style TenantC fill:#cfc,stroke:#333,stroke-width:2px
+    style M_F fill:#f9f,stroke:#333,stroke-width:2px
+    style A_F fill:#f9f,stroke:#333,stroke-width:2px
+    style B_F fill:#f9f,stroke:#333,stroke-width:2px
+    style C_F fill:#f9f,stroke:#333,stroke-width:2px
+    style M_S fill:#ccf,stroke:#333,stroke-width:2px
+    style M_SO fill:#fcf,stroke:#333,stroke-width:2px
+    style A_E fill:#cfc,stroke:#333,stroke-width:2px
+    style B_E fill:#cfc,stroke:#333,stroke-width:2px
+    style C_E fill:#cfc,stroke:#333,stroke-width:2px
+```
+
+### **Diagram Description**
+
+- **Master Tenant:**
+  - **Firewall (M_F)**: Aggregates and manages firewall logs from all sub-tenants.
+  - **SIEM (M_S)**: Correlates data and insights from all tenant firewalls and EDRs.
+  - **SOAR (M_SO)**: Automates responses and actions based on insights from the SIEM.
+
+- **Sub-Tenants (A, B, C):**
+  - **Firewall (A_F, B_F, C_F)**: Monitors and logs network traffic for each sub-tenant.
+  - **EDR (A_E, B_E, C_E)**: Monitors and logs endpoint activities for each sub-tenant.
+
+### **Diagram Flow**
+
+1. **Data Collection:**
+   - **Sub-Tenant Firewalls (A_F, B_F, C_F)** send logs and alerts to the **Master SIEM (M_S)**.
+   - **Sub-Tenant EDRs (A_E, B_E, C_E)** provide detailed endpoint data to **Master SIEM (M_S)**.
+
+2. **Data Analysis:**
+   - **Master SIEM (M_S)** correlates and analyzes logs and alerts from all tenants, providing contextualized insights and alerts.
+   - **Master SIEM (M_S)** sends these insights to **Master SOAR (M_SO)**.
+
+3. **Automated Response:**
+   - **Master SOAR (M_SO)** executes automated responses, which are applied to tenant firewalls and EDRs (A_F, B_F, C_F, A_E, B_E, C_E).
+
+4. **Feedback Loop:**
+   - **Tenant Firewalls and EDRs (A_F, B_F, C_F, A_E, B_E, C_E)** provide updated rules and response data back to the **Master SIEM (M_S)**.
+   - This feedback helps refine detection and response strategies across all tenants.
+
+### **Benefits of Multi-Tenant Feedback Loop**
+
+- **Enhanced Threat Detection:** Collective data from all tenants provides a broader view of threats and trends.
+- **Coordinated Response:** SOAR automates and orchestrates responses across all tenants, improving efficiency.
+- **Unified Management:** Centralized visibility and management simplify oversight and reporting.
+- **Improved Intelligence Sharing:** Insights gained from one tenant benefit all tenants, enhancing overall security posture.
+
+This diagram illustrates how a single vendor solution in a multi-tenant environment integrates and optimizes security operations across all tenants, leveraging collective data and automated responses for improved protection.
+
+## 5.3. Multi-tenant v2
+
+In an advanced setup where there are local SIEM and SOAR instances in addition to a master SIEM and SOAR instance, the feedback loop diagram needs to reflect the dual-layer architecture:
+
+1. **Local SIEM instances** collect, analyze, and correlate events at the tenant level.
+2. **Master SIEM instance** aggregates data from all local SIEM instances for central intelligence.
+3. **Local SOAR instances** execute playbooks locally.
+4. **Master SOAR instance** processes centralized threat intelligence and distributes updated playbooks and intelligence to local SOAR instances.
+
+Here’s the updated Mermaid diagram to represent this architecture:
+
+```mermaid
+graph TD
+    subgraph Master Tenant
+        M_F[Master Firewall]
+        M_SIEM[Master SIEM]
+        M_SOAR[Master SOAR]
+    end
+    
+    subgraph Tenant A
+        A_F[Firewall]
+        A_SIEM[Local SIEM]
+        A_SOAR[Local SOAR]
+        A_E[EDR]
+    end
+    
+    subgraph Tenant B
+        B_F[Firewall]
+        B_SIEM[Local SIEM]
+        B_SOAR[Local SOAR]
+        B_E[EDR]
+    end
+    
+    subgraph Tenant C
+        C_F[Firewall]
+        C_SIEM[Local SIEM]
+        C_SOAR[Local SOAR]
+        C_E[EDR]
+    end
+    
+    %% Data Flows
+    A_F -->|Logs and Alerts| A_SIEM
+    B_F -->|Logs and Alerts| B_SIEM
+    C_F -->|Logs and Alerts| C_SIEM
+    
+    A_SIEM -->|Local Analysis and Correlation| A_E
+    B_SIEM -->|Local Analysis and Correlation| B_E
+    C_SIEM -->|Local Analysis and Correlation| C_E
+    
+    A_E -->|Detailed Endpoint Data| A_SIEM
+    B_E -->|Detailed Endpoint Data| B_SIEM
+    C_E -->|Detailed Endpoint Data| C_SIEM
+    
+    A_SIEM -->|Streamed Data| M_SIEM
+    B_SIEM -->|Streamed Data| M_SIEM
+    C_SIEM -->|Streamed Data| M_SIEM
+    
+    M_SIEM -->|Centralized Intelligence| M_SOAR
+    
+    A_SOAR -->|Execute Local Playbooks| A_F
+    A_SOAR -->|Execute Local Playbooks| A_E
+    B_SOAR -->|Execute Local Playbooks| B_F
+    B_SOAR -->|Execute Local Playbooks| B_E
+    C_SOAR -->|Execute Local Playbooks| C_F
+    C_SOAR -->|Execute Local Playbooks| C_E
+    
+    M_SOAR -->|Updated Playbooks and Intelligence| A_SOAR
+    M_SOAR -->|Updated Playbooks and Intelligence| B_SOAR
+    M_SOAR -->|Updated Playbooks and Intelligence| C_SOAR
+    
+    %% Feedback Loop
+    A_F -->|Updated Rules| A_SIEM
+    B_F -->|Updated Rules| B_SIEM
+    C_F -->|Updated Rules| C_SIEM
+    A_E -->|Response Data| A_SIEM
+    B_E -->|Response Data| B_SIEM
+    C_E -->|Response Data| C_SIEM
+    
+    M_SIEM -->|Feedback Data| M_SOAR
+    M_SOAR -->|Updated Playbooks and Intelligence| A_SOAR
+    M_SOAR -->|Updated Playbooks and Intelligence| B_SOAR
+    M_SOAR -->|Updated Playbooks and Intelligence| C_SOAR
+
+    %% Additional styling (optional)
+    style MasterTenant fill:#ccf,stroke:#333,stroke-width:2px
+    style TenantA fill:#cfc,stroke:#333,stroke-width:2px
+    style TenantB fill:#cfc,stroke:#333,stroke-width:2px
+    style TenantC fill:#cfc,stroke:#333,stroke-width:2px
+    style M_F fill:#f9f,stroke:#333,stroke-width:2px
+    style A_F fill:#f9f,stroke:#333,stroke-width:2px
+    style B_F fill:#f9f,stroke:#333,stroke-width:2px
+    style C_F fill:#f9f,stroke:#333,stroke-width:2px
+    style M_SIEM fill:#ccf,stroke:#333,stroke-width:2px
+    style M_SOAR fill:#fcf,stroke:#333,stroke-width:2px
+    style A_SIEM fill:#ccf,stroke:#333,stroke-width:2px
+    style B_SIEM fill:#ccf,stroke:#333,stroke-width:2px
+    style C_SIEM fill:#ccf,stroke:#333,stroke-width:2px
+    style A_SOAR fill:#fcf,stroke:#333,stroke-width:2px
+    style B_SOAR fill:#fcf,stroke:#333,stroke-width:2px
+    style C_SOAR fill:#fcf,stroke:#333,stroke-width:2px
+    style A_E fill:#cfc,stroke:#333,stroke-width:2px
+    style B_E fill:#cfc,stroke:#333,stroke-width:2px
+    style C_E fill:#cfc,stroke:#333,stroke-width:2px
+```
+
+### **Diagram Description**
+
+- **Master Tenant:**
+  - **Master Firewall (M_F)**: Manages global firewall rules and policies.
+  - **Master SIEM (M_SIEM)**: Aggregates and correlates data from all local SIEMs to provide central intelligence.
+  - **Master SOAR (M_SOAR)**: Distributes updated playbooks and intelligence to local SOAR instances.
+
+- **Local Tenant Instances:**
+  - **Local Firewall (A_F, B_F, C_F)**: Collects logs and sends them to local SIEMs.
+  - **Local SIEM (A_SIEM, B_SIEM, C_SIEM)**: Analyzes and correlates data locally, streams data to the master SIEM.
+  - **Local SOAR (A_SOAR, B_SOAR, C_SOAR)**: Executes playbooks locally based on intelligence from the master SOAR.
+  - **Local EDR (A_E, B_E, C_E)**: Provides endpoint data to local SIEMs and receives local SOAR actions.
+
+### **Diagram Flow**
+
+1. **Local Data Collection:**
+   - Local Firewalls (A_F, B_F, C_F) send logs and alerts to local SIEMs (A_SIEM, B_SIEM, C_SIEM).
+   - Local EDRs (A_E, B_E, C_E) provide endpoint data to local SIEMs.
+
+2. **Local Analysis and Correlation:**
+   - Local SIEMs analyze and correlate data, then stream aggregated data to the Master SIEM (M_SIEM).
+
+3. **Central Intelligence:**
+   - Master SIEM (M_SIEM) aggregates and correlates data from all local SIEMs and provides centralized intelligence to the Master SOAR (M_SOAR).
+
+4. **Automated Response:**
+   - Master SOAR (M_SOAR) updates local SOAR instances (A_SOAR, B_SOAR, C_SOAR) with new playbooks and threat intelligence.
+   - Local SOAR instances execute playbooks and apply responses to local Firewalls and EDRs.
+
+5. **Feedback Loop:**
+   - Local Firewalls and EDRs send updated rules and response data back to their respective local SIEMs.
+   - Local SIEMs provide feedback to the Master SIEM, which in turn updates the Master SOAR with new insights and intelligence.
+
+This updated diagram shows how local and master instances of SIEM and SOAR work together to enhance security across all tenants, ensuring that data and responses are both locally optimized and centrally coordinated.
