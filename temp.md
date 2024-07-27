@@ -797,3 +797,13 @@ While many security tools have built-in automation features, SOAR platforms offe
 - **Improving efficiency** in managing high volumes of alerts and routine tasks.
 
 SOAR adds value by providing a comprehensive, centralized approach to security automation that enhances the overall effectiveness of your security operations, especially in environments with diverse and complex security tools.
+
+# 9. SIEM or SOAR for threat intelligence feeds
+
+Enrichment of events with data from threat intelligence feeds is typically handled by SOAR:
+
+- **SIEM (Security Information and Event Management)**: SIEM systems are primarily responsible for aggregating, analyzing, and correlating log and event data from various sources to identify potential security threats. They can provide context around security events and generate alerts based on predefined rules and patterns. However, while SIEMs can ingest threat intelligence data to enhance their correlation rules or alerting capabilities, they don't usually perform the actual enrichment of events with threat intelligence data directly.
+
+- **SOAR (Security Orchestration, Automation, and Response)**: SOAR platforms are designed to integrate with various security tools and systems, including SIEMs, to automate and orchestrate security operations. This includes enriching security events with threat intelligence data. SOAR systems can automate the process of fetching threat intelligence feeds, integrating this data with event information, and using it to enhance the context and understanding of potential threats. This capability helps in prioritizing and responding to incidents more effectively.
+
+In summary, while SIEMs can utilize threat intelligence to improve their functionality, SOAR platforms are generally the ones that directly handle the enrichment of security events with threat intelligence data.
