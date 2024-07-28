@@ -128,7 +128,7 @@ Overall, machine learning enables WAFs to become more proactive, adaptive, and e
 10. Indexing
 11. Storage
 
-### 3.4. SITEM Integration with EDR/NDR/XDR
+### 3.4. SIEM Integration with EDR/NDR/XDR
 
 SIEM, EDR, NDR, and XDR solutions work together to provide comprehensive visibility, detection, and response capabilities across an organization's IT infrastructure, helping security teams detect and mitigate a wide range of cybersecurity threats.
 
@@ -190,7 +190,7 @@ SIEM, EDR, NDR, and XDR solutions work together to provide comprehensive visibil
 7. Block IOCs
 8. Alert administration
 
-### 3.7. SAN Incident Response Framework
+### 3.7. SANS Incident Response Framework
 
 https://www.sans.org/media/score/504-incident-response-cycle.pdf
 
@@ -231,20 +231,20 @@ https://www.sans.org/media/score/504-incident-response-cycle.pdf
 |Topic|Link|
 |---|--|
 |Magic Quadrant for Network Firewalls 2022|https://www.gartner.com/doc/reprints?id=1-2C2Q9662&ct=221222|
+|2024 Strategic Roadmap for SASE Convergence|https://www.gartner.com/doc/reprints?id=1-2G2V1C8T&ct=231229|
 |Market Guide for CNAPP 2023|https://www.gartner.com/doc/reprints?id=1-2CYRBHBR&ct=230317|
-|Market Guide for SOAR 2023|https://www.gartner.com/doc/reprints?id=1-2E78ER5R&ct=230620|
-|Market Guide for XDR 2023|https://www.gartner.com/doc/reprints?id=1-2EOYTQA6&ct=230811|
 |Magic Quadrant for Cloud WAAP 2022|https://www.techcity.cloud/information/gartner-magic-quadrant-for-cloud-web-application-and-api-protection/|
 |Magic Quadrant for Single-Vendor SASE 2023|https://www.gartner.com/doc/reprints?id=1-2EQ0YMTZ&ct=230816|
-|Magic Quadrant for SIEM 2022|https://www.gartner.com/doc/reprints?id=1-2BDGWSVV&ct=221011|
-|Critical Capabilities for SIEM|https://www.gartner.com/doc/reprints?id=1-2BS9LBUO&ct=221122|
-|2024 Strategic Roadmap for SASE Convergence|https://www.gartner.com/doc/reprints?id=1-2G2V1C8T&ct=231229|
+|Magic Quadrant for SIEM 2024|https://www.gartner.com/doc/reprints?id=1-2HI8DCZY&ct=240508|
+|Market Guide for SOAR 2023|https://www.gartner.com/doc/reprints?id=1-2E78ER5R&ct=230620|
+|Market Guide for XDR 2023|https://www.gartner.com/doc/reprints?id=1-2EOYTQA6&ct=230811|
+|Critical Capabilities for SIEM 2024|https://www.gartner.com/doc/reprints?id=1-2HXU226Z&ct=240626|
 
 ### Technical Documents
 
 |Topic|Link|
 |---|--|
-|Security Pillar - AWS Well-Architected Framework|https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html|
 |Third-party firewall appliance vs AWS Network Firewall/WAF|https://www.linkedin.com/pulse/third-party-firewall-appliance-vs-aws-network-dinesh-sharma-64kmc|
 |Design your firewall deployment for Internet ingress traffic flows|https://aws.amazon.com/blogs/networking-and-content-delivery/design-your-firewall-deployment-for-internet-ingress-traffic-flows/|
 |Exposing Kubernetes Applications|- Part 1: Service and Ingress Resources https://aws.amazon.com/blogs/containers/exposing-kubernetes-applications-part-1-service-and-ingress-resources/<br>- Part 2: AWS Load Balancer Controller https://aws.amazon.com/blogs/containers/exposing-kubernetes-applications-part-2-aws-load-balancer-controller/<br>- Part 3: NGINX Ingress Controller https://aws.amazon.com/blogs/containers/exposing-kubernetes-applications-part-3-nginx-ingress-controller/|
+|AWS Integration with SIEM/SOAR|https://maturitymodel.security.aws.dev/en/3.-efficient/siem-soar/|
