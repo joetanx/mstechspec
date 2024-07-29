@@ -798,7 +798,41 @@ While many security tools have built-in automation features, SOAR platforms offe
 
 SOAR adds value by providing a comprehensive, centralized approach to security automation that enhances the overall effectiveness of your security operations, especially in environments with diverse and complex security tools.
 
-# 9. SIEM or SOAR for threat intelligence feeds
+# 9. Threat intelligence
+
+## 9.1. Threat Intelligence Standards: MISP, TAXII, and STIX
+
+Threat intelligence standards enable organizations to share and consume threat data in a standardized format, facilitating effective communication and defense against cyber threats. Here's an overview of MISP, TAXII, and STIX:
+
+**1. MISP (Malware Information Sharing Platform & Threat Sharing)**
+
+- An open-source platform for collecting, storing, and sharing threat data
+- Supports various formats, including STIX and JSON
+- Enables users to create and manage threat intelligence feeds
+- Includes features like data analytics, visualization, and correlation
+
+**2. TAXII (Trusted Automated eXchange of Indicator Information)**
+
+- A protocol for exchanging threat data between organizations
+- Defines a set of APIs and message formats for sharing threat intelligence
+- Supports multiple formats, including STIX and JSON
+- Enables automated, secure, and standardized sharing of threat data
+
+**3. STIX (Structured Threat Information eXpression)**
+
+- A language and format for representing threat data
+- Defines a set of concepts, relationships, and data models for threat intelligence
+- Enables standardized representation of threat data, including indicators, tactics, techniques, and procedures (TTPs)
+- Supports various use cases, such as incident response, threat analysis, and security automation
+
+**Relationship between MISP, TAXII, and STIX:**
+- MISP uses STIX as a format for representing threat data and TAXII for exchanging data with other platforms
+- TAXII uses STIX as a format for representing threat data during exchange
+- STIX provides the standardized language and format for representing threat data, which is used by MISP and TAXII
+
+In summary, MISP is a platform for collecting and sharing threat data, TAXII is a protocol for exchanging threat data, and STIX is a standardized language and format for representing threat data. Together, they enable effective threat intelligence sharing and consumption.
+
+## 9.2. SIEM or SOAR for threat intelligence feeds
 
 Enrichment of events with data from threat intelligence feeds is typically handled by SOAR:
 
