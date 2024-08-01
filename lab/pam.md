@@ -152,3 +152,15 @@ Connection to pam.net.vx closed.
 ### 3.3. Configure auto-provision rule
 
 ![image](https://github.com/user-attachments/assets/fb52117c-8711-432a-9f86-6acea0e60708)
+
+> [!Note]
+>
+> The auto-provision rule automatically creates the SSO Admin user if it doesn't already exist
+> 
+> ![image](https://github.com/user-attachments/assets/fa2ab476-af5c-4076-a2fc-684f1e9fffb2)
+
+> [!Note]
+>
+> A username can only use one authentication method. If a user is already provisioned under another authentication method (e.g. SAML), login is not allowed using other methods
+> 
+> ![image](https://github.com/user-attachments/assets/e9b2700f-5745-46a4-b47d-f339a5284fa5)
