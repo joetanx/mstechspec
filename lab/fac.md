@@ -193,7 +193,6 @@ Use the `SP Entity ID` and `SP ACS (login) URL` values copied from the previous 
 
 ![image](https://github.com/user-attachments/assets/e2ed4abb-34db-4f70-8164-97bd5c6db61d)
 
-### A.2.4. Test login
 
 ![image](https://github.com/user-attachments/assets/60f4cfcb-4385-4610-935a-11f3122a7c73)
 
@@ -213,11 +212,9 @@ Use the `SP Entity ID` and `SP ACS (login) URL` values copied from the previous 
 
 ![image](https://github.com/user-attachments/assets/65f8a277-0622-45e7-afcf-f8270b1dc868)
 
-### A.3. FortiGate ZTNA SAML
+## A.3. FortiGate ZTNA SAML
 
 ### A.3.1. Create SP on FortiAuthenticator
-
-![image](https://github.com/user-attachments/assets/8a83bff0-d693-49e1-9859-6067dd15be35)
 
 Note the `identifier` value created:
 
@@ -243,6 +240,70 @@ Select `Fortinet Product` and enter:
 
 ### A.3.3. Complete the SP configuration on FortiAuthenticator
 
-Use the `Entity ID` and `Assertion consumer service URL` values copied from the previous FortiGate configuration step:
+Use the `Entity ID`, `Assertion consumer service URL` and `Single logout service URL` values copied from the previous FortiGate configuration step:
 
 ![image](https://github.com/user-attachments/assets/ed3b2137-b107-4342-b022-be0a9db8177f)
+
+## A.4. FortiPAM
+
+### A.4.1. Create SP on FortiAuthenticator
+
+Note the `identifier` value created:
+
+![image](https://github.com/user-attachments/assets/94161a9d-3fc5-4136-99b3-16bdd92bd641)
+
+### A.4.2. Configure IdP on FortiPAM
+
+![image](https://github.com/user-attachments/assets/63ef5591-040d-42e2-a46f-9b6f3601c682)
+
+![image](https://github.com/user-attachments/assets/b3cbbf7a-063b-4bd4-b265-59b88436b465)
+
+![image](https://github.com/user-attachments/assets/27162010-9999-4684-a38c-48cc3aa4d957)
+
+![image](https://github.com/user-attachments/assets/c11ec35c-7589-43ad-925b-b5f3d5326d2a)
+
+> [!Tip]
+>
+> By selecting `Fortinet Product` in the IdP setting, FortiGate automatically populates the required IdP details:
+>
+> ![image](https://github.com/user-attachments/assets/6b9b6b09-0918-4a9a-8d81-cef193ed3e60)
+
+### A.4.3. Complete the SP configuration on FortiAuthenticator
+
+Use the `Entity ID`, `Portal (Sign On) URL` and `Single Logout Service (SLS) URL` values copied from the previous FortiPAM configuration step:
+
+![image](https://github.com/user-attachments/assets/b7b19c5b-46f9-4b38-a729-f4d90de040ff)
+
+### A.4.4. Create user group
+
+![image](https://github.com/user-attachments/assets/bc68437a-3fee-4ac7-ab14-3f0aed0dc20a)
+
+### A.4.6. Configure auto-provision rule
+
+![image](https://github.com/user-attachments/assets/da68b2a3-e375-4349-a212-fa03ce843e4f)
+
+### A.4.6. Test login
+
+![image](https://github.com/user-attachments/assets/3d1e48e2-2c18-40aa-960d-1cac82a8d01b)
+
+![image](https://github.com/user-attachments/assets/3ec4e902-e963-461b-9c01-b7a9ca6af972)
+
+![image](https://github.com/user-attachments/assets/b61fea75-1840-4558-b42e-c3a4b78a134e)
+
+![image](https://github.com/user-attachments/assets/bcd4314b-f5b1-4fd4-9c3b-7f0911008bd8)
+
+![image](https://github.com/user-attachments/assets/c99cb904-2e50-4ae0-80c3-bb851884cb4c)
+
+![image](https://github.com/user-attachments/assets/2c43c2fd-38d7-422f-a75b-a7a316b946ec)
+
+> [!Note]
+>
+> The auto-provision rule automatically creates the SSO user if it doesn't already exist
+> 
+> ![image](https://github.com/user-attachments/assets/73864e10-fa47-499e-849f-19ec728ab7a5)
+
+> [!Note]
+>
+> A username can only use one authentication method. If a user is already provisioned under another authentication method (e.g. LDAP), login is not allowed using other methods
+> 
+> ![image](https://github.com/user-attachments/assets/487e4553-0b88-462d-a67f-18d9abd69c19)
