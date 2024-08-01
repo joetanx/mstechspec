@@ -145,10 +145,10 @@ Connection to pam.net.vx closed.
 
 ### 3.2. Configure user group
 
-![image](https://github.com/user-attachments/assets/57e33f1a-8c1a-41e0-83a8-d869e3eebcb9)
+![image](https://github.com/user-attachments/assets/b157059f-51e6-42f1-afeb-38b20ce29b18)
 
 ![image](https://github.com/user-attachments/assets/9808d0c4-4bbc-45a7-815f-7e035591ed3f)
 
 ### 3.3. Configure auto-provision rule
 
-![image](https://github.com/user-attachments/assets/7c40ade0-5876-4082-9cf2-e8bc671f02c8)
+![image](https://github.com/user-attachments/assets/fb52117c-8711-432a-9f86-6acea0e60708)
