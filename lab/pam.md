@@ -126,3 +126,29 @@ Connection to pam.net.vx closed.
 ![image](https://github.com/user-attachments/assets/1c5459eb-1e2e-4de1-98ea-0d1eeeff1c57)
 
 ![image](https://github.com/user-attachments/assets/1944d540-d766-4470-afce-ae1180e383c4)
+
+## 3. LDAP
+
+### 3.1. Configure LDAP server and user group
+
+![image](https://github.com/user-attachments/assets/a1a011f6-13d3-486b-9293-4a1115f8aac7)
+
+![image](https://github.com/user-attachments/assets/49a77ddc-2926-4311-80a2-c0ff6e8ee9ee)
+
+![image](https://github.com/user-attachments/assets/c5b5e405-5f59-49ad-905f-9fa7569b8e40)
+
+![image](https://github.com/user-attachments/assets/e07f150a-638c-458e-8e98-de16bf81552b)
+
+![image](https://github.com/user-attachments/assets/29830fa0-3a3d-4a46-aa2b-bd5e8c9c6f8a)
+
+![image](https://github.com/user-attachments/assets/a6f0a6b6-c70f-49fb-935c-c91dee7bfb96)
+
+### 3.2. Configure user group
+
+![image](https://github.com/user-attachments/assets/57e33f1a-8c1a-41e0-83a8-d869e3eebcb9)
+
+![image](https://github.com/user-attachments/assets/9808d0c4-4bbc-45a7-815f-7e035591ed3f)
+
+### 3.3. Configure auto-provision rule
+
+![image](https://github.com/user-attachments/assets/7c40ade0-5876-4082-9cf2-e8bc671f02c8)
