@@ -76,23 +76,23 @@
 
 ![image](https://github.com/user-attachments/assets/d4d1b4d8-e7f6-4860-9c92-b32e3d732f37)
 
-![image](https://github.com/user-attachments/assets/5b4d8b5a-97f8-44ee-8c05-492045f19859)
+![image](https://github.com/user-attachments/assets/e2fd3409-0d70-405b-808f-085d4b3067ec)
 
-![image](https://github.com/user-attachments/assets/1a0a599f-e972-4160-9615-7fdc24ac2243)
+![image](https://github.com/user-attachments/assets/9e55d361-1248-4416-94ac-8ce89277e5a6)
 
 ### 5.3. Configure OTP
 
-![image](https://github.com/user-attachments/assets/e8b34f2a-3204-4839-bdcd-15bc94b4c6a1)
+![image](https://github.com/user-attachments/assets/aba2790a-3650-4df9-acc3-ed127ea992b0)
 
-![image](https://github.com/user-attachments/assets/844afd08-5387-4202-8712-7f6e3be9cc16)
+![image](https://github.com/user-attachments/assets/c4381906-5283-4c02-b996-8ed862f7b6ba)
 
-![image](https://github.com/user-attachments/assets/db71a47e-1057-44e0-8130-d955a674a036)
+![image](https://github.com/user-attachments/assets/85bf0380-d9a3-4f8a-97ac-981f542103ff)
 
-![image](https://github.com/user-attachments/assets/c5c7260b-9b37-4a0e-b969-93fab3cbbdfd)
+![image](https://github.com/user-attachments/assets/9940a285-900b-4bbd-af83-11a87eb485da)
 
-![image](https://github.com/user-attachments/assets/8c9357d9-4d6e-4234-af91-62bf532587b5)
+![image](https://github.com/user-attachments/assets/a632e4f9-dfbd-4d67-9b0e-0f162f14824a)
 
-![image](https://github.com/user-attachments/assets/6f785351-4069-4a78-a60e-14791faec12d)
+![image](https://github.com/user-attachments/assets/ff3764d1-b6c4-4e8a-ab47-b6475e85f160)
 
 ## 6. Configure SAML IdP
 
@@ -193,24 +193,25 @@ Use the `SP Entity ID` and `SP ACS (login) URL` values copied from the previous 
 
 ![image](https://github.com/user-attachments/assets/e2ed4abb-34db-4f70-8164-97bd5c6db61d)
 
+### A.2.4. Test login
 
 ![image](https://github.com/user-attachments/assets/60f4cfcb-4385-4610-935a-11f3122a7c73)
 
-![image](https://github.com/user-attachments/assets/0d632b4a-8b3a-46e8-bf13-89b0d58789af)
+![image](https://github.com/user-attachments/assets/b04149b2-4f46-4760-8449-042d349969f2)
 
-![image](https://github.com/user-attachments/assets/1878c4c5-6dd3-40fa-b7e5-4debd20ab1f0)
+![image](https://github.com/user-attachments/assets/4d36e5c1-1e9f-424f-a6aa-239bda73a35a)
 
-![image](https://github.com/user-attachments/assets/fa8b7ec1-8421-4344-84b2-ba37fde6b644)
+![image](https://github.com/user-attachments/assets/db1c585d-a947-4907-afdd-b2a963d90180)
 
-![image](https://github.com/user-attachments/assets/7b115fc7-765c-4e78-8003-e97635290794)
+![image](https://github.com/user-attachments/assets/ec96a40c-500d-449f-a5ab-04a7ebe1fc0b)
 
 > [!Note]
 >
 > The SSO automatically creates the SSO Admin user if it doesn't already exist
 > 
-> ![image](https://github.com/user-attachments/assets/bc44360b-f2d1-4af3-acf8-1263cadcf4c0)
+> ![image](https://github.com/user-attachments/assets/5a324a65-5b26-4067-8969-ea9cf057eda8)
 
-![image](https://github.com/user-attachments/assets/65f8a277-0622-45e7-afcf-f8270b1dc868)
+![image](https://github.com/user-attachments/assets/6d0e313e-2610-463c-9e5d-e24c05b79739)
 
 ## A.3. FortiGate ZTNA SAML
 
