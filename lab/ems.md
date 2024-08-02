@@ -157,21 +157,21 @@ Select required groups and select `Authorize`
 >
 > https://github.com/joetanx/FortiArchitect/blob/main/lab/fac.md#a1-forticlient-ems-saml-authentication
 
-![image](https://github.com/user-attachments/assets/d9b8cf33-8258-4937-bf8d-9353f7c6bbcc)
+![image](https://github.com/user-attachments/assets/530b3797-2289-449f-9e96-81d9b04bdb2b)
 
-![image](https://github.com/user-attachments/assets/4ec6deff-1f59-4f2c-bad7-a3865cbd3d02)
+![image](https://github.com/user-attachments/assets/75ae6b6c-ed58-4d64-ad3b-13a0ed028e3c)
 
 ![image](https://github.com/user-attachments/assets/6997988b-1221-412c-a212-7960eab6584b)
 
-![image](https://github.com/user-attachments/assets/fbe88f17-c47d-41a5-95f2-03fc0464d487)
+![image](https://github.com/user-attachments/assets/4d2a7f8d-77ed-4dab-ac19-fdbb5a8df7e1)
 
 ![image](https://github.com/user-attachments/assets/f4bb51ac-8c79-427d-8ec7-90c8cd563479)
 
-![image](https://github.com/user-attachments/assets/f6714b09-85d7-4bf3-b5a5-efc4f9ec5ba5)
+![image](https://github.com/user-attachments/assets/227ab8e0-4ffb-499e-a87e-44f0ab0f8e04)
 
-![image](https://github.com/user-attachments/assets/175f0fed-54c3-4584-a770-f5b19dcd8e37)
+![image](https://github.com/user-attachments/assets/3bf53ec2-8fb6-4cec-9dc2-ea0a831a96ec)
 
-![image](https://github.com/user-attachments/assets/174e52b4-1511-45db-8363-593babd6fcd7)
+![image](https://github.com/user-attachments/assets/49b6705e-9cf1-4b3a-ac0f-bbeb12c7e10e)
 
 ![image](https://github.com/user-attachments/assets/e5441a34-f355-4daa-b5fd-ba5e87f828b7)
 
