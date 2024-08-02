@@ -295,13 +295,13 @@ Use the `Entity ID`, `Portal (Sign On) URL` and `Single Logout Service (SLS) URL
 
 ![image](https://github.com/user-attachments/assets/188393b4-6f94-47c5-8005-ef1ccde092e8)
 
-![image](https://github.com/user-attachments/assets/2c43c2fd-38d7-422f-a75b-a7a316b946ec)
+![image](https://github.com/user-attachments/assets/e6716f14-fd14-4720-833e-1e3a6f9b2698)
 
 > [!Note]
 >
 > The auto-provision rule automatically creates the SSO user if it doesn't already exist
 > 
-> ![image](https://github.com/user-attachments/assets/73864e10-fa47-499e-849f-19ec728ab7a5)
+> ![image](https://github.com/user-attachments/assets/b1e1026f-ee93-4594-92b6-70318a96cd9d)
 
 > [!Note]
 >
