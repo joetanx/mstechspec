@@ -154,7 +154,7 @@ Use the `SP Entity ID` and `SP ACS (login) URL` values copied from the previous 
 
 Note the `identifier` value created:
 
-![image](https://github.com/user-attachments/assets/487fbb3c-d283-4d12-9e8d-4bd33bc32d85)
+![image](https://github.com/user-attachments/assets/1025edb0-433e-46ac-a896-a2cb07fed3d4)
 
 ### A.2.2. Configure IdP on FortiGate
 
@@ -219,7 +219,7 @@ Use the `SP Entity ID` and `SP ACS (login) URL` values copied from the previous 
 
 Note the `identifier` value created:
 
-![image](https://github.com/user-attachments/assets/58efb23c-74a5-46fd-8bd3-c6f984951a91)
+![image](https://github.com/user-attachments/assets/b7007ada-d8af-4c55-9272-db4dd0125d05)
 
 ### A.3.2. Configure IdP on FortiGate
 
@@ -231,7 +231,7 @@ Select `Fortinet Product` and enter:
 - `Certificate` - the SAML signing certificate (e.g. [here](#62-enable-saml-idp-portal))
 - Also note that the `Attribute used to identify users` corresponds to the `Assertion Attributes` configured on FortiAuthenticator
 
-![image](https://github.com/user-attachments/assets/ffb199a7-6619-4dfd-bab7-08ac578f3183)
+![image](https://github.com/user-attachments/assets/6f979b7b-fd32-47dd-be0f-03c5a04c1438)
 
 > [!Tip]
 >
@@ -251,7 +251,7 @@ Use the `Entity ID`, `Assertion consumer service URL` and `Single logout service
 
 Note the `identifier` value created:
 
-![image](https://github.com/user-attachments/assets/94161a9d-3fc5-4136-99b3-16bdd92bd641)
+![image](https://github.com/user-attachments/assets/7872c55a-81e6-40d9-bdcc-af066e89e405)
 
 ### A.4.2. Configure IdP on FortiPAM
 
@@ -261,7 +261,7 @@ Note the `identifier` value created:
 
 ![image](https://github.com/user-attachments/assets/27162010-9999-4684-a38c-48cc3aa4d957)
 
-![image](https://github.com/user-attachments/assets/c11ec35c-7589-43ad-925b-b5f3d5326d2a)
+![image](https://github.com/user-attachments/assets/26fe7efd-8fae-4811-9475-5507be94216e)
 
 > [!Tip]
 >
@@ -287,13 +287,13 @@ Use the `Entity ID`, `Portal (Sign On) URL` and `Single Logout Service (SLS) URL
 
 ![image](https://github.com/user-attachments/assets/3d1e48e2-2c18-40aa-960d-1cac82a8d01b)
 
-![image](https://github.com/user-attachments/assets/3ec4e902-e963-461b-9c01-b7a9ca6af972)
+![image](https://github.com/user-attachments/assets/25168377-db37-4ead-8629-c45bf1743a49)
 
-![image](https://github.com/user-attachments/assets/b61fea75-1840-4558-b42e-c3a4b78a134e)
+![image](https://github.com/user-attachments/assets/df0a77a2-1c46-47e0-8025-b67877af79f5)
 
 ![image](https://github.com/user-attachments/assets/bcd4314b-f5b1-4fd4-9c3b-7f0911008bd8)
 
-![image](https://github.com/user-attachments/assets/c99cb904-2e50-4ae0-80c3-bb851884cb4c)
+![image](https://github.com/user-attachments/assets/188393b4-6f94-47c5-8005-ef1ccde092e8)
 
 ![image](https://github.com/user-attachments/assets/2c43c2fd-38d7-422f-a75b-a7a316b946ec)
 
