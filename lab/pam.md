@@ -113,7 +113,7 @@ Connection to pam.net.vx closed.
 
 ### 2.1. Email server settings
 
-![image](https://github.com/user-attachments/assets/cc726fa6-b3d5-4132-98bb-26d63a1c60bd)
+![image](https://github.com/user-attachments/assets/85798ccc-bb4e-4d6e-bfda-2862c90cdb64)
 
 ![image](https://github.com/user-attachments/assets/a3da8af5-c732-4485-b39d-53bfcadb57e5)
 
