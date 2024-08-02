@@ -199,11 +199,11 @@ Use the `SP Entity ID` and `SP ACS (login) URL` values copied from the previous 
 
 ![image](https://github.com/user-attachments/assets/b04149b2-4f46-4760-8449-042d349969f2)
 
-![image](https://github.com/user-attachments/assets/4d36e5c1-1e9f-424f-a6aa-239bda73a35a)
+![image](https://github.com/user-attachments/assets/5ae5beec-e7d2-462e-87b1-d7e4cb6df1bc)
 
 ![image](https://github.com/user-attachments/assets/db1c585d-a947-4907-afdd-b2a963d90180)
 
-![image](https://github.com/user-attachments/assets/ec96a40c-500d-449f-a5ab-04a7ebe1fc0b)
+![image](https://github.com/user-attachments/assets/725c261e-1330-4836-87d1-70e0e6dfbc14)
 
 > [!Note]
 >
