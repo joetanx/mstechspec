@@ -188,11 +188,11 @@ Notice that only the EMS CA signed client certificate appears in the prompt.
 
 ### 5.6. Test access:
 
-![image](https://github.com/user-attachments/assets/f53cde66-d6da-4669-899c-e9bdb1101a2a)
+![image](https://github.com/user-attachments/assets/ff4f39c3-a100-46e9-abf7-0c915b9c5508)
 
 ![image](https://github.com/user-attachments/assets/2c7d7b23-2ae6-40d1-8e74-d661e0c2b651)
 
-![image](https://github.com/user-attachments/assets/53fac38c-efd8-4ebb-8c5d-daf2f94c7458)
+![image](https://github.com/user-attachments/assets/5fda8465-e248-42ba-89ef-045e83e045c8)
 
 ![image](https://github.com/user-attachments/assets/7a441fea-878f-4bf4-9c4e-d13be4f9e1e4)
 
@@ -238,11 +238,11 @@ Test connection:
 
 ![image](https://github.com/user-attachments/assets/abba0ec2-c0d5-4a2a-aca3-236c3e3c41d1)
 
-![image](https://github.com/user-attachments/assets/e83c57e0-9b7d-4476-9812-eba3a885b48d)
+![image](https://github.com/user-attachments/assets/06445155-d141-4683-a8f2-d37de16714d9)
 
-![image](https://github.com/user-attachments/assets/0396f4da-4268-4df9-a9f5-883c2ab2e66d)
+![image](https://github.com/user-attachments/assets/931e2d58-8d60-4772-8e70-fac683b90960)
 
-![image](https://github.com/user-attachments/assets/1010c919-fc51-49ee-9fb7-6b0ebd5cb7d8)
+![image](https://github.com/user-attachments/assets/df8207fc-ab80-45a6-8780-97f975bbc4c0)
 
 ![image](https://github.com/user-attachments/assets/47ceb4af-426a-4535-9243-b90e2bb72007)
 
