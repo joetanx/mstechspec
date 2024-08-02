@@ -190,9 +190,11 @@ Notice that only the EMS CA signed client certificate appears in the prompt.
 
 ![image](https://github.com/user-attachments/assets/ff4f39c3-a100-46e9-abf7-0c915b9c5508)
 
+![image](https://github.com/user-attachments/assets/8fbee610-6ede-4995-8353-e40168e74e68)
+
 ![image](https://github.com/user-attachments/assets/2c7d7b23-2ae6-40d1-8e74-d661e0c2b651)
 
-![image](https://github.com/user-attachments/assets/5fda8465-e248-42ba-89ef-045e83e045c8)
+![image](https://github.com/user-attachments/assets/b2fba478-4e62-46ba-8c5b-2d691d79a95c)
 
 ![image](https://github.com/user-attachments/assets/7a441fea-878f-4bf4-9c4e-d13be4f9e1e4)
 
@@ -238,7 +240,7 @@ Test connection:
 
 ![image](https://github.com/user-attachments/assets/abba0ec2-c0d5-4a2a-aca3-236c3e3c41d1)
 
-![image](https://github.com/user-attachments/assets/06445155-d141-4683-a8f2-d37de16714d9)
+![image](https://github.com/user-attachments/assets/6b9a62f9-2f09-4edd-a358-85c16117308f)
 
 ![image](https://github.com/user-attachments/assets/931e2d58-8d60-4772-8e70-fac683b90960)
 
