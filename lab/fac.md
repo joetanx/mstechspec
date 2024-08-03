@@ -389,7 +389,7 @@ gitlab_rails['omniauth_providers'] = [
 
 FortiAuthenticator IdP-initiated login URL: `https://<fac-fqdn>/saml-idp/portal/`
 
-![image](https://github.com/user-attachments/assets/07c0e41e-1aab-4950-9ed2-f036bcf272cc)
+![image](https://github.com/user-attachments/assets/f0f2b2bc-b5c0-44bc-ac93-7796e04b63c0)
 
 #### A.5.4.3. Verify automatically created user:
 
