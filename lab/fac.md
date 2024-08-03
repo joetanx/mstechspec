@@ -308,3 +308,96 @@ Use the `Entity ID`, `Portal (Sign On) URL` and `Single Logout Service (SLS) URL
 > A username can only use one authentication method. If a user is already provisioned under another authentication method (e.g. LDAP), login is not allowed using other methods
 > 
 > ![image](https://github.com/user-attachments/assets/487e4553-0b88-462d-a67f-18d9abd69c19)
+
+## A.5. GitLab
+
+### A.5.1. Create SP on FortiAuthenticator
+
+GitLab supports IdP initiated login. The relay state URL is the same as the assertion consumer service (ACS) URL: `https://<gitlab-fqdn>/users/auth/saml/callback`
+
+SAML claim mapping (assertion attributes):
+
+|SAML attribute|User attribute|
+|---|---|
+|`email`|`Email`|
+|`name`|`displayName`|
+|`first_name`|`First Name`|
+|`last_name`|`Last Name`|
+
+Note the `IdP single sign-on URL` value, which is based on the `identifier` created:
+
+![image](https://github.com/user-attachments/assets/0dcb143c-f884-41c7-94a6-a3f5a15ab8a2)
+
+### A.5.2. Configure IdP on GitLab
+
+Ref: https://docs.gitlab.com/ee/integration/saml.html
+
+Edit `/etc/gitlab/gitlab.rb` with the following:
+
+|Parameter|Value|Remarks|
+|---|---|---|
+|idp_cert_fingerprint|`<certificate-sha1-fingerprint>`|Retrieve from FAC, e.g. `openssl s_client -connect <fac-fqdn>:443 -showcerts < /dev/null | openssl x509 -noout -fingerprint`|
+|idp_sso_target_url|`https://<fac-fqdn>/saml-idp/gitlab/login/`|`IdP single sign-on URL` value from earlier SP creation|
+|issuer|`https://<gitlab-fqdn>/`|a.k.a. `Entity ID` of the SP|
+
+```rb
+gitlab_rails['omniauth_allow_single_sign_on'] = ['saml']
+gitlab_rails['omniauth_block_auto_created_users'] = false
+
+gitlab_rails['omniauth_providers'] = [
+  {
+    name: "saml",
+    label: "FortiAuthenticator", # optional label for login button, defaults to "Saml"
+    args: {
+      assertion_consumer_service_url: "https://gitlab.net.vx/users/auth/saml/callback",
+      idp_cert_fingerprint: "58:ef:41:5e:c8:ef:95:bb:d4:fb:af:b0:97:51:a6:c9:a6:d9:b1:e7",
+      idp_sso_target_url: "https://fac.net.vx/saml-idp/gitlab/login/",
+      issuer: "https://gitlab.net.vx/",
+      name_identifier_format: "urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"
+    }
+  }
+]
+```
+
+[Reconfigure GitLab](https://docs.gitlab.com/ee/administration/restart_gitlab.html#reconfigure-a-linux-package-installation) using the `gitlab-ctl reconfigure` command
+
+> [!Note]
+>
+> The SP metadata of GitLab is available at: `https://<gitlab-fqdn>/users/auth/saml/metadata`
+
+### A.5.3. Complete the SP configuration on FortiAuthenticator
+
+![image](https://github.com/user-attachments/assets/ab754ea9-f5d6-47d0-9c92-71d43e19df03)
+
+### A.5.4. Test login
+
+#### A.5.4.1. SP-initiated login
+
+![image](https://github.com/user-attachments/assets/99559378-7b51-4665-868f-3396aa1b02ae)
+
+![image](https://github.com/user-attachments/assets/a1bc21df-a1e9-404f-804f-a50a45458eaf)
+
+![image](https://github.com/user-attachments/assets/a30f6108-d96e-42dd-b6b8-5a9a85154d7d)
+
+![image](https://github.com/user-attachments/assets/dca17e9c-4edd-4b5c-a572-384570aa415e)
+
+![image](https://github.com/user-attachments/assets/a3e4a839-ea93-4eb6-9eb8-fe96702978ad)
+
+![image](https://github.com/user-attachments/assets/1dcb0262-1eda-4db9-9b67-2f30421be16e)
+
+#### A.5.4.2. IdP-initiated login
+
+FortiAuthenticator IdP-initiated login URL: `https://<fac-fqdn>/saml-idp/portal/`
+
+![image](https://github.com/user-attachments/assets/07c0e41e-1aab-4950-9ed2-f036bcf272cc)
+
+#### A.5.4.3. Verify automatically created user:
+
+![image](https://github.com/user-attachments/assets/749a0e7e-1ad9-4fa9-ae36-bb0fb2a76c79)
+
+#### A.5.4.4. Common error: `Email can't be blank`
+
+![image](https://github.com/user-attachments/assets/6bb76f63-df3d-45b4-8276-60207ff61447)
+
+- User that is logging in does not have an email configured
+- The email SAML claim mapping is not configured correctly
