@@ -473,6 +473,8 @@ Use the `SP Entity ID` and `SP ACS (login) URL` values copied from the previous 
 
 ![image](https://github.com/user-attachments/assets/2beb8787-5079-40c8-adf8-988140d7cceb)
 
+![image](https://github.com/user-attachments/assets/f7f07b1a-e814-4d53-ae7a-4be3eb842087)
+
 #### A.6.4.2. IdP-initiated login
 
 FortiAuthenticator IdP-initiated login URL: `https://<fac-fqdn>/saml-idp/portal/`
@@ -482,3 +484,5 @@ FortiAuthenticator IdP-initiated login URL: `https://<fac-fqdn>/saml-idp/portal/
 #### A.6.4.3. Verify automatically created user
 
 ![image](https://github.com/user-attachments/assets/cedd67f6-490a-483e-ae94-3d6eee4d7e01)
+
+![image](https://github.com/user-attachments/assets/f1186e99-1b61-40f7-ba6d-b590bb04572f)
