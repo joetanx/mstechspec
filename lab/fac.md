@@ -392,7 +392,7 @@ FortiAuthenticator IdP-initiated login URL: `https://<fac-fqdn>/saml-idp/portal/
 
 ![image](https://github.com/user-attachments/assets/f0f2b2bc-b5c0-44bc-ac93-7796e04b63c0)
 
-#### A.5.4.3. Verify automatically created user:
+#### A.5.4.3. Verify automatically created user
 
 ![image](https://github.com/user-attachments/assets/749a0e7e-1ad9-4fa9-ae36-bb0fb2a76c79)
 
@@ -458,3 +458,27 @@ Copy the `Entity ID`, `ACS URL` and `Logout POST URL` values:
 Use the `SP Entity ID` and `SP ACS (login) URL` values copied from the previous FortiSOAR configuration step:
 
 ![image](https://github.com/user-attachments/assets/98a61693-09f9-44e5-847c-dd2fbc822ed0)
+
+### A.6.4. Test login
+
+#### A.6.4.1. SP-initiated login
+
+![image](https://github.com/user-attachments/assets/5b6fe9ff-ef64-4c2d-878d-00de22af0f04)
+
+![image](https://github.com/user-attachments/assets/95498949-9fb0-4109-abd6-92be4533bf2c)
+
+![image](https://github.com/user-attachments/assets/d9320851-4bca-47fd-80a6-381dcf2ac7e5)
+
+![image](https://github.com/user-attachments/assets/96302869-4f38-4eda-be1a-d22660552bf0)
+
+![image](https://github.com/user-attachments/assets/2beb8787-5079-40c8-adf8-988140d7cceb)
+
+#### A.6.4.2. IdP-initiated login
+
+FortiAuthenticator IdP-initiated login URL: `https://<fac-fqdn>/saml-idp/portal/`
+
+![image](https://github.com/user-attachments/assets/c64c88bf-92bd-4d9d-b125-5baa6c3930aa)
+
+#### A.6.4.3. Verify automatically created user
+
+![image](https://github.com/user-attachments/assets/cedd67f6-490a-483e-ae94-3d6eee4d7e01)
