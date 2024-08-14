@@ -1,5 +1,14 @@
 ## 1. Initial Setup
 
+> [!Note]
+>
+> Default password for first login to FortiSOAR using `csadmin` is `changeme`.
+>
+> After first login, a password change is mandated
+> 
+> ![image](https://github.com/user-attachments/assets/145bd9fe-9802-48d5-a487-692f77c0f426)
+
+
 ![image](https://github.com/user-attachments/assets/cfd1832c-a780-4b31-85c9-071fa882a7ae)
 
 ### 1.1. Setup SMTP connector
