@@ -132,11 +132,12 @@ Copy the `IdP Entity ID` and `IdP single sign-on URL` values:
 
 ### A.1.2. Configure IdP on EMS
 
-Use the `IdP Entity ID` and `IdP single sign-on URL` values copied from the previous SP creation step:
+|   |   |
+|---|---|
+|Identity Provider Settings|Use the `IdP Entity ID` and `IdP single sign-on URL` values copied from the previous SP creation step.|
+|Service Provider Settings|Copy the `SP Entity ID` and `SP ACS (login) URL` values|
 
 ![image](https://github.com/user-attachments/assets/e1269f29-962d-4552-afb3-757e1d0ef70b)
-
-Copy the `SP Entity ID` and `SP ACS (login) URL` values:
 
 ![image](https://github.com/user-attachments/assets/5545831d-e1af-4e0f-8544-5ff736b1de20)
 
@@ -401,3 +402,59 @@ FortiAuthenticator IdP-initiated login URL: `https://<fac-fqdn>/saml-idp/portal/
 
 - User that is logging in does not have an email configured
 - The email SAML claim mapping is not configured correctly
+
+## A.6. FortiSOAR
+
+### A.6.1. Create SP on FortiAuthenticator
+
+FortiSOAR supports IdP initiated login. The relay state URL is the same as the assertion consumer service (ACS) URL: `https://<fortisoar-fqdn>/api/public/saml/login`
+
+SAML claim mapping (assertion attributes):
+
+|SAML attribute|User attribute|
+|---|---|
+|`Email`|`Email`|
+|`Roles`|`Group`|
+|`First Name`|`First Name`|
+|`Last Name`|`Last Name`|
+
+Note the `IdP single sign-on URL` value, which is based on the `identifier` created:
+
+![image](https://github.com/user-attachments/assets/7d40dbc8-f50b-4c23-a7dd-1231b8ca94f5)
+
+### A.6.2. Configure IdP on FortiSOAR
+
+#### Identity Provider Configuration
+
+- Use the `IdP Entity ID`, `IdP single sign-on URL` and `IdP single logout URL` values copied from the previous SP creation step
+- Copy the FortiAuthenticator SAML IdP certificate base64-encoded text (Omit `-----BEGIN CERTIFICATE-----` and `-----END CERTIFICATE-----` lines)
+- Select `At Sign-in` under `Provision User` to automatically provision the users. Otherwise, the user needs to be manually pre-created before signning in
+- Select `Sync All Attributes` under `IdP User Attribute Sync` to automatically populate the attributes in the SAML claims into FortiSOAR user details
+
+![image](https://github.com/user-attachments/assets/cf2a1091-1cf4-4996-9fc5-5a0bf98baa42)
+
+#### Service Provider
+
+Copy the `Entity ID`, `ACS URL` and `Logout POST URL` values:
+
+![image](https://github.com/user-attachments/assets/c65feffb-30e7-4fed-8d3e-e8c891c7fbae)
+
+#### Team and Role Mapping
+
+![image](https://github.com/user-attachments/assets/a7bf617d-7003-4734-8dab-0681072f3db9)
+
+![image](https://github.com/user-attachments/assets/aedbb276-e19e-4f13-bf80-73de5e584b60)
+
+![image](https://github.com/user-attachments/assets/f3cf0454-1433-45e1-a79d-1a0632b2acc3)
+
+![image](https://github.com/user-attachments/assets/443d45a3-006c-4281-b4d8-1e82407c4c97)
+
+![image](https://github.com/user-attachments/assets/2db70c79-c124-4483-8530-eab328ed45f3)
+
+![image](https://github.com/user-attachments/assets/b0bff95c-887e-4c02-8c63-ddf759b24d82)
+
+### A.6.3. Complete the SP configuration on FortiAuthenticator
+
+Use the `SP Entity ID` and `SP ACS (login) URL` values copied from the previous FortiSOAR configuration step:
+
+![image](https://github.com/user-attachments/assets/98a61693-09f9-44e5-847c-dd2fbc822ed0)
