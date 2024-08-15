@@ -78,3 +78,27 @@
 ![image](https://github.com/user-attachments/assets/e5061ddd-afb6-4f3c-96d7-81a79d0221ef)
 
 ![image](https://github.com/user-attachments/assets/537ee3aa-084b-4732-9265-cd6c1ca0c474)
+
+### 1.4. Configure miscellaneous connectors
+
+#### 1.4.1. FortiGuard threat intelligence
+
+![image](https://github.com/user-attachments/assets/11942352-8622-4d68-8bcd-0c011497e266)
+
+#### 1.4.2. VirusTotal
+
+![image](https://github.com/user-attachments/assets/35596baa-702d-4615-ba1d-3f34ec9898c8)
+
+#### 1.4.3. IP quality score
+
+![image](https://github.com/user-attachments/assets/691a2c34-9d02-41ed-8f2d-9fbc9f53c982)
+
+#### 1.4.4. FortiSIEM
+
+![image](https://github.com/user-attachments/assets/77b9b72b-cf5a-45a6-b404-cecf22e0e294)
+
+#### 1.4.5. Code snippet
+
+Modules to import: `dns,pandas,numpy,json,re,csv,arrow`
+
+![image](https://github.com/user-attachments/assets/fe7b144b-7894-4ee4-b265-cc2134a5cc5b)
