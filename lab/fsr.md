@@ -102,3 +102,11 @@
 Modules to import: `dns,pandas,numpy,json,re,csv,arrow`
 
 ![image](https://github.com/user-attachments/assets/fe7b144b-7894-4ee4-b265-cc2134a5cc5b)
+
+#### 1.4.6. SLA Management
+
+> [!Tip]
+>
+> The `SLA Templates` module is move to the `SLA Management` solution pack for 7.6.0
+
+![image](https://github.com/user-attachments/assets/b31e9239-18a9-49bc-8eef-7c300d2a88e9)
