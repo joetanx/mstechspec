@@ -10,7 +10,7 @@
 |**WAAP and CNAPP**|
 |Magic Quadrant for Cloud WAAP 2022|https://www.techcity.cloud/information/gartner-magic-quadrant-for-cloud-web-application-and-api-protection/|
 |Market Guide for Cloud WAAP 2023|https://www.gartner.com/doc/reprints?id=1-2G5WIWUG&ct=240105&st=sb|
-|Market Guide for CNAPP 2023|https://www.gartner.com/doc/reprints?id=1-2CYRBHBR&ct=230317|
+|Market Guide for CNAPP 2024|https://www.gartner.com/doc/reprints?id=1-2IIVY3JL&ct=240815|
 |**SecOps**|
 |Critical Capabilities for SIEM 2024|https://www.gartner.com/doc/reprints?id=1-2HXU226Z&ct=240626|
 |Magic Quadrant for SIEM 2024|https://www.gartner.com/doc/reprints?id=1-2HI8DCZY&ct=240508|
