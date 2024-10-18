@@ -4,8 +4,10 @@
 |---|--|
 |**Firewall and SASE**|
 |Magic Quadrant for Network Firewalls 2022|https://www.gartner.com/doc/reprints?id=1-2C2Q9662&ct=221222|
-|Magic Quadrant for Single-Vendor SASE 2023|https://www.gartner.com/doc/reprints?id=1-2EQ0YMTZ&ct=230816|
+|Magic Quadrant for Security Service Edge 2024|https://www.gartner.com/doc/reprints?id=1-2HBZK5EC&ct=240418|
+|Magic Quadrant for Single-Vendor SASE 2024|https://www.gartner.com/doc/reprints?id=1-2I1ER8SK&ct=240708|
 |2024 Strategic Roadmap for SASE Convergence|https://www.gartner.com/doc/reprints?id=1-2G2V1C8T&ct=231229|
+|Magic Quadrant for SD-WAN 2024|https://www.gartner.com/doc/reprints?id=1-2IZEH6Z3&ct=241004|
 |Magic Quadrant for Endpoint Protection Platforms 2024|https://www.gartner.com/doc/reprints?id=1-2IUO6CWY&ct=240920|
 |**WAAP and CNAPP**|
 |Magic Quadrant for Cloud WAAP 2022|https://www.techcity.cloud/information/gartner-magic-quadrant-for-cloud-web-application-and-api-protection/|
