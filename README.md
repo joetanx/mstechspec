@@ -19,3 +19,4 @@
 |Magic Quadrant for SIEM 2024|https://www.gartner.com/doc/reprints?id=1-2HI8DCZY&ct=240508|
 |Market Guide for SOAR 2023|https://www.gartner.com/doc/reprints?id=1-2E78ER5R&ct=230620|
 |Market Guide for XDR 2023|https://www.gartner.com/doc/reprints?id=1-2EOYTQA6&ct=230811|
+|The Forrester Wave™: XDR Platforms, Q2 2024|https://reprints2.forrester.com/#/assets/2/108/RES180824/report|
