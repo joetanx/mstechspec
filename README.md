@@ -14,6 +14,7 @@
 |Market Guide for Cloud WAAP 2023|https://www.gartner.com/doc/reprints?id=1-2G5WIWUG&ct=240105&st=sb|
 |Market Guide for CNAPP 2024|https://www.gartner.com/doc/reprints?id=1-2IIVY3JL&ct=240815|
 |KuppingerCole Leadership Compass for CNAPP 2024|https://www.kuppingercole.com/reprints/55c95b651cd5f33eef490cf053f9810a|
+|The Forrester Wave™: Cloud Workload Security, Q1 2024|https://reprints2.forrester.com/#/assets/2/482/RES180426/report|
 |**SecOps**|
 |Critical Capabilities for SIEM 2024|https://www.gartner.com/doc/reprints?id=1-2HXU226Z&ct=240626|
 |Magic Quadrant for SIEM 2024|https://www.gartner.com/doc/reprints?id=1-2HI8DCZY&ct=240508|
