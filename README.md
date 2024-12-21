@@ -21,5 +21,7 @@
 |Magic Quadrant for SIEM 2024|https://www.gartner.com/doc/reprints?id=1-2HI8DCZY&ct=240508|
 |Market Guide for SOAR 2023|https://www.gartner.com/doc/reprints?id=1-2E97S57A&ct=230623|
 |KuppingerCole Leadership Compass for SOAR 2024|https://www.kuppingercole.com/reprints/c07e2447200fc3ff935536b41591ff84|
-|Market Guide for XDR 2023|https://www.gartner.com/doc/reprints?id=1-2EOYTQA6&ct=230811|
+|Market Guide for NDR 2024|https://www.gartner.com/doc/reprints?id=1-2HLTTN4S&ct=240520|
+|Market Guide for XDR 2024|https://www.gartner.com/doc/reprints?id=1-2JC6NJJC&ct=241112|
 |The Forrester Wave™: XDR Platforms, Q2 2024|https://reprints2.forrester.com/#/assets/2/108/RES180824/report|
+|Market Guide for DFIR 2024|https://www.gartner.com/doc/reprints?id=1-2HVUGEJI&ct=240620|
