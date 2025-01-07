@@ -171,15 +171,55 @@ https://learn.microsoft.com/en-us/azure/sentinel/automation/automation
 
 ### 4.1. Microsoft Defender for IoT
 
-CyberX
+From CyberX acquisition
+
+![image](https://github.com/user-attachments/assets/af6f97c8-f999-4896-8c84-4985da0483ff)
+
+- **Agentless monitoring**: It does not require any software installation or configuration on IoT devices, which reduces the risk of performance or compatibility issues
+- **Behavioral analytics**: It uses ML and AI to analyze the normal behavior of IoT devices and networks and detect any anomalies or deviations that indicate a potential attack
+- **Automated response**: It can automatically block or isolate malicious devices, or trigger alerts and actions in other security tools, such as firewalls, SIEMs, or ticketing systems
+- **Cloud scalability**: It can scale up or down according to the size and complexity of the IoT environment
+- **Integrations**: It has native integrations with Microsoft Security solutions such as Microsoft Defender XDR and Microsoft Sentinel
 
 ### 4.2. External Attack Surface Management (EASM)
 
-RiskIQ
+From RiskIQ acquisition
+
+- Discover and monitor the external attack surface and prioritize the remediation of vulnerabilities.
+- Scans the internet for assets that belong to or are associated with an organization, such as domains, IP addresses, certificates, web servers, and cloud services.
+- Analyzes these assets for vulnerabilities, misconfigurations, and other risks that could be exploited by attackers.
+- Native integration with Azure Log Analytics and Azure Data Explorer, which allows organizations to leverage EASM data in Sentinel.
+  - Flexibility to choose between migrating asset data, attack surface insights, or both data types.
+    - Asset data offers comprehensive details about the entire inventory
+    - Attack surface insights deliver actionable information through Defender EASM dashboards
 
 ### 4.3. Microsoft Defender Threat Intelligence (MDTI)
 
+- Collects and analyzes data from millions of sources, including Microsoft’s own products and services, third-party vendors, open source platforms, and partner networks
+- Uses advanced algorithms and models to identify patterns, trends, and anomalies in the threat landscape, and to prioritize the most relevant and urgent threats for each organization
+- Provides customized and contextualized intelligence reports, alerts, and recommendations that are tailored to the specific needs and preferences of each organization.
+- Enables organizations to automate and orchestrate their threat response and remediation processes, using built-in tools and integrations with other Microsoft security solutions
 
+### 4.4. Microsoft Security Copilot
 
-### 4.4. Microsoft Copilot for Security
+![image](https://github.com/user-attachments/assets/ce1ed693-481a-4a0a-9c45-6a93f4d82470)
 
+https://learn.microsoft.com/en-us/copilot/security/microsoft-security-copilot#security-copilot-primary-use-cases
+
+- **Analyze scripts and codes**
+
+  Many sophisticated attacks (such as ransomware) contain scripts or code that can be very difficult to evaluate. Copilot for Security provides script analysis capability to support analysis.
+
+- **Use guided responses**
+
+  The guided response during investigation provides recommended actions for analysts during investigation. This process is powered by AI and helps analysts  decide how to proceed with incident triaging, investigation, remediation, and containment.
+
+- **Generate KQL queries**
+  - **Advanced Hunting** is one of the Microsoft Defender XDR core features and provides two options to create queries:
+    - Manually in the editor (for advanced users)
+    - Using the query builder to get more guidance on the creation process
+  - Copilot for Security helps with this area as well. The security analyst can ask Copilot for Security to create a KQL query using their natural language, which reduces the barrier for people who are not so familiar with KQL.
+
+- **Create incident reports**
+  - In SOC teams, creating reports about incidents is one of the core tasks undertaken on a regular basis. Copilot for Security assists with writing incident reports more efficiently.
+  - While an incident summary describes how the incident occurred and provides an overview of it, an incident report aggregates information from diverse data sources within **Microsoft Sentinel and Microsoft Defender XDR**. It encompasses both analyst-initiated procedures and automated actions, providing a comprehensive overview of the incident.
