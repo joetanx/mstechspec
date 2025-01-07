@@ -78,6 +78,19 @@ Provides real-time detection and response to modern threats across your cloud wo
 
 The integrated experience with Microsoft 365 Defender and [Sentinel](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-sentinel) enables a comprehensive detection and response solution for a modern security operations center.
 
+CWP uses Azure Monitoring Agent (AMA) to collect data in hybrid and multi-cloud scenarios:
+- Defender for Servers:
+  - Azure Arc agent (for multi-cloud and on-premises servers)
+  - MDE vulnerability assessment
+  - AMA or Log Analytics agent
+- Defender for SQL servers on machines:
+  - Azure Arc agent (for multi-cloud and on-premises servers)
+  - AMA or Log Analytics agent
+  - Automatic SQL server discovery and registration
+- Defender for Containers:
+  - Azure Arc agent (for multi-cloud and on-premises servers)
+  - Defender profile, Azure Policy Extension, Kubernetes audit log data
+
 ### 2.3. Unified DevOps security management
 
 [Microsoft Defender for DevOps](https://www.microsoft.com/security/business/cloud-security/microsoft-defender-devops) in MDC empowers security teams to unify, strengthen, and manage multipipeline DevOps security, shift security left, and enable **code-to-cloud** protections in a central console.
@@ -101,6 +114,58 @@ MDC integrates with Permissions Management, enabling security teams to get unifi
 SIEM and SOAR
 
 ![image](https://github.com/user-attachments/assets/84f89e01-3b92-43a1-9967-aea601a5e217)
+
+### 3.1. Content
+
+Content and solutions support types:
+- Microsoft-supported
+- Partner-supported
+- Community-supported
+
+|Content Type|Description|
+|---|---|
+|[Data connectors](https://learn.microsoft.com/en-us/azure/sentinel/connect-data-sources)|Provide log ingestion from different sources into Microsoft Sentinel|
+|[Parsers](https://learn.microsoft.com/en-us/azure/sentinel/normalization-about-parsers)|Provide log formatting/transformation into [Advanced Security Information Model (ASIM)](https://learn.microsoft.com/en-us/azure/sentinel/normalization) formats, supporting usage across various Microsoft Sentinel content types and scenarios|
+|[Workbooks](https://learn.microsoft.com/en-us/azure/sentinel/get-visibility)|Provide monitoring, visualization, and interactivity with data in Microsoft Sentinel, highlighting meaningful insights for users|
+|[Analytics rules](https://learn.microsoft.com/en-us/azure/sentinel/detect-threats-built-in)|Provide alerts that point to relevant SOC actions via incidents|
+|[Hunting queries](https://learn.microsoft.com/en-us/azure/sentinel/hunting)|Used by SOC teams to proactively hunt for threats in Microsoft Sentinel|
+|[Notebooks](https://learn.microsoft.com/en-us/azure/sentinel/notebooks)|Help SOC teams use advanced hunting features in Jupyter and Azure Notebooks|
+|[Watchlists](https://learn.microsoft.com/en-us/azure/sentinel/watchlists)|Support the ingestion of specific data for enhanced threat detection and reduced alert fatigue|
+|[Playbooks and Azure Logic Apps custom connectors](https://learn.microsoft.com/en-us/azure/sentinel/automate-responses-with-playbooks)|Provide features for automated investigation, remediation, and response scenarios in Microsoft Sentinel|
+
+### 3.2. SOAR
+
+Sentinel SOAR is organized into two distinct layers – automation and playbooks:
+- Automation layer enables analysts to centrally manage incident handling through automation rules
+- Sentinel playbook (built on top of Azure Logic Apps) is a collection of response and remediation actions and logic that can be executed within Microsoft Sentinel as a routine
+
+https://learn.microsoft.com/en-us/azure/sentinel/automation/automation
+
+### 3.3. Microsoft Sentinel versus Microsoft Defender XDR
+
+- **Data ingestion**:
+  - Sentinel: configure data collection based on your needs and ingest data from Azure, multi-cloud environments, on-premises, and so on.
+  - XDR: receive data mainly from Defender solutions: MDE, MDO, MDA, MDI, and MDC, as well as Entra ID Protection.
+- **Threat detection and investigation**:
+  - Both solutions provide advanced capabilities for threat detection.
+  - The major difference: Sentinel’s wider support for Azure and third-party data sources including the Fusion detection engine (advanced multistage attack detection) → better correlations with multiple data sources.
+- **Data retention**:
+  - Maximum data retention:
+    - XDR: 180 days
+    - Sentinel: up to 12 years.
+  - Sentinel, or the underlying Azure Log Analytics, is not the ideal place for long-term storage of logs. The Azure Monitor data retention and archive or Azure Data Explorer are better suited for long-term retention.
+- **Automation**:
+  - XDR: AIR capabilities for MDE, MDO, and MDI (and for MDA with custom policies)
+  - Sentinel: wide range of automation capabilities (SOAR). This is established in two layers: the automation layer and custom playbooks that are built on top of Azure Logic Apps.
+- **Advanced UEBA capabilities**:
+  - XDR: UEBA capabilities from MDA and MDI
+  - Sentinel: advanced UEBA capabilities; UEBA raw data is also available for threat hunting or investigation.
+- **Threat hunting**:
+  - XDR: data from MDE, MDO, MDI, MDA and Entra ID only, but has advanced hunting that can be used in two different ways: building KQL queries from scratch or with the query builder, which is helpful if the user is not an expert in creating KQL queries.
+  - Sentinel: can ingest data from third-party data sources, and has Jupyter Notebook integration for advanced scenarios.
+- **Threat intelligence (TI)**:
+  - XDR: TI capabilities are out-of-the-box features and it provides information on the Threat Analytics dashboard and uses it when analyzing threats.
+  - Sentinel: can ingest data from various TI platforms. In addition, Microsoft Defender TI can be ingested for free, even if your organization didn’t purchase the Microsoft Defender TI solution.
 
 ## 4. Others
 
