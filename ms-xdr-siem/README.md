@@ -223,3 +223,19 @@ https://learn.microsoft.com/en-us/copilot/security/microsoft-security-copilot#se
 - **Create incident reports**
   - In SOC teams, creating reports about incidents is one of the core tasks undertaken on a regular basis. Copilot for Security assists with writing incident reports more efficiently.
   - While an incident summary describes how the incident occurred and provides an overview of it, an incident report aggregates information from diverse data sources within **Microsoft Sentinel and Microsoft Defender XDR**. It encompasses both analyst-initiated procedures and automated actions, providing a comprehensive overview of the incident.
+
+## 5. Reference architectures
+
+### 5.1. Security Operations
+
+![image](security-operations.svg)
+
+### 5.2. Attack Chain
+
+![image](attack-chain.svg)
+
+### 5.3. OT Security
+
+Apply zero trust principles to securing OT and industrial IoT environments
+
+![image](operational-technology.svg)
