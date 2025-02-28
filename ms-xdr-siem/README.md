@@ -115,7 +115,7 @@ SIEM and SOAR
 
 ![image](https://github.com/user-attachments/assets/84f89e01-3b92-43a1-9967-aea601a5e217)
 
-### 3.1. Content
+### 3.1. Content Hub
 
 Content and solutions support types:
 - Microsoft-supported
