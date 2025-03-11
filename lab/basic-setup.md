@@ -119,3 +119,15 @@ Ref: https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-hub-spoke-nat-
 ![image](https://github.com/user-attachments/assets/ac6eb5ca-7710-4436-930c-47e6f7441f0f)
 
 ![image](https://github.com/user-attachments/assets/3f4786ac-375c-4b41-bb3a-4307ba0f3b82)
+
+![image](https://github.com/user-attachments/assets/a342c18f-a045-44c5-932f-b87bfd0b1a62)
+
+## 9. Test connection
+
+![image](https://github.com/user-attachments/assets/65b81457-4b96-4216-96f0-0ec5d19e84b7)
+
+![image](https://github.com/user-attachments/assets/d69186d7-40d5-4277-97f1-ca891512f245)
+
+![image](https://github.com/user-attachments/assets/a7458db5-4dbf-4604-89c9-aa4f4c505e7f)
+
+![image](https://github.com/user-attachments/assets/5c4c1ff7-b911-494b-8f42-af776b7ba5e5)
