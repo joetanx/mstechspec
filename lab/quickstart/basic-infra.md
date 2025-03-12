@@ -146,6 +146,8 @@ Check firewall private IP:
 
 ## 8. Create a virtual machine to test the outbound connectivity through the NAT gateway
 
+### 8.1. Ubuntu
+
 ![image](https://github.com/user-attachments/assets/3b6a23bb-b66f-4f25-842a-867bfe271b49)
 
 ![image](https://github.com/user-attachments/assets/269c2039-a9cb-4f36-9709-510003314b0c)
@@ -166,6 +168,28 @@ Check firewall private IP:
 
 ![image](https://github.com/user-attachments/assets/f81178c4-9a33-41b5-9eb2-bdf538645495)
 
+### 8.2. Windows
+
+![image](https://github.com/user-attachments/assets/34fb93c4-7c3d-435a-b0c7-fc3a972ecfa9)
+
+![image](https://github.com/user-attachments/assets/754226ec-e095-4a5c-9dda-6e66e969c782)
+
+![image](https://github.com/user-attachments/assets/5a0d9cce-fccc-4a3c-b446-1729ede55f0b)
+
+![image](https://github.com/user-attachments/assets/bc22a40b-2d13-448c-abf9-9513497f3805)
+
+![image](https://github.com/user-attachments/assets/3381f0a7-fc16-4e6d-ab26-a0857b83a4bc)
+
+![image](https://github.com/user-attachments/assets/380e3268-fb50-47c8-9d7a-bd3ba22dd544)
+
+![image](https://github.com/user-attachments/assets/722e3867-14af-41fd-a2f6-83ed5c4e19ff)
+
+![image](https://github.com/user-attachments/assets/b16eb765-0d57-4d26-a9a2-64c02f1d5694)
+
+![image](https://github.com/user-attachments/assets/117e9e58-6926-4f43-a7af-e6190ca5d706)
+
+![image](https://github.com/user-attachments/assets/fe2b69af-50bf-4cf8-bb6d-76e9ffa6562c)
+
 ## 9. Test connection
 
 ### 9.1. Check NAT gateway public IP
@@ -178,12 +202,22 @@ Check firewall private IP:
 
 ### 9.3. Connect to VM
 
-![image](https://github.com/user-attachments/assets/718c99c6-9986-4446-994f-b428ead492ae)
-
-![image](https://github.com/user-attachments/assets/ee9c090e-bf6a-4a7c-ad17-a803db98e31c)
-
 Verify that:
 1. Outbound traffic to internet uses NAT gateway
 2. SSH connection is established through bastion subnet address range
 
+#### 9.3.1. Ubuntu
+
+![image](https://github.com/user-attachments/assets/718c99c6-9986-4446-994f-b428ead492ae)
+
+![image](https://github.com/user-attachments/assets/ee9c090e-bf6a-4a7c-ad17-a803db98e31c)
+
 ![image](https://github.com/user-attachments/assets/e3747130-43c1-497d-9c4a-30f8775dc4a3)
+
+#### 9.3.2. Windows
+
+![image](https://github.com/user-attachments/assets/b3bb3aca-b809-4082-86d8-6c71df88908e)
+
+![image](https://github.com/user-attachments/assets/a451c810-201e-4770-b700-8722f8498c34)
+
+![image](https://github.com/user-attachments/assets/1b33ee0d-cf3e-42de-9269-ba68f182908d)
