@@ -146,7 +146,44 @@ Check firewall private IP:
 
 ## 8. Create a virtual machine to test the outbound connectivity through the NAT gateway
 
+![image](https://github.com/user-attachments/assets/3b6a23bb-b66f-4f25-842a-867bfe271b49)
 
+![image](https://github.com/user-attachments/assets/269c2039-a9cb-4f36-9709-510003314b0c)
+
+![image](https://github.com/user-attachments/assets/b7c1fcfb-523a-4199-af6e-8e2cdfad2442)
+
+![image](https://github.com/user-attachments/assets/affe16be-005a-42dc-9008-ee7732243938)
+
+![image](https://github.com/user-attachments/assets/1e409912-345e-4db2-9eb4-cb798c24612f)
+
+![image](https://github.com/user-attachments/assets/737118c8-6b7b-45be-9a6e-1e49599be549)
+
+![image](https://github.com/user-attachments/assets/26bccf34-d31f-4058-b81c-431dd6b942f9)
+
+![image](https://github.com/user-attachments/assets/038cee66-d313-442b-a5ac-18369ffca155)
+
+![image](https://github.com/user-attachments/assets/dfc47477-ad9b-436a-81aa-bf4bb298f362)
+
+![image](https://github.com/user-attachments/assets/f81178c4-9a33-41b5-9eb2-bdf538645495)
 
 ## 9. Test connection
 
+### 9.1. Check NAT gateway public IP
+
+![image](https://github.com/user-attachments/assets/412b18e2-a086-4a83-ba7d-23b7897c0d0f)
+
+### 9.2. Check bastion subnet address range
+
+![image](https://github.com/user-attachments/assets/7bb6d541-8a04-4d77-8adc-e234dd56f522)
+
+### 9.3. Connect to VM
+
+![image](https://github.com/user-attachments/assets/718c99c6-9986-4446-994f-b428ead492ae)
+
+![image](https://github.com/user-attachments/assets/ee9c090e-bf6a-4a7c-ad17-a803db98e31c)
+
+Verify that:
+1. Outbound traffic to internet uses NAT gateway
+2. SSH connection is established through bastion subnet address range
+
+![image](https://github.com/user-attachments/assets/e3747130-43c1-497d-9c4a-30f8775dc4a3)
