@@ -183,6 +183,7 @@ After=network.target
 [Service]
 Type=simple
 ExecStart=/usr/bin/node /etc/usersapp/app.js
+Restart=on-failure
 WorkingDirectory=/etc/usersapp
 
 [Install]
