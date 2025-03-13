@@ -152,6 +152,7 @@ Install NPM modules, create `.env` file and download keys, application code and 
 
 ```sh
 mkdir -p /etc/usersapp/views /etc/usersapp/pki
+cd /etc/usersapp
 npm install express express-session mysql2 pg path dotenv bcrypt hbs jsonwebtoken cookie-parser
 cat << EOF > /etc/usersapp/.env
 DB_TYPE = mysql
