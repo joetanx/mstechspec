@@ -1,8 +1,8 @@
-## 4. Deploy [Users App](https://github.com/joetanx/usersapp) on Azure VM
+## 1. Deploy [Users App](https://github.com/joetanx/usersapp) on Azure VM
 
 Adapted from [manual install](https://github.com/joetanx/usersapp#4-deployment-via-manual-install) of [Users App](https://github.com/joetanx/usersapp) to install on Ubuntu
 
-### 4.1. Preparation
+### 1.1. Preparation
 
 Install necessary packages:
 
@@ -11,9 +11,9 @@ apt update
 apt -y install mysql-server postgresql nodejs npm jq
 ```
 
-### 4.2. Setup Databases
+### 1.2. Setup Databases
 
-#### 4.2.1. MySQL
+#### 1.2.1. MySQL
 
 Set MySQL to listen on `0.0.0.0`
 
@@ -61,7 +61,7 @@ mysql -u root -e "SELECT id,firstName,lastName,username,email,mobile,password FR
 
 </details>
 
-#### 4.2.2. PostgreSQL
+#### 1.2.2. PostgreSQL
 
 Populate PostgreSQL database:
 
@@ -132,13 +132,13 @@ sudo -u postgres psql -d users -c "SELECT id,firstName,lastName,username,email,m
 
 </details>
 
-#### 4.2.3. Clean-up
+#### 1.2.3. Clean-up
 
 ```sh
 rm -f /tmp/users-my.sql /tmp/users-pg.sql
 ```
 
-### 4.3. Deploy Node.js Application
+### 1.3. Deploy Node.js Application
 
 Install NPM modules, create `.env` file and download keys, application code and view templates:
 
@@ -212,4 +212,32 @@ Mar 13 20:48:00 ubuntu-vm systemd[1]: Started usersapp.service - Run node.js use
 Mar 13 20:48:01 ubuntu-vm node[10489]: Verification service listening at http://azcm-ubuntu:3000
 ```
 
-![image](https://github.com/user-attachments/assets/34d0a0ca-5baa-4901-a631-99d1f9d3d0aa)
+![image](https://github.com/user-attachments/assets/b492e318-8523-4533-b101-dcc5459c14dd)
+
+## 2. Create WAF policy
+
+![image](https://github.com/user-attachments/assets/eec48469-5676-46d3-ba0f-029e7df22492)
+
+![image](https://github.com/user-attachments/assets/ebc096b0-ec44-434c-8d78-dcd03a2cf489)
+
+![image](https://github.com/user-attachments/assets/26d709b8-d50f-4cc5-a172-51b70eae4cb2)
+
+![image](https://github.com/user-attachments/assets/ca0384d4-25d4-48b1-b0e7-04bacf48eeac)
+
+![image](https://github.com/user-attachments/assets/b1d44d78-9e0a-4e5c-b7b9-d05b013ba383)
+
+![image](https://github.com/user-attachments/assets/d9e75712-19c8-4f0f-95d6-84fe7134477a)
+
+![image](https://github.com/user-attachments/assets/9e7d29f0-2435-4792-ba1b-0209ce93e136)
+
+![image](https://github.com/user-attachments/assets/c3bed6de-6c5c-4d67-b396-edd300b56722)
+
+![image](https://github.com/user-attachments/assets/f8099173-2ca3-4134-99a7-77c91590ebe1)
+
+## 3. Create subnet
+
+![image](https://github.com/user-attachments/assets/3efab161-3830-46cc-b6a0-7bf8aad76c27)
+
+![image](https://github.com/user-attachments/assets/0d2c835d-53aa-4b01-a249-69f156010f67)
+
+## 4. Create application gateway
