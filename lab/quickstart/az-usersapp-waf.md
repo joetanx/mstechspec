@@ -241,3 +241,33 @@ Mar 13 20:48:01 ubuntu-vm node[10489]: Verification service listening at http://
 ![image](https://github.com/user-attachments/assets/0d2c835d-53aa-4b01-a249-69f156010f67)
 
 ## 4. Create application gateway
+
+![image](https://github.com/user-attachments/assets/f351b4a3-4bd5-4171-91be-aa81048f43fe)
+
+![image](https://github.com/user-attachments/assets/15df4714-49e2-4a20-870c-5b4b73b48f8b)
+
+![image](https://github.com/user-attachments/assets/f31130f7-ece4-4d4d-a73f-90ae713bc7ef)
+
+![image](https://github.com/user-attachments/assets/a5ff3f70-6aef-406c-bc8b-4afa6c64fc8e)
+
+![image](https://github.com/user-attachments/assets/46aeba8d-6505-49c0-8d82-ffaff226a532)
+
+![image](https://github.com/user-attachments/assets/5ec57e26-a353-4432-b89b-e2b3bb57532c)
+
+![image](https://github.com/user-attachments/assets/ebdec273-d841-4927-9f40-b7831f17bbc2)
+
+![image](https://github.com/user-attachments/assets/6687f897-dbd6-444f-a021-018d94301af4)
+
+![image](https://github.com/user-attachments/assets/db50b570-11a2-4339-8232-67938ae26b9b)
+
+![image](https://github.com/user-attachments/assets/20170b1d-83cb-4863-b290-ca4a46f29cc1)
+
+![image](https://github.com/user-attachments/assets/86b7bde5-d3ee-45cb-946c-6e51deba99d1)
+
+![image](https://github.com/user-attachments/assets/0a2dde75-2bef-4f1c-a01d-b3a11a627323)
+
+![image](https://github.com/user-attachments/assets/ecd722ea-cd32-4dee-ae3e-2ea8d1c1307c)
+
+![image](https://github.com/user-attachments/assets/33157b16-80ed-4287-859d-b038966c4acd)
+
+![image](https://github.com/user-attachments/assets/7853f940-15ed-49fa-aecd-45560b9d4e36)
