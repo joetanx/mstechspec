@@ -34,7 +34,9 @@ Install Sentinel solutions: left pane → Content management → Content hub
 |Windows Forwarded Events|![image](https://github.com/user-attachments/assets/1047fe4e-f402-439e-b2a4-d8c4c5d0ae70)|
 |Common Event Format|![image](https://github.com/user-attachments/assets/da9da109-c3ed-4cfc-9c35-182b6ad67024)|
 |Syslog|![image](https://github.com/user-attachments/assets/5468f1dd-6d0b-43f6-81d6-890a44aed7c0)|
+|Sentinel SOAR Essentials|![image](https://github.com/user-attachments/assets/91672ea7-ed56-4085-a06f-f1e092686434)|
+|Threat Intelligence|![image](https://github.com/user-attachments/assets/2b4bcfa5-3ad1-4076-a3fa-c9b3e53906c8)|
 
 Data connectors available after installation:
 
-![image](https://github.com/user-attachments/assets/47ae3a29-548d-488f-b90c-e8768ce2e869)
+![image](https://github.com/user-attachments/assets/b4df07c8-6496-4757-94b3-8627eeb8f57b)
