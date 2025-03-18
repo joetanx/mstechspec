@@ -26,26 +26,15 @@ Install Sentinel solutions: left pane → Content management → Content hub
 
 ![image](https://github.com/user-attachments/assets/edb5804d-80bc-46c6-b2d7-a881c0e56661)
 
-### 3.1. Azure Activity
+|Solution||
+|---|---|
+|Azure Activity|![image](https://github.com/user-attachments/assets/6faae0ac-f746-43e3-9839-2ee0ecd82d8a)|
+|Defender for Cloud|![image](https://github.com/user-attachments/assets/6c55ca54-9b5f-47f4-ba51-8d64d27fc73b)|
+|Windows Security Events|![image](https://github.com/user-attachments/assets/99e19ad4-d811-438b-8b9f-72edd8f0e79e)|
+|Windows Forwarded Events|![image](https://github.com/user-attachments/assets/1047fe4e-f402-439e-b2a4-d8c4c5d0ae70)|
+|Common Event Format|![image](https://github.com/user-attachments/assets/da9da109-c3ed-4cfc-9c35-182b6ad67024)|
+|Syslog|![image](https://github.com/user-attachments/assets/5468f1dd-6d0b-43f6-81d6-890a44aed7c0)|
 
-![image](https://github.com/user-attachments/assets/6faae0ac-f746-43e3-9839-2ee0ecd82d8a)
+Data connectors available after installation:
 
-### 3.2. Defender for Cloud
-
-![image](https://github.com/user-attachments/assets/6c55ca54-9b5f-47f4-ba51-8d64d27fc73b)
-
-### 3.3. Windows Security Events
-
-![image](https://github.com/user-attachments/assets/99e19ad4-d811-438b-8b9f-72edd8f0e79e)
-
-### 3.4. Windows Forwarded Events
-
-![image](https://github.com/user-attachments/assets/1047fe4e-f402-439e-b2a4-d8c4c5d0ae70)
-
-### 3.5. Common Event Format
-
-![image](https://github.com/user-attachments/assets/da9da109-c3ed-4cfc-9c35-182b6ad67024)
-
-### 3.6. Syslog
-
-![image](https://github.com/user-attachments/assets/5468f1dd-6d0b-43f6-81d6-890a44aed7c0)
+![image](https://github.com/user-attachments/assets/47ae3a29-548d-488f-b90c-e8768ce2e869)
