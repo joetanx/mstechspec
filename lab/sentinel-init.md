@@ -24,6 +24,8 @@
 
 Install Sentinel solutions: left pane → Content management → Content hub
 
+![image](https://github.com/user-attachments/assets/edb5804d-80bc-46c6-b2d7-a881c0e56661)
+
 ### 3.1. Azure Activity
 
 ![image](https://github.com/user-attachments/assets/6faae0ac-f746-43e3-9839-2ee0ecd82d8a)
