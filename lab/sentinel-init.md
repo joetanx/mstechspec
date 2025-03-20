@@ -79,13 +79,13 @@ Select the resources that the DCR will cover:
 
 ![image](https://github.com/user-attachments/assets/97fdb096-1118-4050-a9a7-a99218e4f707)
 
-### 4.2. CEF via AMA
+### 4.2. Syslog via AMA
 
-![image](https://github.com/user-attachments/assets/12c2fc83-7385-4fb6-b5c7-c4a46752948c)
+![image](https://github.com/user-attachments/assets/45698c20-9b7f-4969-83d1-e08922a20039)
 
-![image](https://github.com/user-attachments/assets/3c5b1289-d411-4988-aada-9194c1f9dd16)
+![image](https://github.com/user-attachments/assets/b47c16bf-8e1f-4759-a8b8-aac007f089d9)
 
-#### 4.1.1. Install AMA on Linux machines
+#### 4.2.1. Install AMA on Linux machines
 
 ```sh
 curl -sLO https://github.com/Azure/Azure-Sentinel/raw/refs/heads/master/DataConnectors/Syslog/Forwarder_AMA_installer.py
@@ -98,19 +98,23 @@ python Forwarder_AMA_installer.py
 
 ![image](https://github.com/user-attachments/assets/adfa069b-435d-4c45-b458-d284eb5e464d)
 
-#### 4.1.2. Create data collection rule
+Check AMA status `systemctl status azuremonitor*`:
 
-![image](https://github.com/user-attachments/assets/7178cef4-c00b-42d1-8e05-facb93c5b09d)
+![image](https://github.com/user-attachments/assets/9e9a851f-3ef3-4695-b437-b4ace22b9360)
+
+#### 4.2.2. Create data collection rule
+
+![image](https://github.com/user-attachments/assets/e5671eda-c7c6-43eb-8a40-4b8ce1f44c32)
+
+![image](https://github.com/user-attachments/assets/d4cbd91f-4365-4bc3-9b09-1656187551b2)
 
 ![image](https://github.com/user-attachments/assets/c100487a-c8c0-4cdc-814e-1ce049f941e7)
 
-![image](https://github.com/user-attachments/assets/c7ab7f94-868d-49e5-b8c9-530b2de4ffd7)
-
-![image](https://github.com/user-attachments/assets/192c4aec-5438-4a47-ba74-02d815ad6e3d)
+![image](https://github.com/user-attachments/assets/8b1da32c-32d6-479b-b7c1-efa3f2eee565)
 
 ![image](https://github.com/user-attachments/assets/af19e8a5-18fe-45b5-b858-57524fb6d116)
 
-#### 4.1.3. Results
+#### 4.2.3. Results
 
 ![image](https://github.com/user-attachments/assets/40b88e24-71c6-44a0-a6db-ed0839a0fff0)
 
@@ -118,4 +122,4 @@ python Forwarder_AMA_installer.py
 
 ![image](https://github.com/user-attachments/assets/38936108-6805-4421-9484-d4e17f449293)
 
-![image](https://github.com/user-attachments/assets/74a656be-859f-40fb-8dae-d482dd85aa5c)
+![image](https://github.com/user-attachments/assets/14d24b5f-d67c-4592-99c8-b09e859d23df)
