@@ -45,7 +45,37 @@ Data connectors available after installation:
 
 ### 4.1. Windows Security Events via AMA
 
+Ref: https://learn.microsoft.com/en-us/azure/sentinel/connect-services-windows-based
+
 ![image](https://github.com/user-attachments/assets/b43b9062-09f6-43d8-9772-378fd9d9448f)
+
+![image](https://github.com/user-attachments/assets/6ce7047d-b0e0-4b3b-9b5d-3b00f2c75369)
+
+![image](https://github.com/user-attachments/assets/624d6246-2cdf-41ff-91dc-8a1151abfeda)
+
+Select the resources that the DCR will cover:
+
+> [!Note]
+>
+> At the end of this process, the Azure Monitor Agent will be installed on any selected machines that don't already have it installed.
+
+![image](https://github.com/user-attachments/assets/31d33f09-c475-4867-b238-f3d3ddf4a79b)
+
+![image](https://github.com/user-attachments/assets/46d256ad-be37-4425-b215-94d19e3af3f5)
+
+![image](https://github.com/user-attachments/assets/89c20321-2e82-49a4-8c50-e59ed8d1613e)
+
+![image](https://github.com/user-attachments/assets/235cac21-4d0e-4c14-8dfe-d5eeecf66cbe)
+
+#### 4.1.1. Results
+
+![image](https://github.com/user-attachments/assets/9dd40d4c-414b-4572-b1bc-d950280602f7)
+
+![image](https://github.com/user-attachments/assets/7788843e-2f00-433f-ad78-8b450b304ad6)
+
+![image](https://github.com/user-attachments/assets/1baf6220-5d03-4aa8-bf20-3fb4f4d4a95d)
+
+![image](https://github.com/user-attachments/assets/97fdb096-1118-4050-a9a7-a99218e4f707)
 
 ### 4.2. CEF via AMA
 
