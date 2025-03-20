@@ -40,3 +40,13 @@ Install Sentinel solutions: left pane → Content management → Content hub
 Data connectors available after installation:
 
 ![image](https://github.com/user-attachments/assets/b4df07c8-6496-4757-94b3-8627eeb8f57b)
+
+## 4. Ingestion
+
+### 4.1. Windows Security Events via AMA
+
+![image](https://github.com/user-attachments/assets/b43b9062-09f6-43d8-9772-378fd9d9448f)
+
+### 4.2. CEF via AMA
+
+![image](https://github.com/user-attachments/assets/12c2fc83-7385-4fb6-b5c7-c4a46752948c)
