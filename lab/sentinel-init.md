@@ -111,3 +111,11 @@ python Forwarder_AMA_installer.py
 ![image](https://github.com/user-attachments/assets/af19e8a5-18fe-45b5-b858-57524fb6d116)
 
 #### 4.1.3. Results
+
+![image](https://github.com/user-attachments/assets/40b88e24-71c6-44a0-a6db-ed0839a0fff0)
+
+![image](https://github.com/user-attachments/assets/c535b12e-6c4b-430d-8d01-9d89da894aa7)
+
+![image](https://github.com/user-attachments/assets/38936108-6805-4421-9484-d4e17f449293)
+
+![image](https://github.com/user-attachments/assets/74a656be-859f-40fb-8dae-d482dd85aa5c)
