@@ -98,10 +98,6 @@ python Forwarder_AMA_installer.py
 
 ![image](https://github.com/user-attachments/assets/adfa069b-435d-4c45-b458-d284eb5e464d)
 
-Check AMA status `systemctl status azuremonitor*`:
-
-![image](https://github.com/user-attachments/assets/9e9a851f-3ef3-4695-b437-b4ace22b9360)
-
 #### 4.2.2. Create data collection rule
 
 ![image](https://github.com/user-attachments/assets/e5671eda-c7c6-43eb-8a40-4b8ce1f44c32)
@@ -121,5 +117,9 @@ Check AMA status `systemctl status azuremonitor*`:
 ![image](https://github.com/user-attachments/assets/c535b12e-6c4b-430d-8d01-9d89da894aa7)
 
 ![image](https://github.com/user-attachments/assets/38936108-6805-4421-9484-d4e17f449293)
+
+Check AMA status `systemctl status azuremonitor*`:
+
+![image](https://github.com/user-attachments/assets/9e9a851f-3ef3-4695-b437-b4ace22b9360)
 
 ![image](https://github.com/user-attachments/assets/14d24b5f-d67c-4592-99c8-b09e859d23df)
