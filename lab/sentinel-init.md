@@ -79,13 +79,33 @@ Select the resources that the DCR will cover:
 
 ![image](https://github.com/user-attachments/assets/97fdb096-1118-4050-a9a7-a99218e4f707)
 
-### 4.2. Syslog via AMA
+### 4.2. Windows Forwarded Events
+
+![image](https://github.com/user-attachments/assets/9f216be8-e03e-43db-8efb-25f895154f84)
+
+![image](https://github.com/user-attachments/assets/42cd0c88-968d-41dd-9ea1-a812547bdfaa)
+
+#### 4.2.1. Create data collection rule
+
+![image](https://github.com/user-attachments/assets/8d57affc-91c0-45d5-85f2-d2f5b1335407)
+
+Select the Windows events collector:
+
+![image](https://github.com/user-attachments/assets/40c76178-ab34-4557-ac6a-4be25938fa42)
+
+![image](https://github.com/user-attachments/assets/1da74e00-73b2-471f-8285-5aa215d115a8)
+
+![image](https://github.com/user-attachments/assets/e4bc6935-cadf-4566-b0b6-139f1dca49bc)
+
+![image](https://github.com/user-attachments/assets/e9087b81-4999-470b-ba46-38d7eba3f203)
+
+### 4.3. Syslog via AMA
 
 ![image](https://github.com/user-attachments/assets/45698c20-9b7f-4969-83d1-e08922a20039)
 
 ![image](https://github.com/user-attachments/assets/b47c16bf-8e1f-4759-a8b8-aac007f089d9)
 
-#### 4.2.1. Install AMA on Linux machines
+#### 4.3.1. Install AMA on Linux machines
 
 ```sh
 curl -sLO https://github.com/Azure/Azure-Sentinel/raw/refs/heads/master/DataConnectors/Syslog/Forwarder_AMA_installer.py
@@ -98,7 +118,7 @@ python Forwarder_AMA_installer.py
 
 ![image](https://github.com/user-attachments/assets/adfa069b-435d-4c45-b458-d284eb5e464d)
 
-#### 4.2.2. Create data collection rule
+#### 4.3.2. Create data collection rule
 
 ![image](https://github.com/user-attachments/assets/e5671eda-c7c6-43eb-8a40-4b8ce1f44c32)
 
@@ -110,7 +130,7 @@ python Forwarder_AMA_installer.py
 
 ![image](https://github.com/user-attachments/assets/af19e8a5-18fe-45b5-b858-57524fb6d116)
 
-#### 4.2.3. Results
+#### 4.3.3. Results
 
 ![image](https://github.com/user-attachments/assets/40b88e24-71c6-44a0-a6db-ed0839a0fff0)
 
