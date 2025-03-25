@@ -99,6 +99,10 @@ Select the Windows events collector:
 
 ![image](https://github.com/user-attachments/assets/e9087b81-4999-470b-ba46-38d7eba3f203)
 
+#### 4.2.2. Results
+
+![image](https://github.com/user-attachments/assets/fabcc5b5-e077-4079-9c96-e18a32724e6b)
+
 ### 4.3. Syslog via AMA
 
 ![image](https://github.com/user-attachments/assets/45698c20-9b7f-4969-83d1-e08922a20039)
