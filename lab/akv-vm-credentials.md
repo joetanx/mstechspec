@@ -54,21 +54,21 @@
 
 The private key file needs to be uploaded via Azure CLI
 
-![image](https://github.com/user-attachments/assets/2c30ee31-e132-4ad7-9a17-2331278f836c)
+![image](https://github.com/user-attachments/assets/97996f7d-d9a6-459c-a7a5-11eba532d97f)
 
 #### 4.1.1. Create SSH key so that it can be used to create VMs in the future
 
-![image](https://github.com/user-attachments/assets/8559e094-ffe8-4958-8a60-5683d4ce7816)
+![image](https://github.com/user-attachments/assets/a1742745-f436-4122-a7b5-628a6270e818)
 
-![image](https://github.com/user-attachments/assets/fbfc1392-b80a-47d1-a3c3-b7ba81dbde3f)
+![image](https://github.com/user-attachments/assets/c1f224ee-ba0c-4496-8464-c8cf9f886708)
 
-![image](https://github.com/user-attachments/assets/f7964cf2-6dc3-4e3c-9fcc-d1047bde6704)
+![image](https://github.com/user-attachments/assets/8ec8897d-ca74-4f27-89eb-d8a5c92c6e5e)
 
 ### 4.2. Windows password
 
-![image](https://github.com/user-attachments/assets/fe8ee83b-92af-4d99-8a7b-f1ed931698f1)
+![image](https://github.com/user-attachments/assets/2f5f92d2-271b-4a16-b2b5-992163374317)
 
-![image](https://github.com/user-attachments/assets/1199f21d-4e8c-4e9d-8d11-0f55910d6ac4)
+![image](https://github.com/user-attachments/assets/68cd8ea7-4742-4716-8096-98d939f80aa3)
 
 ## 5. Bastion connection to VMs using key vault secrets
 
