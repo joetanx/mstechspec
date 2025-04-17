@@ -8,6 +8,29 @@
 
 ![image](https://github.com/user-attachments/assets/e92c4ff1-ad68-46a9-b245-6364e2708bc6)
 
+## 2. Create Public VNet
+
+![image](https://github.com/user-attachments/assets/7249c7d8-7e46-4994-bfe7-69fcdeb3320f)
+
+### 2.1. Configure Bastion in security settings
+
+![image](https://github.com/user-attachments/assets/484542bd-f0f4-46b2-9736-1a32b0a60e02)
+
+![image](https://github.com/user-attachments/assets/f4c92cbf-9ce7-4c4f-851a-6363a89812c0)
+
+### 2.2. Confirm IP addresses
+
+![image](https://github.com/user-attachments/assets/063ccb32-6424-4145-a51a-593be469f63c)
+
+### 2.3. Configure tags
+
+![image](https://github.com/user-attachments/assets/db564885-4427-4dcc-b1c0-1d9bff5c30cb)
+
+### 2.4. Review + create
+
+![image](https://github.com/user-attachments/assets/a2031ec6-0d56-474c-bfec-abee8b777d3e)
+
+
 # ARCHIVED
 
 ## 0. Basic infra setup
