@@ -98,13 +98,35 @@
 
 ### 6.2. Create route
 
-![image](https://github.com/user-attachments/assets/a3a58ee3-1f18-4ea2-813f-521deabdefca)
+![image](https://github.com/user-attachments/assets/f57d288b-6b35-429d-a1a1-b2117546510b)
 
 ![image](https://github.com/user-attachments/assets/a4371d8e-72af-4115-82c6-2f2dfda00c79)
 
 ![image](https://github.com/user-attachments/assets/41d94088-6f18-43a5-8495-78dea213c39b)
 
 ![image](https://github.com/user-attachments/assets/edd485e7-8390-4bef-bf7d-1fe890e430bd)
+
+### 6.3. Associate route to subnet
+
+![image](https://github.com/user-attachments/assets/756dd279-f5fc-449d-af7e-a662a6d8d517)
+
+![image](https://github.com/user-attachments/assets/16a40f72-14f7-45ba-9d41-fceb48746849)
+
+![image](https://github.com/user-attachments/assets/9f974841-174b-455a-ad6e-c7d6ecef65f8)
+
+![image](https://github.com/user-attachments/assets/bcb82a9e-3986-4e8d-9012-2805eae4f01d)
+
+### 6.4. Create network security group
+
+![image](https://github.com/user-attachments/assets/5b4c6bb1-d811-4bcf-a632-a21cf5c73e4a)
+
+![image](https://github.com/user-attachments/assets/8e428286-2028-4270-9b76-8653c010d13b)
+
+![image](https://github.com/user-attachments/assets/1499d5aa-b437-4967-8a96-6d733e4d4ad0)
+
+![image](https://github.com/user-attachments/assets/11960251-eab3-4a4f-8a8b-8465541f118a)
+
+![image](https://github.com/user-attachments/assets/8646ccb9-3186-4982-9b31-59573b4cf774)
 
 <details><summary><h1>ARCHIVED DONE</h1></summary>
 
@@ -224,10 +246,6 @@ Check firewall private IP:
 
 ![image](https://github.com/user-attachments/assets/9353bf24-54b0-46b5-9d20-919b3b15fae1)
 
-</details>
-
-<details><summary><h1>ARCHIVED WIP</h1></summary>
-
 ### 6.3. Associate route to subnet
 
 ![image](https://github.com/user-attachments/assets/96c77692-e954-4e20-9978-bec553092527)
@@ -237,6 +255,10 @@ Check firewall private IP:
 ![image](https://github.com/user-attachments/assets/d788f038-58e3-40f6-9a3c-67cb739b2a32)
 
 ![image](https://github.com/user-attachments/assets/4db46c0e-1f26-43c3-91a1-5c682c9fa6ba)
+
+</details>
+
+<details><summary><h1>ARCHIVED WIP</h1></summary>
 
 ## 7. Create a firewall policy for the hub virtual network
 
