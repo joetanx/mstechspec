@@ -36,7 +36,23 @@
 
 ![image](https://github.com/user-attachments/assets/fd0a5861-c05e-4aa9-910e-e3ceff22eda4)
 
-<details><summary><h1>ARCHIVED</h1></summary>
+## 3. Create a NAT gateway and associate it with the public VNet outbound subnet
+
+![image](https://github.com/user-attachments/assets/c4f3528f-326e-420f-934f-4dc89b0e18e1)
+
+![image](https://github.com/user-attachments/assets/e67208ca-e2a7-4d77-9c71-035020df56bd)
+
+![image](https://github.com/user-attachments/assets/bb7a9221-c7e2-4983-b484-fb6463a4c2b2)
+
+![image](https://github.com/user-attachments/assets/4a4799ce-2f27-4dea-a5ba-10fcf62020fa)
+
+![image](https://github.com/user-attachments/assets/e3a0e565-3c9a-4f65-a83a-611b3f71b1f2)
+
+![image](https://github.com/user-attachments/assets/41670c15-c8c7-4fa8-b8bd-0a674965f8e2)
+
+![image](https://github.com/user-attachments/assets/f002ed9e-48dc-4d2b-8530-d9c758b52979)
+
+<details><summary><h1>ARCHIVED DONE</h1></summary>
 
 ## 0. Basic infra setup
 
@@ -95,6 +111,10 @@ Ref: https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-hub-spoke-nat-
 ![image](https://github.com/user-attachments/assets/891a5159-8fc8-4ffc-ac99-71fc5bb1f90e)
 
 ![image](https://github.com/user-attachments/assets/9368840e-381f-4960-9d30-120b273eb807)
+
+</details>
+
+<details><summary><h1>ARCHIVED WIP</h1></summary>
 
 ## 4. Create a spoke virtual network
 
