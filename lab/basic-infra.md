@@ -1,18 +1,20 @@
+## 1. Create resource group
+
+![image](https://github.com/user-attachments/assets/457723db-0e30-4245-b4ba-b6edc51af062)
+
+![image](https://github.com/user-attachments/assets/07faad5f-c0fc-4beb-8d4b-207692a9fd53)
+
+![image](https://github.com/user-attachments/assets/5a2af5ce-34e2-452b-bd1a-283dd1e8de7d)
+
+![image](https://github.com/user-attachments/assets/e92c4ff1-ad68-46a9-b245-6364e2708bc6)
+
+# ARCHIVED
+
 ## 0. Basic infra setup
 
 Ref: https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-hub-spoke-nat-firewall
 
 ![image](https://learn.microsoft.com/en-us/azure/nat-gateway/media/tutorial-hub-spoke-nat-firewall/resources-diagram.png)
-
-## 1. Create resource group
-
-![image](https://github.com/user-attachments/assets/3702d970-aad1-423e-8e07-8f35c75181fa)
-
-![image](https://github.com/user-attachments/assets/3b02f8c5-c3e5-4988-a7f9-b062039dd568)
-
-![image](https://github.com/user-attachments/assets/9f54fcbb-850a-4426-83c9-0522392c70ec)
-
-![image](https://github.com/user-attachments/assets/3c248714-d08b-470d-8f64-124ab496fe6c)
 
 ## 2. Create a hub virtual network and deploy an Azure Firewall and Azure Bastion during deployment
 
