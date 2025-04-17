@@ -70,6 +70,42 @@
 
 ![image](https://github.com/user-attachments/assets/00626179-e685-4573-9891-fbb1d0377967)
 
+## 5. Create peering between public and private VNets
+
+![image](https://github.com/user-attachments/assets/5ff1604d-b788-48a4-949a-79cec666763a)
+
+![image](https://github.com/user-attachments/assets/13b885cf-d80b-4c18-88a9-683eaa0a0335)
+
+![image](https://github.com/user-attachments/assets/5d2aa1ce-36a7-4406-bc70-43018245d1b8)
+
+![image](https://github.com/user-attachments/assets/e9788dca-fcb3-408d-a237-8e2efaa2b4e4)
+
+![image](https://github.com/user-attachments/assets/bbcb5016-f1ae-490f-8d37-aa87ae9ab676)
+
+## 6. Configure outbound routing from private subnet to internet via NAT Gateway
+
+### 6.1. Create route table
+
+![image](https://github.com/user-attachments/assets/6bd3dca9-5f86-4c5c-9e57-43014ec65545)
+
+![image](https://github.com/user-attachments/assets/1a178ce5-6331-497c-9d60-07a8ea7cd30b)
+
+![image](https://github.com/user-attachments/assets/8cdecfc9-f8c1-4555-a2cd-4025310141a7)
+
+![image](https://github.com/user-attachments/assets/432ba85e-8dea-4d1e-8b2d-b814c50ed50e)
+
+![image](https://github.com/user-attachments/assets/ca203055-3b77-48db-bab5-c711fb1d317d)
+
+### 6.2. Create route
+
+![image](https://github.com/user-attachments/assets/a3a58ee3-1f18-4ea2-813f-521deabdefca)
+
+![image](https://github.com/user-attachments/assets/a4371d8e-72af-4115-82c6-2f2dfda00c79)
+
+![image](https://github.com/user-attachments/assets/41d94088-6f18-43a5-8495-78dea213c39b)
+
+![image](https://github.com/user-attachments/assets/edd485e7-8390-4bef-bf7d-1fe890e430bd)
+
 <details><summary><h1>ARCHIVED DONE</h1></summary>
 
 ## 0. Basic infra setup
@@ -148,10 +184,6 @@ Ref: https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-hub-spoke-nat-
 
 ![image](https://github.com/user-attachments/assets/4fa532f0-75be-4f0e-9646-f1a5c9cf3250)
 
-<details><summary><h1>ARCHIVED WIP</h1></summary>
-
-</details>
-
 ## 5. Create a virtual network peering
 
 ![image](https://github.com/user-attachments/assets/a2163ed3-8b89-4803-8834-5891c636af4d)
@@ -191,6 +223,10 @@ Check firewall private IP:
 ![image](https://github.com/user-attachments/assets/8e393fea-65fb-4b33-a1aa-2f6743c8b4f2)
 
 ![image](https://github.com/user-attachments/assets/9353bf24-54b0-46b5-9d20-919b3b15fae1)
+
+</details>
+
+<details><summary><h1>ARCHIVED WIP</h1></summary>
 
 ### 6.3. Associate route to subnet
 
