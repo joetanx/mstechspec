@@ -128,6 +128,18 @@
 
 ![image](https://github.com/user-attachments/assets/8646ccb9-3186-4982-9b31-59573b4cf774)
 
+![image](https://github.com/user-attachments/assets/059cc144-64df-4a15-8be2-954351c8c617)
+
+### 6.5. Associate NSG with private VNet
+
+![image](https://github.com/user-attachments/assets/569c7e7d-e87a-4428-81d0-7e61d79820fa)
+
+![image](https://github.com/user-attachments/assets/36a81ed1-d169-481d-bad3-46a926724ab4)
+
+![image](https://github.com/user-attachments/assets/b28adaaf-c3c3-465e-996f-ccd39c135eb9)
+
+![image](https://github.com/user-attachments/assets/c46f9063-8c45-44a2-ab82-0deaef5c7b57)
+
 <details><summary><h1>ARCHIVED DONE</h1></summary>
 
 ## 0. Basic infra setup
