@@ -34,15 +34,19 @@
 >
 > `Key Vault XXXX` roles are required to work on key vault contents
 
-![image](https://github.com/user-attachments/assets/f9cc4e72-5b4e-4ae4-8f49-914e0521cde7)
+![image](https://github.com/user-attachments/assets/335f6433-742a-4f5e-a6ad-adf213c14974)
 
-![image](https://github.com/user-attachments/assets/3f2c8582-4ac0-43eb-8da7-a1b69a4177bd)
+![image](https://github.com/user-attachments/assets/4c3280b4-9872-44f8-aad1-9aaf9842f390)
 
-![image](https://github.com/user-attachments/assets/3e48340f-9136-4723-947a-330c2453f9d2)
+![image](https://github.com/user-attachments/assets/67eb1f45-8c85-4931-8b17-471e6968e72b)
 
-![image](https://github.com/user-attachments/assets/31432aab-4e8b-46f3-a7dc-c42d9ac7ddd4)
+![image](https://github.com/user-attachments/assets/26b838bd-60d4-4fb3-96bd-a80e1e872542)
 
-![image](https://github.com/user-attachments/assets/c9e96152-a686-4744-b8f4-9c2068ef6bcc)
+![image](https://github.com/user-attachments/assets/7850c57a-8fd6-426e-8ff9-8bfab88825c7)
+
+![image](https://github.com/user-attachments/assets/74c90cc9-ec02-467d-b9d8-3daed49cb831)
+
+![image](https://github.com/user-attachments/assets/9768b2bc-4730-4119-8c9f-d93a82490d63)
 
 ## 4. Onboard secrets
 
