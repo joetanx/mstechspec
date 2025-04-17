@@ -18,9 +18,11 @@
 
 ![image](https://github.com/user-attachments/assets/f4c92cbf-9ce7-4c4f-851a-6363a89812c0)
 
-### 2.2. Confirm IP addresses
+### 2.2. Add outbound subnet for NAT Gateway
 
-![image](https://github.com/user-attachments/assets/063ccb32-6424-4145-a51a-593be469f63c)
+![image](https://github.com/user-attachments/assets/8e8cd071-1487-4ea2-8602-5907d60380e2)
+
+![image](https://github.com/user-attachments/assets/a853a86e-17c9-4164-ac48-26b698c450a2)
 
 ### 2.3. Configure tags
 
@@ -28,13 +30,13 @@
 
 ### 2.4. Review + create
 
-![image](https://github.com/user-attachments/assets/a2031ec6-0d56-474c-bfec-abee8b777d3e)
+![image](https://github.com/user-attachments/assets/5aa045c2-88b6-40b2-96f9-c5e07e9e6e2d)
 
 ![image](https://github.com/user-attachments/assets/1db2cbfb-9098-4169-bfa1-2617c35f62ab)
 
 ![image](https://github.com/user-attachments/assets/fd0a5861-c05e-4aa9-910e-e3ceff22eda4)
 
-# ARCHIVED
+<details><summary><h1>ARCHIVED</h1></summary>
 
 ## 0. Basic infra setup
 
@@ -249,3 +251,5 @@ Verify that:
 ![image](https://github.com/user-attachments/assets/a451c810-201e-4770-b700-8722f8498c34)
 
 ![image](https://github.com/user-attachments/assets/1b33ee0d-cf3e-42de-9269-ba68f182908d)
+
+</details>
