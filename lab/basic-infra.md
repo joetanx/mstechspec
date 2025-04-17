@@ -140,6 +140,32 @@
 
 ![image](https://github.com/user-attachments/assets/c46f9063-8c45-44a2-ab82-0deaef5c7b57)
 
+## 8. Create a virtual machine to test the outbound connectivity through the NAT gateway
+
+### 8.1. Ubuntu
+
+![image](https://github.com/user-attachments/assets/5895d68a-bc8c-4a44-9cb7-e070d71eeddf)
+
+![image](https://github.com/user-attachments/assets/991981f6-08f6-4d3d-96ec-0a0709431376)
+
+![image](https://github.com/user-attachments/assets/58978bb7-c901-4f9e-b2ac-664ed18a6543)
+
+![image](https://github.com/user-attachments/assets/2192d148-21ec-4a89-982f-a02756cf88f9)
+
+![image](https://github.com/user-attachments/assets/8e76ddc6-6da9-4828-b4b9-ec403c552e94)
+
+![image](https://github.com/user-attachments/assets/47dd5f2d-4e4a-42b1-8d55-0ea05c8f5900)
+
+![image](https://github.com/user-attachments/assets/e46ffc14-b3d9-4af8-a7bb-5e5055e8a10d)
+
+![image](https://github.com/user-attachments/assets/3786d0ab-5186-4868-8b77-330236ab54f9)
+
+![image](https://github.com/user-attachments/assets/038cee66-d313-442b-a5ac-18369ffca155)
+
+![image](https://github.com/user-attachments/assets/bffe4345-77e7-4a3a-98dc-6a6afc36547c)
+
+![image](https://github.com/user-attachments/assets/b21d98f7-a34d-4272-985b-af3616b3ebe4)
+
 <details><summary><h1>ARCHIVED DONE</h1></summary>
 
 ## 0. Basic infra setup
@@ -268,10 +294,6 @@ Check firewall private IP:
 
 ![image](https://github.com/user-attachments/assets/4db46c0e-1f26-43c3-91a1-5c682c9fa6ba)
 
-</details>
-
-<details><summary><h1>ARCHIVED WIP</h1></summary>
-
 ## 7. Create a firewall policy for the hub virtual network
 
 ![image](https://github.com/user-attachments/assets/31b46cfe-2078-4f4c-b279-13c065406dac)
@@ -281,10 +303,6 @@ Check firewall private IP:
 ![image](https://github.com/user-attachments/assets/f8fe0705-cc84-44d8-b9ac-9df24f410152)
 
 ![image](https://github.com/user-attachments/assets/03555033-fc94-4866-8a0e-aa8af81f8758)
-
-## 8. Create a virtual machine to test the outbound connectivity through the NAT gateway
-
-### 8.1. Ubuntu
 
 ![image](https://github.com/user-attachments/assets/3b6a23bb-b66f-4f25-842a-867bfe271b49)
 
@@ -305,6 +323,10 @@ Check firewall private IP:
 ![image](https://github.com/user-attachments/assets/dfc47477-ad9b-436a-81aa-bf4bb298f362)
 
 ![image](https://github.com/user-attachments/assets/f81178c4-9a33-41b5-9eb2-bdf538645495)
+
+</details>
+
+<details><summary><h1>ARCHIVED WIP</h1></summary>
 
 ### 8.2. Windows
 
