@@ -52,6 +52,24 @@
 
 ![image](https://github.com/user-attachments/assets/f002ed9e-48dc-4d2b-8530-d9c758b52979)
 
+## 4. Create Private VNet
+
+![image](https://github.com/user-attachments/assets/e5ceb9eb-0c31-4261-a370-40549a84417c)
+
+![image](https://github.com/user-attachments/assets/4c770891-9d12-43a0-80b2-ede2bbac4e5f)
+
+![image](https://github.com/user-attachments/assets/7289ca1d-88be-4424-9181-efe2c7d2ad99)
+
+![image](https://github.com/user-attachments/assets/fc84d822-49ef-4383-bb33-88685caffe09)
+
+![image](https://github.com/user-attachments/assets/7d027da9-001b-45b2-bd88-5b4a677f6413)
+
+![image](https://github.com/user-attachments/assets/34eebb08-592a-4b60-a789-42798ad41778)
+
+![image](https://github.com/user-attachments/assets/53d11a18-bac0-4fc8-b652-603b685b0a56)
+
+![image](https://github.com/user-attachments/assets/00626179-e685-4573-9891-fbb1d0377967)
+
 <details><summary><h1>ARCHIVED DONE</h1></summary>
 
 ## 0. Basic infra setup
@@ -112,10 +130,6 @@ Ref: https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-hub-spoke-nat-
 
 ![image](https://github.com/user-attachments/assets/9368840e-381f-4960-9d30-120b273eb807)
 
-</details>
-
-<details><summary><h1>ARCHIVED WIP</h1></summary>
-
 ## 4. Create a spoke virtual network
 
 ![image](https://github.com/user-attachments/assets/0175a1cc-1e37-4dfe-9575-57befe9f2c8e)
@@ -133,6 +147,10 @@ Ref: https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-hub-spoke-nat-
 ![image](https://github.com/user-attachments/assets/532498c9-5ca6-42d7-94d4-9f360ce48ff3)
 
 ![image](https://github.com/user-attachments/assets/4fa532f0-75be-4f0e-9646-f1a5c9cf3250)
+
+<details><summary><h1>ARCHIVED WIP</h1></summary>
+
+</details>
 
 ## 5. Create a virtual network peering
 
