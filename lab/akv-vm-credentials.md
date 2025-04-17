@@ -1,30 +1,30 @@
 ## 1. Create security resource group
 
-![image](https://github.com/user-attachments/assets/544a3148-d9fa-409e-a4fe-42b14d9809a1)
+![image](https://github.com/user-attachments/assets/64362c7e-f40a-453f-8e91-037aa5126982)
 
-![image](https://github.com/user-attachments/assets/a417c1f8-dcfe-41f4-92d5-6539fda000c9)
+![image](https://github.com/user-attachments/assets/f25f1c10-7639-4c28-8044-a361a5f3dff7)
 
-![image](https://github.com/user-attachments/assets/1f2561e5-129e-44d3-9c91-b81638b4d597)
+![image](https://github.com/user-attachments/assets/9b57e1fd-ec23-4ec9-8ce5-90e76d95424f)
 
 ## 2. Create Azure key vault
 
-![image](https://github.com/user-attachments/assets/d5fc127c-2c64-47b9-9d61-cfb7fe7d4831)
+![image](https://github.com/user-attachments/assets/6e853b9f-e834-4644-82bc-1d7dbb47d58a)
 
-![image](https://github.com/user-attachments/assets/dc500533-03ee-4215-939c-de49f2708961)
+![image](https://github.com/user-attachments/assets/47610833-5a6b-41b3-a43c-4c253f9d2e19)
 
 > [!Note]
 >
 > Secure the key vault by disabling public access or allowing only selected networks
 
-![image](https://github.com/user-attachments/assets/e098913d-74b3-41d3-ae61-e88fca67e541)
+![image](https://github.com/user-attachments/assets/d8db5e3b-b786-4dd4-bc52-2d0c215bd2cf)
 
-![image](https://github.com/user-attachments/assets/3b0b1564-82b0-4cd9-82d1-a702a42af89c)
+![image](https://github.com/user-attachments/assets/19c5df71-caae-4905-94be-2dd493cbb1e2)
 
-![image](https://github.com/user-attachments/assets/895e3a80-be18-4f66-9a5f-a9485fe64f1a)
+![image](https://github.com/user-attachments/assets/744cbc03-a57c-4248-9241-924f9c46bf91)
 
-![image](https://github.com/user-attachments/assets/e8b5d219-0613-4f73-80b4-133c1691f90a)
+![image](https://github.com/user-attachments/assets/3d935885-dfa4-4272-ad18-50e5ac06d50e)
 
-![image](https://github.com/user-attachments/assets/3b76f67d-b667-406a-979a-f9faf4cf9f06)
+![image](https://github.com/user-attachments/assets/b1f72c81-a38f-4dbe-b1ec-4d084878c7f9)
 
 ## 3. Configure key vault administrator access
 
