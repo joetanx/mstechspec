@@ -74,7 +74,7 @@ The private key file needs to be uploaded via Azure CLI
 
 ### 5.1. Linux
 
-![image](https://github.com/user-attachments/assets/fa73f2a6-200e-4d4e-a30e-623e3dad538a)
+![image](https://github.com/user-attachments/assets/c31823e8-51e0-4d60-a290-7cfaa4e168bf)
 
 ### 5.2. Windows
 
