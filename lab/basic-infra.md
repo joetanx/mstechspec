@@ -116,30 +116,6 @@
 
 ![image](https://github.com/user-attachments/assets/bcb82a9e-3986-4e8d-9012-2805eae4f01d)
 
-### 6.4. Create network security group
-
-![image](https://github.com/user-attachments/assets/5b4c6bb1-d811-4bcf-a632-a21cf5c73e4a)
-
-![image](https://github.com/user-attachments/assets/8e428286-2028-4270-9b76-8653c010d13b)
-
-![image](https://github.com/user-attachments/assets/1499d5aa-b437-4967-8a96-6d733e4d4ad0)
-
-![image](https://github.com/user-attachments/assets/11960251-eab3-4a4f-8a8b-8465541f118a)
-
-![image](https://github.com/user-attachments/assets/8646ccb9-3186-4982-9b31-59573b4cf774)
-
-![image](https://github.com/user-attachments/assets/059cc144-64df-4a15-8be2-954351c8c617)
-
-### 6.5. Associate NSG with private VNet
-
-![image](https://github.com/user-attachments/assets/569c7e7d-e87a-4428-81d0-7e61d79820fa)
-
-![image](https://github.com/user-attachments/assets/36a81ed1-d169-481d-bad3-46a926724ab4)
-
-![image](https://github.com/user-attachments/assets/b28adaaf-c3c3-465e-996f-ccd39c135eb9)
-
-![image](https://github.com/user-attachments/assets/c46f9063-8c45-44a2-ab82-0deaef5c7b57)
-
 ## 8. Create a virtual machine to test the outbound connectivity through the NAT gateway
 
 ### 8.1. Ubuntu
@@ -165,6 +141,74 @@
 ![image](https://github.com/user-attachments/assets/bffe4345-77e7-4a3a-98dc-6a6afc36547c)
 
 ![image](https://github.com/user-attachments/assets/b21d98f7-a34d-4272-985b-af3616b3ebe4)
+
+## 9. Test connection
+
+### 9.1. Check NAT gateway public IP
+
+![image](https://github.com/user-attachments/assets/ece98aec-bea2-478c-97cb-3b318be93dc6)
+
+### 9.2. Check bastion subnet address range
+
+![image](https://github.com/user-attachments/assets/affae4ca-f339-4bc3-83f2-5ef34f287899)
+
+### 9.3. Connect to VM
+
+Verify that:
+1. Outbound traffic to internet uses NAT gateway
+2. SSH connection is established through bastion subnet address range
+
+#### 9.3.1. Ubuntu
+
+
+
+<details><summary><h1>ARCHIVED WIP</h1></summary>
+
+### 8.2. Windows
+
+![image](https://github.com/user-attachments/assets/34fb93c4-7c3d-435a-b0c7-fc3a972ecfa9)
+
+![image](https://github.com/user-attachments/assets/754226ec-e095-4a5c-9dda-6e66e969c782)
+
+![image](https://github.com/user-attachments/assets/5a0d9cce-fccc-4a3c-b446-1729ede55f0b)
+
+![image](https://github.com/user-attachments/assets/bc22a40b-2d13-448c-abf9-9513497f3805)
+
+![image](https://github.com/user-attachments/assets/3381f0a7-fc16-4e6d-ab26-a0857b83a4bc)
+
+![image](https://github.com/user-attachments/assets/380e3268-fb50-47c8-9d7a-bd3ba22dd544)
+
+![image](https://github.com/user-attachments/assets/722e3867-14af-41fd-a2f6-83ed5c4e19ff)
+
+![image](https://github.com/user-attachments/assets/b16eb765-0d57-4d26-a9a2-64c02f1d5694)
+
+![image](https://github.com/user-attachments/assets/117e9e58-6926-4f43-a7af-e6190ca5d706)
+
+![image](https://github.com/user-attachments/assets/fe2b69af-50bf-4cf8-bb6d-76e9ffa6562c)
+
+### 9.3. Connect to VM
+
+Verify that:
+1. Outbound traffic to internet uses NAT gateway
+2. SSH connection is established through bastion subnet address range
+
+#### 9.3.1. Ubuntu
+
+![image](https://github.com/user-attachments/assets/718c99c6-9986-4446-994f-b428ead492ae)
+
+![image](https://github.com/user-attachments/assets/ee9c090e-bf6a-4a7c-ad17-a803db98e31c)
+
+![image](https://github.com/user-attachments/assets/e3747130-43c1-497d-9c4a-30f8775dc4a3)
+
+#### 9.3.2. Windows
+
+![image](https://github.com/user-attachments/assets/b3bb3aca-b809-4082-86d8-6c71df88908e)
+
+![image](https://github.com/user-attachments/assets/a451c810-201e-4770-b700-8722f8498c34)
+
+![image](https://github.com/user-attachments/assets/1b33ee0d-cf3e-42de-9269-ba68f182908d)
+
+</details>
 
 <details><summary><h1>ARCHIVED DONE</h1></summary>
 
@@ -324,32 +368,6 @@ Check firewall private IP:
 
 ![image](https://github.com/user-attachments/assets/f81178c4-9a33-41b5-9eb2-bdf538645495)
 
-</details>
-
-<details><summary><h1>ARCHIVED WIP</h1></summary>
-
-### 8.2. Windows
-
-![image](https://github.com/user-attachments/assets/34fb93c4-7c3d-435a-b0c7-fc3a972ecfa9)
-
-![image](https://github.com/user-attachments/assets/754226ec-e095-4a5c-9dda-6e66e969c782)
-
-![image](https://github.com/user-attachments/assets/5a0d9cce-fccc-4a3c-b446-1729ede55f0b)
-
-![image](https://github.com/user-attachments/assets/bc22a40b-2d13-448c-abf9-9513497f3805)
-
-![image](https://github.com/user-attachments/assets/3381f0a7-fc16-4e6d-ab26-a0857b83a4bc)
-
-![image](https://github.com/user-attachments/assets/380e3268-fb50-47c8-9d7a-bd3ba22dd544)
-
-![image](https://github.com/user-attachments/assets/722e3867-14af-41fd-a2f6-83ed5c4e19ff)
-
-![image](https://github.com/user-attachments/assets/b16eb765-0d57-4d26-a9a2-64c02f1d5694)
-
-![image](https://github.com/user-attachments/assets/117e9e58-6926-4f43-a7af-e6190ca5d706)
-
-![image](https://github.com/user-attachments/assets/fe2b69af-50bf-4cf8-bb6d-76e9ffa6562c)
-
 ## 9. Test connection
 
 ### 9.1. Check NAT gateway public IP
@@ -360,26 +378,32 @@ Check firewall private IP:
 
 ![image](https://github.com/user-attachments/assets/7bb6d541-8a04-4d77-8adc-e234dd56f522)
 
-### 9.3. Connect to VM
+</details>
 
-Verify that:
-1. Outbound traffic to internet uses NAT gateway
-2. SSH connection is established through bastion subnet address range
+<details><summary><h1>ARCHIVED OBSELETE</h1></summary>
 
-#### 9.3.1. Ubuntu
+### 6.4. Create network security group
 
-![image](https://github.com/user-attachments/assets/718c99c6-9986-4446-994f-b428ead492ae)
+![image](https://github.com/user-attachments/assets/5b4c6bb1-d811-4bcf-a632-a21cf5c73e4a)
 
-![image](https://github.com/user-attachments/assets/ee9c090e-bf6a-4a7c-ad17-a803db98e31c)
+![image](https://github.com/user-attachments/assets/8e428286-2028-4270-9b76-8653c010d13b)
 
-![image](https://github.com/user-attachments/assets/e3747130-43c1-497d-9c4a-30f8775dc4a3)
+![image](https://github.com/user-attachments/assets/1499d5aa-b437-4967-8a96-6d733e4d4ad0)
 
-#### 9.3.2. Windows
+![image](https://github.com/user-attachments/assets/11960251-eab3-4a4f-8a8b-8465541f118a)
 
-![image](https://github.com/user-attachments/assets/b3bb3aca-b809-4082-86d8-6c71df88908e)
+![image](https://github.com/user-attachments/assets/8646ccb9-3186-4982-9b31-59573b4cf774)
 
-![image](https://github.com/user-attachments/assets/a451c810-201e-4770-b700-8722f8498c34)
+![image](https://github.com/user-attachments/assets/059cc144-64df-4a15-8be2-954351c8c617)
 
-![image](https://github.com/user-attachments/assets/1b33ee0d-cf3e-42de-9269-ba68f182908d)
+### 6.5. Associate NSG with private VNet
+
+![image](https://github.com/user-attachments/assets/569c7e7d-e87a-4428-81d0-7e61d79820fa)
+
+![image](https://github.com/user-attachments/assets/36a81ed1-d169-481d-bad3-46a926724ab4)
+
+![image](https://github.com/user-attachments/assets/b28adaaf-c3c3-465e-996f-ccd39c135eb9)
+
+![image](https://github.com/user-attachments/assets/c46f9063-8c45-44a2-ab82-0deaef5c7b57)
 
 </details>
