@@ -160,7 +160,9 @@ Verify that:
 
 #### 9.3.1. Ubuntu
 
+![image](https://github.com/user-attachments/assets/52ed9cc5-ec90-47c5-8c07-872685af040b)
 
+![image](https://github.com/user-attachments/assets/8894ee06-b639-457e-8b1a-ba4ec6dc69f3)
 
 <details><summary><h1>ARCHIVED WIP</h1></summary>
 
