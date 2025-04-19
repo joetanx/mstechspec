@@ -251,8 +251,12 @@ Verify that:
 
 ![image](https://github.com/user-attachments/assets/8894ee06-b639-457e-8b1a-ba4ec6dc69f3)
 
+![image](https://github.com/user-attachments/assets/e7b0af29-b6cf-44e0-8ac8-1a4f69307329)
+
 #### 9.3.2. Windows
 
 ![image](https://github.com/user-attachments/assets/7b34dc08-dcac-4ad9-b841-d485ec013dc8)
 
 ![image](https://github.com/user-attachments/assets/f13f4915-430f-45ee-908a-8436f2ce0f61)
+
+![image](https://github.com/user-attachments/assets/77b8d698-47c1-48f9-9809-f8fa0aed6562)
