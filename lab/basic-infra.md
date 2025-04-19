@@ -116,21 +116,46 @@ VNet peering can be initiated from either VNet:
 
 ## 6. Configure outbound routing from private subnet to internet via firewall
 
-
-
 ### 6.1. Create route table
 
+![image](https://github.com/user-attachments/assets/6bd3dca9-5f86-4c5c-9e57-43014ec65545)
 
+![image](https://github.com/user-attachments/assets/1a178ce5-6331-497c-9d60-07a8ea7cd30b)
+
+![image](https://github.com/user-attachments/assets/8cdecfc9-f8c1-4555-a2cd-4025310141a7)
+
+![image](https://github.com/user-attachments/assets/f9898916-77b4-4c8a-8967-bc2d0388e144)
+
+![image](https://github.com/user-attachments/assets/d6b337e7-96b6-4df9-b967-24c287e94876)
 
 ### 6.2. Create route
 
+![image](https://github.com/user-attachments/assets/f57d288b-6b35-429d-a1a1-b2117546510b)
+
 ### 6.2.1. Check firewall IP address
 
+![image](https://github.com/user-attachments/assets/db68cbbc-5eb1-49e8-aee7-ccf9e6119cb9)
 
+### 6.2.2. Add route
 
-### 6.3. Associate route to private subnet
+- Default (Internet) route: `0.0.0.0/0`
+- Next hop address: firewall address `10.0.1.68`
 
+![image](https://github.com/user-attachments/assets/030fcd55-eb7f-4084-b604-391621b2d134)
 
+![image](https://github.com/user-attachments/assets/f1f446cd-f34f-42ee-8866-1039414bfe09)
+
+![image](https://github.com/user-attachments/assets/e7254ee0-046b-4033-8724-9b0ec0be4dc4)
+
+### 6.3. Associate route table to private subnet
+
+![image](https://github.com/user-attachments/assets/756dd279-f5fc-449d-af7e-a662a6d8d517)
+
+![image](https://github.com/user-attachments/assets/16a40f72-14f7-45ba-9d41-fceb48746849)
+
+![image](https://github.com/user-attachments/assets/9f974841-174b-455a-ad6e-c7d6ecef65f8)
+
+![image](https://github.com/user-attachments/assets/bcb82a9e-3986-4e8d-9012-2805eae4f01d)
 
 ## 7. Create firewall policy for public VNet
 
