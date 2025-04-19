@@ -159,43 +159,100 @@ VNet peering can be initiated from either VNet:
 
 ## 7. Create firewall policy for public VNet
 
+![image](https://github.com/user-attachments/assets/7d7eba10-c1b9-4f81-a696-a43102c68c58)
 
+![image](https://github.com/user-attachments/assets/d811a4de-2a0d-48e4-bf58-9b2b0448c005)
+
+![image](https://github.com/user-attachments/assets/de4802f7-6cea-4ff6-a30d-80528c889019)
+
+![image](https://github.com/user-attachments/assets/bfa8311c-c0d8-4be5-86c8-96a8c4c388eb)
 
 ## 8. Create virtual machines to test outbound connectivity via NAT gateway
 
-
-
 ### 8.1. Ubuntu
 
+#### 8.1.1. Configure instance details and credentials
 
+![image](https://github.com/user-attachments/assets/5895d68a-bc8c-4a44-9cb7-e070d71eeddf)
+
+#### 8.1.2. Review disks details
+
+![image](https://github.com/user-attachments/assets/991981f6-08f6-4d3d-96ec-0a0709431376)
+
+#### 8.1.3. Configure networking
+
+![image](https://github.com/user-attachments/assets/58978bb7-c901-4f9e-b2ac-664ed18a6543)
+
+![image](https://github.com/user-attachments/assets/2192d148-21ec-4a89-982f-a02756cf88f9)
+
+![image](https://github.com/user-attachments/assets/744f47ef-a782-4fd2-911d-72ce84da424e)
+
+#### 8.1.4. Configure instance management settings
+
+![image](https://github.com/user-attachments/assets/47dd5f2d-4e4a-42b1-8d55-0ea05c8f5900)
+
+#### 8.1.5. Review + create
+
+![image](https://github.com/user-attachments/assets/7a5eea8e-88e6-45cf-8429-87dc52e2cc9b)
+
+![image](https://github.com/user-attachments/assets/a1fa2c09-597c-4a74-bd3a-5305897e92eb)
+
+![image](https://github.com/user-attachments/assets/3749df12-8b6a-40d6-82aa-19bbca0bd9d6)
 
 ### 8.2. Windows
 
+#### 8.2.1. Configure instance details and credentials
 
+![image](https://github.com/user-attachments/assets/ac9f2b8e-c817-4725-b6e4-2a32996f7fc9)
+
+#### 8.2.2. Review disks details
+
+![image](https://github.com/user-attachments/assets/24554201-28a3-4242-9a8e-ead3c9f50949)
+
+#### 8.2.3. Configure networking
+
+![image](https://github.com/user-attachments/assets/905580f9-8137-49bb-bd22-0f2255a85b01)
+
+![image](https://github.com/user-attachments/assets/79df5cf3-842b-4d0e-8eba-5d01635fff08)
+
+![image](https://github.com/user-attachments/assets/e85cf86d-a60c-4dfe-8d5f-596f6d14c75e)
+
+#### 8.2.4. Configure instance management settings
+
+![image](https://github.com/user-attachments/assets/fb10afd3-f078-47dd-b93e-0f6e95a54e5b)
+
+#### 8.2.5. Review + create
+
+![image](https://github.com/user-attachments/assets/cd84a224-582f-40f4-8a36-e539f0c6c842)
+
+![image](https://github.com/user-attachments/assets/9c763c7a-2ff6-485a-afb1-a73ef43454ae)
+
+![image](https://github.com/user-attachments/assets/beeb2ac9-72fc-4a20-aac7-a892253d6101)
 
 ## 9. Test connection
 
-
-
 ### 9.1. Check NAT gateway public IP
 
-
+![image](https://github.com/user-attachments/assets/bf45f47d-d21e-4326-a8ef-82521736a2fb)
 
 ### 9.2. Check bastion subnet address range
 
-
+![image](https://github.com/user-attachments/assets/affae4ca-f339-4bc3-83f2-5ef34f287899)
 
 ### 9.3. Connect to VM
 
-
+Verify that:
+1. Outbound traffic to internet uses NAT gateway
+2. SSH/RDP access to VM is established through bastion subnet address range
 
 #### 9.3.1. Ubuntu
 
+![image](https://github.com/user-attachments/assets/52ed9cc5-ec90-47c5-8c07-872685af040b)
 
+![image](https://github.com/user-attachments/assets/8894ee06-b639-457e-8b1a-ba4ec6dc69f3)
 
 #### 9.3.2. Windows
 
+![image](https://github.com/user-attachments/assets/7b34dc08-dcac-4ad9-b841-d485ec013dc8)
 
-
-
-
+![image](https://github.com/user-attachments/assets/f13f4915-430f-45ee-908a-8436f2ce0f61)
