@@ -96,7 +96,23 @@
 
 ## 5. Create peering between public and private VNets
 
+![image](https://github.com/user-attachments/assets/a2163ed3-8b89-4803-8834-5891c636af4d)
 
+### 5.1. Configure peering settings
+
+VNet peering can be initiated from either VNet:
+- Remote VNet: the VNet peer (`PrvVNet` in this example) to be initiated towards
+- Local VNet the current VNet (`PubNet` in this example) that the configuration is initiated from
+
+![image](https://github.com/user-attachments/assets/066fd3f9-8c72-4efd-b2d7-936d2bb05842)
+
+### 5.2. Verify peering sync status and peering state
+
+![image](https://github.com/user-attachments/assets/29ad91eb-eb9b-4175-8cc4-567e63632c67)
+
+![image](https://github.com/user-attachments/assets/d3594a3e-16d5-49ff-97cc-5e7314f31109)
+
+![image](https://github.com/user-attachments/assets/3924512f-2b3d-4169-9823-620ec8f7d3ed)
 
 ## 6. Configure outbound routing from private subnet to internet via firewall
 
@@ -107,6 +123,8 @@
 
 
 ### 6.2. Create route
+
+### 6.2.1. Check firewall IP address
 
 
 
